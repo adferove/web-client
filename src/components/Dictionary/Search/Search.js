@@ -1,11 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+import DictionaryContext from '../../../context/dictionary/dictionaryContext';
 
-const Search = ({
-  handledNotification,
-  handledSearch,
-  handledClear,
-  showClear,
-}) => {
+const Search = ({ handledNotification }) => {
+  const dictionaryContext = useContext(DictionaryContext);
+  const { searchHandler, clearHandler, legalDefinitions } = dictionaryContext;
   const [text, setText] = useState('');
 
   const onTextChange = (e) => {
@@ -17,12 +15,12 @@ const Search = ({
     if (text === '') {
       handledNotification('Please enter at least 2 letters', 'danger');
     } else {
-      handledSearch(text);
+      searchHandler(text);
     }
   };
 
   const clearResults = () => {
-    handledClear();
+    clearHandler();
   };
 
   return (
@@ -41,7 +39,7 @@ const Search = ({
           className="btn btn-block btn-blue"
         />
       </form>
-      {showClear && (
+      {legalDefinitions !== null && legalDefinitions.length > 0 && (
         <button className="btn btn-block btn-grey" onClick={clearResults}>
           Clear
         </button>

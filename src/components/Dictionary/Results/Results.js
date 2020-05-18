@@ -1,16 +1,19 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import classes from './Results.module.css';
 import ItemResult from './ItemResult/ItemResult';
 import Loading from '../../UI/Loading/Loading';
+import DictionaryContext from '../../../context/dictionary/dictionaryContext';
 
-const results = ({ loading, results }) => {
+const Results = () => {
+  const dictionaryContext = useContext(DictionaryContext);
+  const { loading, legalDefinitions } = dictionaryContext;
   if (loading) {
     return <Loading />;
   } else {
-    if (results !== null && results.length > 0) {
+    if (legalDefinitions !== null && legalDefinitions.length > 0) {
       return (
         <div className={[classes.Result, 'grid-2'].join(' ')}>
-          {results.map((item, index) => {
+          {legalDefinitions.map((item, index) => {
             return (
               <ItemResult key={index} word={item.key} definition={item.def} />
             );
@@ -23,4 +26,4 @@ const results = ({ loading, results }) => {
   }
 };
 
-export default results;
+export default Results;
