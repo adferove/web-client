@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "key": "Address for service",
+    "def": "After a court case starts, all the people involved in the case need to have an address where they want letters and court documents to be delivered to them by post and by hand."
+  },
+  {
+    "id": 2,
+    "key": "Adjoining properties",
+    "def": "Properties located next to one another."
+  },
+  {
+    "id": 3,
+    "key": "Adjournment",
+    "def": "Postponing a court hearing or other court appearance to another date."
+  },
+  {
+    "id": 4,
+    "key": "Administrator",
+    "def": "An administrator is the person who is granted letters of administration after someone has died without leaving a will. The administrator has legal authority to distribute the deceased person's estate."
+  },
+  {
+    "id": 5,
+    "key": "Admissible evidence",
+    "def": "The court has rules about what kind of evidence it will accept in a court case. Evidence the court decides to accept is called 'admissible evidence'."
+  }
+]

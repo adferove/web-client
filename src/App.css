@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Balsamiq+Sans');
 
-/* Global Styles */
 :root {
-  --primary-color: #5e1219;
+  --primary-color: #720432;
   --dark-color: #333333;
   --light-color: #f4f4f4;
   --danger-color: #dc3545;
   --success-color: #28a745;
-  --grey-color: #615c64;
+  --grey-color: #888;
+  --blue-color: #377283;
 }
 
 * {
@@ -20,7 +20,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
-  background-color: rgb(184, 180, 180);
+  background-color: #fff;
   color: #333;
 }
 
@@ -41,7 +41,6 @@ img {
   width: 100%;
 }
 
-/* Utilities */
 .container {
   max-width: 1100px;
   margin: auto;
@@ -49,7 +48,6 @@ img {
   padding: 0 2rem;
 }
 
-/* Text Styles*/
 .x-large {
   font-size: 4rem;
   line-height: 1.2;
@@ -99,7 +97,6 @@ img {
   text-align: left;
 }
 
-/* Center All */
 .all-center {
   display: flex;
   flex-direction: column;
@@ -110,14 +107,14 @@ img {
   text-align: center;
 }
 
-/* Cards */
 .card {
   padding: 1rem;
-  border: #ccc 1px dotted;
-  margin: 0.7rem 0;
+  border: #ccc;
+  margin: 0.5rem 0;
+  background-color: var(--light-color);
+  border-radius: 5px;
 }
 
-/* List */
 .list {
   margin: 0.5rem 0;
 }
@@ -126,7 +123,6 @@ img {
   padding-bottom: 0.3rem;
 }
 
-/* Padding */
 .p {
   padding: 0.5rem;
 }
@@ -152,7 +148,6 @@ img {
   padding: 3rem 0;
 }
 
-/* Margin */
 .m {
   margin: 0.5rem;
 }
@@ -178,7 +173,6 @@ img {
   margin: 3rem 0;
 }
 
-/* Grid */
 .grid-2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -205,9 +199,7 @@ img {
   font-size: 1rem;
   border: none;
   cursor: pointer;
-  margin-right: 0.5rem;
   transition: opacity 0.2s ease-in;
-  outline: none;
   border-radius: 5px;
 }
 
@@ -245,6 +237,7 @@ img {
   opacity: 0.9;
   background: var(--light-color);
   color: #333;
+  border-radius: 5px;
 }
 
 .btn-primary,
@@ -304,6 +297,14 @@ img {
   color: #fff;
 }
 
+.btn-blue,
+.bg-blue,
+.badge-blue,
+.alert-blue {
+  background: var(--blue-color);
+  color: #fff;
+}
+
 .btn:hover {
   opacity: 0.8;
 }
@@ -317,7 +318,6 @@ img {
   border-radius: 50%;
 }
 
-/* Forms */
 input {
   margin: 1.2rem 0;
 }
@@ -344,7 +344,7 @@ textarea {
 
 input[type='submit'],
 button {
-  font: inherit;
+  font-weight: bolder;
 }
 
 table th,
@@ -357,11 +357,11 @@ table th {
   background: var(--light-color);
 }
 
-/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-weight: bolder;
   padding: 0.7rem 2rem;
   z-index: 1;
   width: 100%;
@@ -391,7 +391,6 @@ table th {
   margin-right: 0.6rem;
 }
 
-/* Mobile Styles */
 @media (max-width: 700px) {
   .hide-sm {
     display: none;
@@ -403,7 +402,6 @@ table th {
     grid-template-columns: 1fr;
   }
 
-  /* Text Styles */
   .x-large {
     font-size: 3rem;
   }
@@ -416,7 +414,6 @@ table th {
     font-size: 1rem;
   }
 
-  /* Navbar */
   .navbar {
     display: block;
     text-align: center;
@@ -425,5 +422,29 @@ table th {
   .navbar ul {
     text-align: center;
     justify-content: center;
+  }
+
+  .btn {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+
+  input[type='text'],
+  input[type='email'],
+  input[type='password'],
+  input[type='date'],
+  input[type='submit'],
+  select,
+  textarea {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+
+  .card {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 1rem;
   }
 }
