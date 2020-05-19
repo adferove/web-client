@@ -1,9 +1,12 @@
 import React, { useState, useContext } from 'react';
 import DictionaryContext from '../../../context/dictionary/dictionaryContext';
+import NotificationContext from '../../../context/notification/notificationContext';
 
-const Search = ({ handledNotification }) => {
+const Search = () => {
   const dictionaryContext = useContext(DictionaryContext);
+  const notificationContext = useContext(NotificationContext);
   const { searchHandler, clearHandler, legalDefinitions } = dictionaryContext;
+  const { notificationHandler } = notificationContext;
   const [text, setText] = useState('');
 
   const onTextChange = (e) => {
@@ -13,7 +16,7 @@ const Search = ({ handledNotification }) => {
   const searchDefinition = (e) => {
     e.preventDefault();
     if (text === '') {
-      handledNotification('Please enter at least 2 letters', 'danger');
+      notificationHandler('Please enter at least 2 letters', 'danger');
     } else {
       searchHandler(text);
     }

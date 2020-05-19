@@ -2,15 +2,15 @@ import React from 'react';
 import './App.css';
 import Layout from './hoc/Layout/Layout';
 import Dictionary from './components/Dictionary/Dictionary';
-import DictionaryState from './context/dictionary/DictionaryState';
+import NotificationState from './context/notification/NotificationState';
 
 function App() {
   return (
     <div className="App">
       <Layout>
-        <DictionaryState>
+        <NotificationState>
           <Dictionary />
-        </DictionaryState>
+        </NotificationState>
       </Layout>
     </div>
   );
