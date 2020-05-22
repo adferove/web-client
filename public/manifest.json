@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Online Triage",
+  "name": "Online Triage Tool",
   "icons": [
     {
       "src": "favicon.ico",
