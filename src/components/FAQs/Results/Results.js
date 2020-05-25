@@ -9,7 +9,7 @@ const Results = ({ loading, legalDefinitions }) => {
   } else {
     if (legalDefinitions !== null && legalDefinitions.length > 0) {
       return (
-        <div className={[classes.Result, 'grid-2'].join(' ')}>
+        <div className={[classes.Result, 'grid-1'].join(' ')}>
           {legalDefinitions.map((item, index) => {
             return (
               <ItemResult key={index} word={item.key} definition={item.def} />

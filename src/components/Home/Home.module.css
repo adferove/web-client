@@ -1,0 +1,35 @@
+.Home {
+  position: relative;
+  max-width: 800px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.card {
+  padding: 2rem;
+  border: 1px solid #eee;
+  background-color: cadetblue;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  height: 5rem;
+  margin-bottom: 0.2rem;
+}
+
+.card:hover {
+  background-color: #ccc;
+  color: #000000;
+}
+
+.card:active {
+  background-color: #aaa;
+}
+
+@media (max-width: 813px) {
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,17 +1,17 @@
 import React, { useState, useContext } from 'react';
-import DictionaryContext from '../../../context/dictionary/dictionaryContext';
+import FAQsContext from '../../../context/faqs/faqsContext';
 import NotificationContext from '../../../context/notification/notificationContext';
 import Results from '../Results/Results';
 
 const Search = () => {
-  const dictionaryContext = useContext(DictionaryContext);
+  const faqsContext = useContext(FAQsContext);
   const notificationContext = useContext(NotificationContext);
   const {
     searchHandler,
     clearHandler,
     legalDefinitions,
     loading,
-  } = dictionaryContext;
+  } = faqsContext;
   const { notificationHandler } = notificationContext;
   const [text, setText] = useState('');
 
