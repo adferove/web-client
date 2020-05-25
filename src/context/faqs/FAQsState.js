@@ -1,21 +1,21 @@
 import React, { useReducer } from 'react';
-import DictionaryContext from './dictionaryContext';
-import DictionaryReducer from './dictionaryReducer';
+import FAQSContext from './faqsContext';
+import FAQSReducer from './faqsReducer';
 import dictionaryResults from '../../legalDictionary.json';
 import Api from '../../common/api';
 import { SEARCH_LEGAL_DEFINITION, CLEAR_RESULTS, SET_LOADING } from '../types';
 
-const DictionaryState = (props) => {
+const FAQsState = (props) => {
   const initialState = {
     legalDefinitions: [],
     loading: false,
   };
 
-  const [state, dispatch] = useReducer(DictionaryReducer, initialState);
+  const [state, dispatch] = useReducer(FAQSReducer, initialState);
 
   const searchHandler = async (text) => {
     setLoading();
-    const res = await Api.getDefinitionsByText('dic', text);
+    const res = await Api.getDefinitionsByText('faq', text);
     let payload;
     if (res) payload = res.data.dictionary;
     else payload = dictionaryResults;
@@ -36,7 +36,7 @@ const DictionaryState = (props) => {
   };
 
   return (
-    <DictionaryContext.Provider
+    <FAQSContext.Provider
       value={{
         legalDefinitions: state.legalDefinitions,
         loading: state.loading,
@@ -46,8 +46,8 @@ const DictionaryState = (props) => {
       }}
     >
       {props.children}
-    </DictionaryContext.Provider>
+    </FAQSContext.Provider>
   );
 };
 
-export default DictionaryState;
+export default FAQsState;

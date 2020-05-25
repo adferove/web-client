@@ -1,7 +1,6 @@
 import React from 'react';
 import classes from './Dictionary.module.css';
 import Search from './Search/Search';
-import Results from './Results/Results';
 import Notification from '../UI/Notification/Notification';
 import DictionaryState from '../../context/dictionary/DictionaryState';
 
@@ -10,8 +9,8 @@ const Dictionary = () => {
     <div className={classes.Dictionary}>
       <DictionaryState>
         <Notification />
+        <div className="txt-dict">Dictionary</div>
         <Search />
-        <Results />
       </DictionaryState>
     </div>
   );
