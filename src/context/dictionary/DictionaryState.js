@@ -17,7 +17,7 @@ const DictionaryState = (props) => {
     setLoading();
     const res = await Api.getDefinitionsByText('dic', text);
     let payload;
-    if (res) payload = res.data.dictionary;
+    if (res) payload = res.dictionary;
     else payload = dictionaryResults;
     dispatch({
       type: SEARCH_LEGAL_DEFINITION,

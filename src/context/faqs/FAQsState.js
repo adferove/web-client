@@ -17,7 +17,7 @@ const FAQsState = (props) => {
     setLoading();
     const res = await Api.getDefinitionsByText('faq', text);
     let payload;
-    if (res) payload = res.data.dictionary;
+    if (res) payload = res.dictionary;
     else payload = dictionaryResults;
     dispatch({
       type: SEARCH_LEGAL_DEFINITION,
