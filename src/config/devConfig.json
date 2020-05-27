@@ -1,5 +1,5 @@
 {
   "version": "v1",
   "functionsHost": "http://localhost:4201/api",
-  "legalBotHost": "https://legal-bot-da259909.localhost.run"
+  "legalBotHost": "https://onlinetriage-legalbot-dev.azurewebsites.net"
 }
