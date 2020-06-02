@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Balsamiq+Sans');
 
 :root {
-  --primary-color: #720432;
+  --primary-color: #dedede;
   --dark-color: #333333;
   --light-color: #f4f4f4;
   --danger-color: #dc3545;
   --success-color: #28a745;
   --grey-color: #888;
   --cadet-blue-color: cadetblue;
+  --white-color: #fff;
+  --legal-color: #6f192e;
 }
 
 * {
@@ -20,17 +22,18 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
-  background-color: #fff;
+  background-color: #e5e5e5;
   color: #333;
 }
 
 a {
-  color: var(--primary-color);
+  color: var(--legal-color);
   text-decoration: none;
+  font-weight: bold;
 }
 
 a:hover {
-  color: #666;
+  color: var(--white-color);
 }
 
 ul {
@@ -379,24 +382,7 @@ table th {
   background: var(--light-color);
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-weight: bolder;
-  padding: 0.7rem 2rem;
-  z-index: 1;
-  font-family: Gotham A, Gotham B, Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  width: 100%;
-  opacity: 0.9;
-  margin-bottom: 0.2rem;
-  position: relative;
-  max-width: 800px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
+/*
 .navbar ul {
   display: flex;
 }
@@ -426,6 +412,7 @@ table th {
 .navbar .welcome span {
   margin-right: 0.6rem;
 }
+*/
 
 @media (max-width: 813px) {
   .hide-sm {
@@ -448,16 +435,6 @@ table th {
 
   .lead {
     font-size: 1rem;
-  }
-
-  .navbar {
-    display: block;
-    text-align: center;
-  }
-
-  .navbar ul {
-    text-align: center;
-    justify-content: center;
   }
 
   .btn {

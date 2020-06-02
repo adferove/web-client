@@ -1,0 +1,27 @@
+.Toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  z-index: 1;
+  font-family: Gotham A, Gotham B, Helvetica, Arial, sans-serif;
+  width: 100%;
+  height: 6.625rem;
+  opacity: 0.9;
+  margin-bottom: 0.2rem;
+  position: relative;
+  max-width: 800px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--primary-color);
+}
+
+.Logo {
+  align-self: flex-end;
+}
+
+@media (max-width: 813px) {
+  .DesktopOnly {
+    display: none;
+  }
+}

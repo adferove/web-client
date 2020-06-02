@@ -1,12 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Auxiliary from '../Auxiliary/Auxiliary';
 import Toolbar from '../../components/Navigation/Toolbar/Toolbar';
+import SideNavigation from '../../components/Navigation/SideNavigation/SideNavigation';
 
-const layout = (props) => (
-  <Auxiliary>
-    <Toolbar />
-    <main>{props.children}</main>
-  </Auxiliary>
-);
+const Layout = (props) => {
+  const [openSideNav, setOpenSideNav] = useState(false);
+  const toggleSideNav = () => {
+    setOpenSideNav((openSideNav) => !openSideNav);
+  };
+  return (
+    <Auxiliary>
+      <Toolbar toggled={toggleSideNav} />
+      <SideNavigation open={openSideNav} close={toggleSideNav} />
+      <main>{props.children}</main>
+    </Auxiliary>
+  );
+};
 
-export default layout;
+export default Layout;

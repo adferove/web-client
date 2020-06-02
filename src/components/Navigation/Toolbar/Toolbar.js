@@ -1,21 +1,23 @@
 import React from 'react';
+import classes from './Toolbar.module.css';
 import { Link } from 'react-router-dom';
+import Logo from '../../Logo/Logo';
+import NavigationItems from '../NavigationItems/NavigationItems';
+import ToggleMenu from '../ToggleMenu/ToggleMenu';
 
-const Toolbar = () => {
+const Toolbar = ({ toggled }) => {
   return (
-    <nav className="navbar bg-primary">
-      <Link to="/">
-        <h3>Legal Aid NSW</h3>
-      </Link>
-      <ul>
-        <li>
-          <Link to="/dictionary">Legal Dictionary</Link>
-        </li>
-        <li>
-          <Link to="/faqs">FAQs</Link>
-        </li>
-      </ul>
-    </nav>
+    <header className={classes.Toolbar}>
+      <div className={classes.Logo}>
+        <Link to="/">
+          <Logo />
+        </Link>
+      </div>
+      <nav className={classes.DesktopOnly}>
+        <NavigationItems />
+      </nav>
+      <ToggleMenu toggledMenu={toggled} />
+    </header>
   );
 };
 export default Toolbar;

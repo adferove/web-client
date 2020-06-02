@@ -1,0 +1,23 @@
+.ToggleMenu {
+  display: flex;
+  width: 2.5rem;
+  height: 50%;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 0.625rem 0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.ToggleMenu div {
+  width: 2.125rem;
+  height: 0.306875rem;
+  background-color: #fff;
+}
+
+@media (min-width: 813px) {
+  .ToggleMenu {
+    display: none;
+  }
+}
