@@ -40,10 +40,6 @@ ul {
   list-style: none;
 }
 
-img {
-  width: 100%;
-}
-
 .txt-dict {
   display: block;
   width: 100%;
@@ -314,10 +310,6 @@ img {
 .bg-light,
 .badge-light {
   border: #ccc solid 1px;
-}
-
-.round-img {
-  border-radius: 50%;
 }
 
 input {

@@ -8,7 +8,7 @@ import ToggleMenu from '../ToggleMenu/ToggleMenu';
 const Toolbar = ({ toggled }) => {
   return (
     <header className={classes.Toolbar}>
-      <div className={classes.Logo}>
+      <div>
         <Link to="/">
           <Logo />
         </Link>

@@ -1,9 +1,18 @@
 .Logo {
-  width: 50%;
 }
 
-@media (max-width: 413px) {
-  .Logo {
-    width: 80%;
+.Logo img {
+  width: auto;
+  height: auto;
+  max-width: 14.375rem;
+  max-height: 5.9375rem;
+}
+
+@media (max-width: 338px) {
+  .Logo img {
+    width: auto;
+    height: auto;
+    max-width: 12rem;
+    max-height: 5rem;
   }
 }
