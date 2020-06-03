@@ -5,7 +5,7 @@ import Logo from '../../Logo/Logo';
 import NavigationItems from '../NavigationItems/NavigationItems';
 import ToggleMenu from '../ToggleMenu/ToggleMenu';
 
-const Toolbar = ({ toggled }) => {
+const Toolbar = () => {
   return (
     <header className={classes.Toolbar}>
       <div>
@@ -16,7 +16,7 @@ const Toolbar = ({ toggled }) => {
       <nav className={classes.DesktopOnly}>
         <NavigationItems />
       </nav>
-      <ToggleMenu toggledMenu={toggled} />
+      <ToggleMenu />
     </header>
   );
 };
