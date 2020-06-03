@@ -1,0 +1,8 @@
+.Layout {
+  background-color: #ffffff;
+  position: relative;
+  max-width: 50rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0 0.5rem;
+}
