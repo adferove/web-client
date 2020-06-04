@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import classes from './ToggleMenu.module.css';
 import SideNavigationContext from '../../../context/sideNavigation/sideNavigationContext';
 
-const ToggleMenu = ({ toggledMenu }) => {
+const ToggleMenu = () => {
   const sideNavigationContext = useContext(SideNavigationContext);
   const { toggleSideNav } = sideNavigationContext;
   return (

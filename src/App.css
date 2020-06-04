@@ -124,6 +124,14 @@ ul {
   border-radius: 5px;
 }
 
+.card:hover {
+  background-color: #e5e5e5;
+  -webkit-transition: all 0.5s 0s ease;
+  -moz-transition: all 0.5s 0s ease;
+  -o-transition: all 0.5s 0s ease;
+  transition: all 0.5s 0s ease;
+}
+
 .list {
   margin: 0.5rem 0;
 }
