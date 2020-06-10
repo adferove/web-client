@@ -1,6 +1,16 @@
 .Dictionary {
-  position: relative;
-  max-width: 800px;
+  position: absolute;
+  width: 50rem;
   left: 50%;
   transform: translateX(-50%);
+  top: 6.625rem;
+  background-color: #fff;
+  padding: 0 2.5rem;
+}
+
+@media (max-width: 813px) {
+  .Dictionary {
+    width: 100%;
+    padding: 0;
+  }
 }

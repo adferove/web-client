@@ -1,0 +1,17 @@
+.NextButton {
+  background: #585857;
+  border: 1px solid #dedede;
+  box-sizing: border-box;
+  border-radius: 1.25rem;
+  width: 21.1875rem;
+  height: 2.5rem;
+  color: #fff;
+  margin-top: 1.4375rem;
+  margin-bottom: 1.4375rem;
+}
+
+@media (max-width: 350px) {
+  .NextButton {
+    width: 100%;
+  }
+}

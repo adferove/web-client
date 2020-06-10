@@ -4,9 +4,7 @@ import './App.css';
 import Layout from './hoc/Layout/Layout';
 import NotificationState from './context/notification/NotificationState';
 import SideNavigationState from './context/sideNavigation/SideNavigationState';
-import Home from './components/Home/Home';
-import Dictionary from './components/Dictionary/Dictionary';
-import FAQs from './components/FAQs/FAQs';
+import routes from './common/Routes';
 
 function App() {
   return (
@@ -16,9 +14,14 @@ function App() {
           <Layout>
             <NotificationState>
               <Switch>
-                <Route exact path="/dictionary" render={() => <Dictionary />} />
-                <Route exact path="/faqs" render={() => <FAQs />} />
-                <Route exact path="/" render={() => <Home />} />
+                {routes.map(({ path, component: C }, i) => (
+                  <Route
+                    key={i}
+                    exact
+                    path={path}
+                    render={(props) => <C {...props} />}
+                  />
+                ))}
               </Switch>
             </NotificationState>
           </Layout>

@@ -1,16 +1,15 @@
-.FAQs {
+.Legalbot {
   position: absolute;
   width: 50rem;
+  background-color: #fff;
   left: 50%;
   transform: translateX(-50%);
-  top: 6.625rem;
-  background-color: #fff;
-  padding: 0 2.5rem;
+  top: 0.125rem;
+  bottom: 0.5rem;
 }
 
 @media (max-width: 813px) {
-  .FAQs {
+  .Legalbot {
     width: 100%;
-    padding: 0;
   }
 }

@@ -8,6 +8,10 @@
   padding: 0.625rem 0;
   box-sizing: border-box;
   cursor: pointer;
+  position: absolute;
+  right: 4.8%;
+  top: 45.28%;
+  bottom: 15.09%;
 }
 
 .ToggleMenu div {
