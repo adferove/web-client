@@ -1,0 +1,7 @@
+.Cards {
+  position: absolute;
+  max-width: 50rem;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20.25rem;
+}

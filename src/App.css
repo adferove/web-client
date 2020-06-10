@@ -50,6 +50,17 @@ ul {
   border-radius: 5px;
 }
 
+.txt-normal {
+  display: block;
+  width: 100%;
+  padding: 0.7em 0em;
+  font-size: 1.2rem;
+  font-weight: 400;
+  border: 0.5px;
+  border-radius: 5px;
+  color: #585857;
+}
+
 .container {
   max-width: 1100px;
   margin: auto;

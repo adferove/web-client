@@ -1,0 +1,8 @@
+.ItemCard {
+  padding: 1rem;
+  border: #ccc;
+  margin: 0.2rem 0rem;
+  background-color: var(--light-color);
+  border-radius: 5px;
+  box-shadow: 2px 4px 10px #000000;
+}
