@@ -9,3 +9,9 @@
   margin-top: 1.4375rem;
   margin-bottom: 1.4375rem;
 }
+
+@media (max-width: 350px) {
+  .NextButton {
+    width: 100%;
+  }
+}

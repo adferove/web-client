@@ -1,6 +1,7 @@
 .Home {
   position: absolute;
-  width: 800px;
+  width: 50rem;
+  top: 6.625rem;
   left: 50%;
   transform: translateX(-50%);
 }

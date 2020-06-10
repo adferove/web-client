@@ -1,9 +1,11 @@
 .Dictionary {
-  position: relative;
-  width: 90%;
+  position: absolute;
+  width: 50rem;
   left: 50%;
   transform: translateX(-50%);
   bottom: 0.5rem;
+  top: 6.625rem;
+  background-color: #fff;
 }
 
 @media (max-width: 813px) {

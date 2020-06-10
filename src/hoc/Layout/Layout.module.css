@@ -1,10 +1,5 @@
 .Layout {
   background-color: #ffffff;
-  position: absolute;
-  width: 50rem;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 6.625rem;
 }
 
 @media (max-width: 813px) {
@@ -12,3 +7,8 @@
     width: 100%;
   }
 }
+/*width: 50rem;
+left: 50%;
+transform: translateX(-50%);
+top: 6.625rem;
+ top: 6.625rem;*/

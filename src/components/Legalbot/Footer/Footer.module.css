@@ -5,6 +5,12 @@
   transform: translateX(-50%);
   border: 1px solid #fff;
   background-color: #fff;
-  width: 100%;
+  width: 50rem;
   text-align: center;
+}
+
+@media (max-width: 813px) {
+  .Footer {
+    width: 100%;
+  }
 }
