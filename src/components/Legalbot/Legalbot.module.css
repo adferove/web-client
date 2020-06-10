@@ -1,10 +1,11 @@
 .Legalbot {
   position: absolute;
   width: 50rem;
-  height: 100vh;
   background-color: #fff;
   left: 50%;
   transform: translateX(-50%);
+  top: 0.125rem;
+  bottom: 0.5rem;
 }
 
 @media (max-width: 813px) {
