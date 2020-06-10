@@ -10,8 +10,7 @@ const InputIntend = () => {
       <span className="txt-dict"> Describe your legal situation</span>
       <input
         onKeyPress={submitQuestionHandler}
-        className="form-text"
-        type="text"
+        type="search"
         name="text"
         placeholder="Type sentences or keywords"
       />
