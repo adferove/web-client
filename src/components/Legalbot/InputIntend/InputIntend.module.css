@@ -1,9 +1,17 @@
 .InputIntend {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 3.0625rem;
   background-color: #bdbdbd;
-  height: 5000px;
-  top: 1000px;
+  width: 95%;
+  text-align: center;
+  padding-bottom: 2rem;
+  height: 90vh;
 }
 
 .InputIntend input {
-  margin-bottom: 0.2rem;
+  width: 95%;
+  margin: auto;
+  background-color: #fff;
 }

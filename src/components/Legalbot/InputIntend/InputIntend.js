@@ -7,7 +7,7 @@ const InputIntend = () => {
   };
   return (
     <div className={classes.InputIntend}>
-      <div className="txt-dict">Describe your legal situation</div>
+      <span className="txt-dict"> Describe your legal situation</span>
       <input
         onKeyPress={submitQuestionHandler}
         className="form-text"
