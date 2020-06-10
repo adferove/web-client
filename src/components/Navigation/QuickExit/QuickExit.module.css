@@ -1,0 +1,13 @@
+.QuickExit button {
+  width: 6.3125rem;
+  height: 2.625rem;
+  background: #ffffff;
+  border: 1px solid #bdbdbd;
+  border-radius: 0.9375rem;
+  position: absolute;
+  right: 4.8%;
+  top: 45.28%;
+  bottom: 15.09%;
+  color: #bdbdbd;
+  cursor: pointer;
+}

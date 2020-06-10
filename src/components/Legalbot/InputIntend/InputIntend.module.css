@@ -1,0 +1,9 @@
+.InputIntend {
+  background-color: #bdbdbd;
+  height: 5000px;
+  top: 1000px;
+}
+
+.InputIntend input {
+  margin-bottom: 0.2rem;
+}

@@ -1,9 +1,14 @@
 .Layout {
   background-color: #ffffff;
-  position: relative;
-  max-width: 50rem;
+  position: absolute;
+  width: 50rem;
   left: 50%;
   transform: translateX(-50%);
-  padding: 0.5rem 0.5rem;
-  top: 6.65rem;
+  top: 6.625rem;
+}
+
+@media (max-width: 813px) {
+  .Layout {
+    width: 100%;
+  }
 }

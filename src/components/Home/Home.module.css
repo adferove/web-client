@@ -1,6 +1,6 @@
 .Home {
-  position: relative;
-  max-width: 800px;
+  position: absolute;
+  width: 800px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -14,7 +14,6 @@
   text-align: center;
   color: #fff;
   height: 5rem;
-  margin-bottom: 0.2rem;
 }
 
 .card:hover {
@@ -31,5 +30,8 @@
   .grid-3,
   .grid-4 {
     grid-template-columns: 1fr;
+  }
+  .Home {
+    width: 100%;
   }
 }

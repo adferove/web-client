@@ -10,6 +10,9 @@ const Home = () => (
     <Link to="/faqs">
       <div className={classes.card}>FAQs</div>
     </Link>
+    <Link to="/legalbot">
+      <div className={classes.card}>Triage Tool</div>
+    </Link>
   </div>
 );
 

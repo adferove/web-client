@@ -15,11 +15,26 @@
   background: var(--primary-color);
 }
 
+.Quickfix {
+  margin-bottom: 1rem;
+}
+
+.TopBar {
+  position: fixed;
+  top: 6rem;
+}
+
 @media (max-width: 813px) {
   .DesktopOnly {
     display: none;
   }
   .Toolbar {
     width: 100%;
+  }
+}
+
+@media (max-width: 415px) {
+  .Toolbar {
+    display: block;
   }
 }

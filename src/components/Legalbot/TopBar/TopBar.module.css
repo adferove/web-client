@@ -1,0 +1,13 @@
+.TopBar {
+  background-color: #fff;
+  height: 3.625rem;
+  width: 50rem;
+  left: 0;
+  position: fixed;
+}
+
+@media (max-width: 813px) {
+  .TopBar {
+    width: 100%;
+  }
+}
