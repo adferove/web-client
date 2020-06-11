@@ -8,6 +8,7 @@
   color: #fff;
   margin-top: 1.4375rem;
   margin-bottom: 1.4375rem;
+  cursor: pointer;
 }
 
 @media (max-width: 350px) {
