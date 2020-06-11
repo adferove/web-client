@@ -1,0 +1,13 @@
+.Cards {
+  position: absolute;
+  width: 45rem;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20.25rem;
+}
+
+@media (max-width: 813px) {
+  .Cards {
+    width: 90%;
+  }
+}

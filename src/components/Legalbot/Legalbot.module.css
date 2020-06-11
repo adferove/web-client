@@ -5,7 +5,7 @@
   left: 50%;
   transform: translateX(-50%);
   top: 0.125rem;
-  bottom: 0.5rem;
+  height: 160vh;
 }
 
 @media (max-width: 813px) {

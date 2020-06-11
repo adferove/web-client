@@ -7,11 +7,15 @@
   width: 95%;
   text-align: center;
   padding-bottom: 2rem;
-  bottom: 0.5rem;
+  height: 150vh;
 }
 
 .InputIntend input {
   width: 95%;
   margin: auto;
   background-color: #fff;
+}
+
+.Text {
+  padding: 2rem;
 }
