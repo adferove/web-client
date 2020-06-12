@@ -14,6 +14,9 @@ switch (process.env.REACT_APP_DEPLOY_ENV) {
   case 'DEV':
     config = require('./devConfig.json');
     break;
+  case 'TEST':
+    config = require('./testConfig.json');
+    break;
 
   default:
     config = require('./localConfig.json');
