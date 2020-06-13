@@ -1,0 +1,15 @@
+.TriageTool {
+  position: absolute;
+  top: 6.625rem;
+  left: 50%;
+  width: 50rem;
+  transform: translateX(-50%);
+  border: 1px solid #000000;
+  background-color: #ffffff;
+}
+
+@media (max-width: 813px) {
+  .TriageTool {
+    width: 100%;
+  }
+}
