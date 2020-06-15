@@ -13,6 +13,7 @@
   left: 50%;
   transform: translateX(-50%);
   background: var(--primary-color);
+  box-shadow: 2px 0px 5px #000000;
 }
 
 .Quickfix {

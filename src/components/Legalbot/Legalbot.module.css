@@ -6,6 +6,7 @@
   transform: translateX(-50%);
   top: 0.125rem;
   height: 160vh;
+  box-shadow: 2px 4px 5px #000000;
 }
 
 @media (max-width: 813px) {

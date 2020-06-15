@@ -6,6 +6,7 @@
   top: 6.625rem;
   background-color: #fff;
   padding: 0 2.5rem;
+  box-shadow: 2px 0px 5px #000000;
 }
 
 @media (max-width: 813px) {

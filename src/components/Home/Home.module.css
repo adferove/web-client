@@ -4,6 +4,7 @@
   top: 6.625rem;
   left: 50%;
   transform: translateX(-50%);
+  box-shadow: 2px 4px 10px #000000;
 }
 
 .card {
