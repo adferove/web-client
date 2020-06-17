@@ -6,7 +6,7 @@
   transform: translateX(-50%);
   background-color: #ffffff;
   box-shadow: 2px 4px 5px #000000;
-  min-height: 100%;
+  margin-bottom: 3rem;
 }
 
 .TopContent {
