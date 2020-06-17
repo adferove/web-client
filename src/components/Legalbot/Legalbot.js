@@ -22,13 +22,15 @@ const Legalbot = () => {
   return (
     <Auxiliary>
       <div className={classes.Legalbot}>
-        <InputIntend />
-        <Cards
-          optionsTopProblems={options}
-          cardActivation={cardActivationHandler}
-        />
+        <div className={classes.Frame}>
+          <InputIntend />
+          <Cards
+            optionsTopProblems={options}
+            cardActivation={cardActivationHandler}
+          />
+          <Footer />
+        </div>
       </div>
-      <Footer />
     </Auxiliary>
   );
 };

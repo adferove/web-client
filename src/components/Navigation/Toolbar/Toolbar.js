@@ -26,6 +26,7 @@ const Toolbar = () => {
       <ToggleMenu />
     </Auxiliary>
   );
+  let topBar = null;
   switch (pathname) {
     case DICTIONARY:
       break;
@@ -37,11 +38,9 @@ const Toolbar = () => {
           <div className={classes.Quickfix}>
             <QuickExit />
           </div>
-          <div className={classes.TopBar}>
-            <TopBar />
-          </div>
         </Auxiliary>
       );
+      topBar = <TopBar />;
       break;
     case HOME:
       break;
@@ -58,14 +57,17 @@ const Toolbar = () => {
       break;
   }
   return (
-    <header className={classes.Toolbar}>
-      <div>
-        <Link to="/">
-          <Logo />
-        </Link>
-      </div>
-      {toolBarElement}
-    </header>
+    <Auxiliary>
+      <header className={classes.Toolbar}>
+        <div>
+          <Link to="/">
+            <Logo />
+          </Link>
+        </div>
+        {toolBarElement}
+      </header>
+      {topBar}
+    </Auxiliary>
   );
 };
 export default Toolbar;

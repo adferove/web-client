@@ -22,7 +22,7 @@
 
 .TopBar {
   position: fixed;
-  top: 6rem;
+  top: 6.625rem;
 }
 
 @media (max-width: 813px) {

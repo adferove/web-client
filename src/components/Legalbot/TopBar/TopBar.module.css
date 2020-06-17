@@ -1,9 +1,14 @@
 .TopBar {
+  display: flex;
+  justify-content: space-between;
   background-color: #fff;
   height: 3.625rem;
-  width: 50rem;
-  left: 0;
   position: fixed;
+  width: 50rem;
+  left: 50%;
+  top: 6.625rem;
+  transform: translateX(-50%);
+  box-shadow: 2px 4px 5px #000000;
 }
 
 @media (max-width: 813px) {

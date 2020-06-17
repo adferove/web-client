@@ -14,7 +14,6 @@ const InputIntend = () => {
         name="text"
         placeholder="Type sentences or keywords"
       />
-      <span className="txt-normal">Top Legal Problems</span>
     </div>
   );
 };

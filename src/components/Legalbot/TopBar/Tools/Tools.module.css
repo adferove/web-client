@@ -3,7 +3,6 @@
   justify-content: space-around;
   width: 4.625rem;
   height: 1.8125rem;
-  right: 1.25rem;
-  top: 0.8rem;
-  position: absolute;
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
 }

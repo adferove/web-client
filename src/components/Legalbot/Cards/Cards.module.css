@@ -1,9 +1,7 @@
 .Cards {
-  position: absolute;
-  width: 45rem;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 20.25rem;
+  width: 95%;
+  margin: auto;
+  background-color: #cecece;
 }
 
 @media (max-width: 813px) {
