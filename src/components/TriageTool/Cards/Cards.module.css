@@ -1,0 +1,10 @@
+.Cards {
+  width: 95%;
+  margin: auto;
+}
+
+@media (max-width: 813px) {
+  .Cards {
+    width: 90%;
+  }
+}

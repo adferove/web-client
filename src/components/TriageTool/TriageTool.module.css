@@ -1,11 +1,22 @@
 .TriageTool {
   position: absolute;
-  top: 6.625rem;
+  top: 10.25rem;
   left: 50%;
   width: 50rem;
   transform: translateX(-50%);
-  border: 1px solid #000000;
   background-color: #ffffff;
+  box-shadow: 2px 4px 5px #000000;
+  min-height: 100%;
+}
+
+.TopContent {
+  top: 3.625rem;
+}
+
+.Frame {
+  padding: 0.05rem;
+  margin: 1rem;
+  background-color: #bdbdbd;
 }
 
 @media (max-width: 813px) {

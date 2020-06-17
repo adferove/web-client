@@ -1,19 +1,19 @@
 import React from 'react';
-import Cards from '../../Legalbot/Cards/Cards';
+import Auxiliary from '../../../hoc/Auxiliary/Auxiliary';
+import InputIntend from '../InputIntend/InputIntend';
+import Cards from '../Cards/Cards';
+import Title from '../Title/Title';
 
-const FirstStep = ({ nextStep, options, cardActivationHandler }) => {
-  const next = (e) => {
-    e.preventDefault();
-    nextStep();
-  };
+const FirstStep = ({ options, cardActivationHandler }) => {
   return (
-    <div>
+    <Auxiliary>
+      <InputIntend />
+      <Title>Top Legal optionsTopProblems</Title>
       <Cards
         optionsTopProblems={options}
         cardActivation={cardActivationHandler}
       />
-      <button onClick={next}>Next</button>
-    </div>
+    </Auxiliary>
   );
 };
 

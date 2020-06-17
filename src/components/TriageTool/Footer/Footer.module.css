@@ -1,0 +1,16 @@
+.Footer {
+  border: 1px solid #fff;
+  background-color: #fff;
+  text-align: center;
+  position: fixed;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50rem;
+}
+
+@media (max-width: 813px) {
+  .Footer {
+    width: 100%;
+  }
+}

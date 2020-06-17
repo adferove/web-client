@@ -1,11 +1,9 @@
 import React from 'react';
 
-const SecondStep = ({ nextStep, prevStep }) => {
+const SecondStep = () => {
   return (
     <div>
       <p>SecondStep</p>
-      <button onClick={nextStep}>Next</button>
-      <button onClick={prevStep}>Back</button>
     </div>
   );
 };

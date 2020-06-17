@@ -1,0 +1,11 @@
+.BackButton button {
+  background: #6f192e;
+  color: #ffffff;
+  border: 1px solid #dedede;
+  border-radius: 1.25rem;
+  cursor: pointer;
+  width: 5.625rem;
+  height: 2.5rem;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+}

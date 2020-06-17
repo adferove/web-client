@@ -1,10 +1,9 @@
 import React from 'react';
 
-const Summary = ({ prevStep }) => {
+const Summary = () => {
   return (
     <div>
       <p>Summary</p>
-      <button onClick={prevStep}>Back</button>
     </div>
   );
 };

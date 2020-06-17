@@ -1,0 +1,12 @@
+.InputIntend {
+  width: 95%;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 1rem;
+}
+
+.InputIntend input {
+  width: 95%;
+  margin: auto;
+  background-color: #fff;
+}

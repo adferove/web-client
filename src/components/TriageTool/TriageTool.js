@@ -1,13 +1,17 @@
 import React, { useState } from 'react';
 import classes from './TriageTool.module.css';
+import Auxiliary from '../../hoc/Auxiliary/Auxiliary';
+import TopBar from './TopBar/TopBar';
 import FirsStep from './FirstStep/FirstStep';
 import SecondStep from './SecondStep/SecondStep';
 import Summary from './Summary/Summary';
 import topLegalProblems from '../../common/topLegalProblems.json';
+import Footer from './Footer/Footer';
 
 const TriageTool = () => {
   const [step, setStep] = useState(1);
   const [options, setOptions] = useState(topLegalProblems);
+
   const cardActivationHandler = (optionId) => {
     const optionIndex = options.findIndex((option) => {
       return option.id === optionId;
@@ -20,12 +24,13 @@ const TriageTool = () => {
     setOptions(newOptions);
   };
 
-  const nextStep = () => {
-    console.log('Yellow');
+  const nextStep = (e) => {
+    e.preventDefault();
     setStep(step + 1);
   };
 
-  const prevStep = () => {
+  const prevStep = (e) => {
+    e.preventDefault();
     setStep(step - 1);
   };
 
@@ -51,7 +56,15 @@ const TriageTool = () => {
       break;
   }
 
-  return <div className={classes.TriageTool}>{currentForm}</div>;
+  return (
+    <Auxiliary>
+      <TopBar back={prevStep} />
+      <div className={classes.TriageTool}>
+        <div className={classes.Frame}>{currentForm}</div>
+      </div>
+      <Footer next={nextStep} />
+    </Auxiliary>
+  );
 };
 
 export default TriageTool;
