@@ -23,5 +23,10 @@
     "id": "5",
     "title": "Housing",
     "active": false
+  },
+  {
+    "id": "6",
+    "title": "Not sure",
+    "active": false
   }
 ]
