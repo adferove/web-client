@@ -1,7 +1,6 @@
 import React from 'react';
-import classes from './Results.module.css';
 import ItemResult from './ItemResult/ItemResult';
-import Loading from '../../UI/Loading/Loading';
+import Loading from '../../../UI/Loading/Loading';
 
 const Results = ({ loading, legalDefinitions }) => {
   if (loading) {
@@ -9,7 +8,7 @@ const Results = ({ loading, legalDefinitions }) => {
   } else {
     if (legalDefinitions !== null && legalDefinitions.length > 0) {
       return (
-        <div className={[classes.Result, 'grid-2'].join(' ')}>
+        <div className="dic-la-w-l111">
           {legalDefinitions.map((item, index) => {
             return (
               <ItemResult key={index} word={item.key} definition={item.def} />

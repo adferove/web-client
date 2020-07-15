@@ -1,0 +1,62 @@
+html {
+  color: rgb(51, 51, 51);
+  font-family: $font-stack;
+  height: 100%;
+  line-height: 1.5;
+  color: rgb(26, 32, 44);
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: 100%;
+  text-rendering: optimizelegibility;
+  text-size-adjust: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  border-width: 0px;
+  border-style: solid;
+  border-color: rgb(226, 232, 240);
+}
+
+body {
+  margin: 0;
+  height: 100%;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+}
+
+img {
+  border-style: solid;
+}
+
+.app-la {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 100%;
+  background-color: #ebeef5;
+}

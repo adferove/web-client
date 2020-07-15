@@ -33,10 +33,10 @@ const Search = () => {
   };
 
   return (
-    <div>
-      <form onSubmit={searchDefinition}>
+    <div className="dic-la-w-l11">
+      <form className="dic-la-w-l111" onSubmit={searchDefinition}>
         <input
-          className="form-text"
+          className="nsw-form-input"
           type="search"
           name="text"
           placeholder="Search..."
@@ -46,11 +46,14 @@ const Search = () => {
         <input
           type="submit"
           value="Search"
-          className="btn btn-block btn-blue"
+          className="triage-button triage-button--highlight"
         />
       </form>
       {legalDefinitions !== null && legalDefinitions.length > 0 && (
-        <button className="btn btn-block btn-grey" onClick={clearResults}>
+        <button
+          className="triage-button triage-button--triage"
+          onClick={clearResults}
+        >
           Clear
         </button>
       )}

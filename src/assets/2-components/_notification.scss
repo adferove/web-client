@@ -1,0 +1,79 @@
+.gel-notify {
+  padding: 0.9375rem 1.25rem 0.9375rem 3.125rem;
+  margin-bottom: 2.1875rem;
+  background-position: 0.9375rem 1.2rem;
+}
+
+.gel-notify p {
+  margin: 0.25rem 0 0.25rem 1rem;
+}
+
+.error {
+  background-color: $critical-background;
+  background-image: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='UTF-8'?%3E%3Csvg width='24px' height='24px' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3C!-- Generator: sketchtool 55.1 (78136) - https://sketchapp.com --%3E%3Ctitle%3E92C56BB3-8AB4-41D2-8021-FF3B12933927%3C/title%3E%3Cdesc%3ECreated with sketchtool.%3C/desc%3E%3Cdefs%3E%3Cpath d='M22,10 C15.4,10 10,15.4 10,22 C10,28.6 15.4,34 22,34 C28.6,34 34,28.6 34,22 C34,15.4 28.6,10 22,10 Z M27.8781256,26.2 L26.2,27.8781256 L22,23.6781256 L17.8,27.8781256 L16.1218756,26.2 L20.3218756,22 L16.1218756,17.8 L17.8,16.1218756 L22,20.3218756 L26.2,16.1218756 L27.8781256,17.8 L23.6781256,22 L27.8781256,26.2 Z' id='path-1'%3E%3C/path%3E%3C/defs%3E%3Cg id='Style-guide---GEL-v2.3' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='Global-Notification' transform='translate(-98.000000, -839.000000)'%3E%3Cg id='list/notification-copy-3' transform='translate(80.000000, 815.000000)'%3E%3Cg id='list/notification'%3E%3Cg id='icon-status' transform='translate(8.000000, 14.000000)'%3E%3Cmask id='mask-2' fill='white'%3E%3Cuse xlink:href='%23path-1'%3E%3C/use%3E%3C/mask%3E%3Cuse id='Shape' fill='%23B81237' fill-rule='nonzero' xlink:href='%23path-1'%3E%3C/use%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-size: 1.625rem;
+  background-repeat: no-repeat;
+  box-shadow: inset 0.375rem 0 0 0 $critical;
+  background-position: left;
+  background-position-x: 1rem;
+}
+
+.info {
+  background-color: $info-background;
+  background-image: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='UTF-8'?%3E%3Csvg width='29px' height='24px' viewBox='0 0 29 24' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3C!-- Generator: sketchtool 55.1 (78136) - https://sketchapp.com --%3E%3Ctitle%3E4BC5EECD-1396-4078-AF60-7329AE3158E0%3C/title%3E%3Cdesc%3ECreated with sketchtool.%3C/desc%3E%3Cg id='Style-guide---GEL-v2.3' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='Global-Notification' transform='translate(-96.000000, -519.000000)' fill='%232E5299' fill-rule='nonzero'%3E%3Cg id='list/notification' transform='translate(80.000000, 495.000000)'%3E%3Cg id='icon-status'%3E%3Cg transform='translate(8.000000, 14.000000)'%3E%3Cg id='noun_936894' transform='translate(8.000000, 10.000000)'%3E%3Cpath d='M14.4998428,0 L0,24 L29,24 L14.4998428,0 Z M15.9541034,21.1777895 C15.9541034,21.3521053 15.8135511,21.4935789 15.6396687,21.4935789 L13.3600169,21.4935789 C13.1861345,21.4935789 13.0455822,21.3521053 13.0455822,21.1777895 L13.0455822,19.1251579 C13.0455822,18.9508421 13.1861345,18.8093684 13.3600169,18.8093684 L15.6396687,18.8093684 C15.8135511,18.8093684 15.9541034,18.9508421 15.9541034,19.1251579 L15.9541034,21.1777895 Z M15.6396687,16.8751579 L13.3600169,16.8751579 C13.1861345,16.8751579 13.0455822,16.7336842 13.0455822,16.5593684 L13.0455822,7.87515789 C13.0455822,7.70084211 13.1861345,7.55936842 13.3600169,7.55936842 L15.6396687,7.55936842 C15.8135511,7.55936842 15.9541034,7.70084211 15.9541034,7.87515789 L15.9541034,16.5593684 C15.9541034,16.7336842 15.8135511,16.8751579 15.6396687,16.8751579 Z' id='Shape'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-size: 1.625rem;
+  background-repeat: no-repeat;
+  box-shadow: inset 0.375rem 0 0 0 $info;
+}
+
+.success,
+.alert-success[role='alert'] {
+  background-color: $success-background;
+  background-image: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='UTF-8'?%3E%3Csvg width='24px' height='19px' viewBox='0 0 24 19' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3C!-- Generator: sketchtool 55.1 (78136) - https://sketchapp.com --%3E%3Ctitle%3EF93E1241-60AF-48EF-8ECF-C0C19A5EDBB4%3C/title%3E%3Cdesc%3ECreated with sketchtool.%3C/desc%3E%3Cg id='Style-guide---GEL-v2.3' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='Global-Notification' transform='translate(-98.000000, -972.000000)' fill='%234CAF50' fill-rule='nonzero'%3E%3Cg id='list/notification-copy' transform='translate(80.000000, 947.000000)'%3E%3Cg id='list/notification'%3E%3Cg id='icon-status' transform='translate(8.000000, 12.000000)'%3E%3Cg id='icons8-checkmark' transform='translate(10.000000, 13.000000)'%3E%3Cpolygon id='Shape' points='21.7083333 0.381696429 8 14.3348214 2.29166667 8.52455357 0.375 10.4754464 7.04166667 17.2611607 8 18.1941964 8.95833333 17.2611607 23.625 2.33258929'%3E%3C/polygon%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-size: 1.625rem;
+  background-repeat: no-repeat;
+  box-shadow: inset 0.375rem 0 0 0 $success;
+}
+.important-info {
+  font-weight: bold;
+}
+
+.warning {
+  background-color: $warning-background;
+  background-image: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='UTF-8'?%3E%3Csvg width='29px' height='24px' viewBox='0 0 29 24' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3C!-- Generator: sketchtool 55.1 (78136) - https://sketchapp.com --%3E%3Ctitle%3EC1F4058A-413D-44F7-80E4-F3B85F68FD05%3C/title%3E%3Cdesc%3ECreated with sketchtool.%3C/desc%3E%3Cg id='Style-guide---GEL-v2.3' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='Global-Notification' transform='translate(-96.000000, -1073.000000)' fill='%23DC5800' fill-rule='nonzero'%3E%3Cg id='list/notification-copy-2' transform='translate(80.000000, 1051.000000)'%3E%3Cg id='list/notification'%3E%3Cg id='icon-status' transform='translate(8.000000, 12.000000)'%3E%3Cg id='noun_936894' transform='translate(8.000000, 10.000000)'%3E%3Cpath d='M14.4998428,0 L0,24 L29,24 L14.4998428,0 Z M15.9541034,21.1777895 C15.9541034,21.3521053 15.8135511,21.4935789 15.6396687,21.4935789 L13.3600169,21.4935789 C13.1861345,21.4935789 13.0455822,21.3521053 13.0455822,21.1777895 L13.0455822,19.1251579 C13.0455822,18.9508421 13.1861345,18.8093684 13.3600169,18.8093684 L15.6396687,18.8093684 C15.8135511,18.8093684 15.9541034,18.9508421 15.9541034,19.1251579 L15.9541034,21.1777895 Z M15.6396687,16.8751579 L13.3600169,16.8751579 C13.1861345,16.8751579 13.0455822,16.7336842 13.0455822,16.5593684 L13.0455822,7.87515789 C13.0455822,7.70084211 13.1861345,7.55936842 13.3600169,7.55936842 L15.6396687,7.55936842 C15.8135511,7.55936842 15.9541034,7.70084211 15.9541034,7.87515789 L15.9541034,16.5593684 C15.9541034,16.7336842 15.8135511,16.8751579 15.6396687,16.8751579 Z' id='Shape'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-size: 1.625rem;
+  background-repeat: no-repeat;
+  box-shadow: inset 0.375rem 0 0 0 $warning;
+}
+
+.important-info {
+  font-weight: bold;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-gap: 0.625rem;
+  background-color: #fff;
+  color: #444;
+}
+
+.border {
+  border: darkgrey solid;
+  margin-top: 1.25rem;
+  padding: 1.375rem;
+  background-color: #eaedf4;
+  margin-bottom: 1.25rem;
+}
+
+.topbar {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.center {
+  margin: auto;
+  flex: 1;
+}
