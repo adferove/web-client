@@ -28,6 +28,9 @@
   background-color: #fff;
   margin: 0 auto;
   max-width: 54rem;
+  &__grey {
+    background-color: $light10;
+  }
   // @media screen and (min-width: 64rem) {
   //   -webkit-flex-direction: row-reverse;
   //   -ms-flex-direction: row-reverse;
@@ -96,6 +99,13 @@
   padding-right: 1rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  &__row {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    justify-content: left;
+    cursor: pointer;
+  }
   // @media screen and (min-width: 64rem) {
   //   max-width: 29.375rem;
   //   padding-left: 0;
@@ -122,7 +132,7 @@
   font-weight: 600;
   font-family: $font-stack;
   text-align: left;
-  margin-bottom: 2rem;
+  margin-bottom: 0.1rem;
   // @media screen and (min-width: 64rem) {
   //   font-size: 2rem;
   // }

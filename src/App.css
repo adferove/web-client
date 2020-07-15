@@ -303,6 +303,8 @@ img {
   background-color: #fff;
   margin: 0 auto;
   max-width: 54rem; }
+  .land-la-wrapper__grey {
+    background-color: #f4f4f7; }
 
 .land-la-w-img {
   background-image: url(/landing.svg);
@@ -352,6 +354,12 @@ img {
   padding-right: 1rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem; }
+  .land-la-w-l11__row {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    justify-content: left;
+    cursor: pointer; }
 
 .land-la-w-l12 {
   background-color: #002664;
@@ -366,7 +374,7 @@ img {
   font-weight: 600;
   font-family: Montserrat, sans-serif;
   text-align: left;
-  margin-bottom: 2rem; }
+  margin-bottom: 0.1rem; }
 
 .land-la-w-l111 {
   display: -webkit-box;

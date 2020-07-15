@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Landing = () => {
   return (
@@ -44,9 +45,12 @@ const Landing = () => {
               </button>
             </div>
             <div>
-              <button className="triage-button triage-button--outline">
+              <Link
+                className="triage-button triage-button--outline"
+                to="/contact-legal-aid"
+              >
                 I don't feel safe
-              </button>
+              </Link>
             </div>
           </div>
           <div className="land-la-w-l12"></div>
