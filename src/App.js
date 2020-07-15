@@ -4,6 +4,7 @@ import './App.css';
 import routes from './common/Routes';
 import SideNavigationState from './context/sideNavigation/SideNavigationState';
 import NotificationState from './context/notification/NotificationState';
+import TriageContainer from './containers/TriageContainer/TriageContainer';
 
 function App() {
   return (
@@ -11,16 +12,18 @@ function App() {
       <div className="app-la">
         <NotificationState>
           <SideNavigationState>
-            <Switch>
-              {routes.map(({ path, component: C }, i) => (
-                <Route
-                  key={i}
-                  exact
-                  path={path}
-                  render={(props) => <C {...props} />}
-                />
-              ))}
-            </Switch>
+            <TriageContainer>
+              <Switch>
+                {routes.map(({ path, component: C }, i) => (
+                  <Route
+                    key={i}
+                    exact
+                    path={path}
+                    render={(props) => <C {...props} />}
+                  />
+                ))}
+              </Switch>
+            </TriageContainer>
           </SideNavigationState>
         </NotificationState>
       </div>

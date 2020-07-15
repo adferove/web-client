@@ -22,7 +22,7 @@ const Search = () => {
   const searchDefinition = (e) => {
     e.preventDefault();
     if (text === '') {
-      notificationHandler('Please enter at least 2 letters', 'danger');
+      notificationHandler('Please enter at least 2 letters', 'error');
     } else {
       searchHandler(text);
     }
