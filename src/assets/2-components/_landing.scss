@@ -4,7 +4,7 @@
   padding-left: 0;
   padding-right: 0;
   width: 100%;
-  @media (max-width: 78.125rem) {
+  @media (max-width: 54rem) {
     padding-right: 0;
   }
   @media screen and (min-width: 64rem) {
@@ -27,7 +27,7 @@
   align-items: stretch;
   background-color: #fff;
   margin: 0 auto;
-  max-width: 78.125rem;
+  max-width: 54rem;
   // @media screen and (min-width: 64rem) {
   //   -webkit-flex-direction: row-reverse;
   //   -ms-flex-direction: row-reverse;
@@ -117,7 +117,7 @@
 }
 
 .land-la-w-l11-h1 {
-  font-size: 2rem;
+  font-size: 1.75rem;
   line-height: 1.25;
   font-weight: 600;
   font-family: $font-stack;

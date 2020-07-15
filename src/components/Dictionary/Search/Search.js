@@ -43,20 +43,23 @@ const Search = () => {
           value={text}
           onChange={onTextChange}
         />
-        <input
-          type="submit"
-          value="Search"
-          className="triage-button triage-button--highlight"
-        />
+        <div className="grid-2">
+          <input
+            type="submit"
+            value="Search"
+            className="triage-button triage-button--highlight"
+          />
+          {legalDefinitions !== null && legalDefinitions.length > 0 && (
+            <button
+              className="triage-button triage-button--triage"
+              onClick={clearResults}
+            >
+              Clear
+            </button>
+          )}
+        </div>
       </form>
-      {legalDefinitions !== null && legalDefinitions.length > 0 && (
-        <button
-          className="triage-button triage-button--triage"
-          onClick={clearResults}
-        >
-          Clear
-        </button>
-      )}
+
       <Results loading={loading} legalDefinitions={legalDefinitions} />
     </div>
   );

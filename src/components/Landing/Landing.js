@@ -38,12 +38,16 @@ const Landing = () => {
             </div>
           </div>
           <div className="land-la-w-l11">
-            <button className="triage-button triage-button--highlight">
-              Start
-            </button>
-            <button className="triage-button triage-button--outline">
-              I don't feel safe
-            </button>
+            <div>
+              <button className="triage-button triage-button--highlight">
+                Start
+              </button>
+            </div>
+            <div>
+              <button className="triage-button triage-button--outline">
+                I don't feel safe
+              </button>
+            </div>
           </div>
           <div className="land-la-w-l12"></div>
         </div>

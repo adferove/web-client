@@ -55,6 +55,11 @@ img {
   min-height: 100%;
   background-color: #ebeef5; }
 
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem; }
+
 /* stylelint-disable declaration-no-important  */
 /* stylelint-disable declaration-no-important  */
 /* stylelint-disable declaration-no-important, selector-no-qualifying-type  */
@@ -189,7 +194,7 @@ img {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  max-width: 78.125rem;
+  max-width: 54rem;
   width: 100%; }
 
 .toggle-menu {
@@ -271,7 +276,7 @@ img {
   padding-left: 0;
   padding-right: 0;
   width: 100%; }
-  @media (max-width: 78.125rem) {
+  @media (max-width: 54rem) {
     .land-la {
       padding-right: 0; } }
   @media screen and (min-width: 64rem) {
@@ -293,7 +298,7 @@ img {
   align-items: stretch;
   background-color: #fff;
   margin: 0 auto;
-  max-width: 78.125rem; }
+  max-width: 54rem; }
 
 .land-la-w-img {
   background-image: url(/landing.svg);
@@ -352,7 +357,7 @@ img {
   width: 200vw; }
 
 .land-la-w-l11-h1 {
-  font-size: 2rem;
+  font-size: 1.75rem;
   line-height: 1.25;
   font-weight: 600;
   font-family: Montserrat, sans-serif;
@@ -423,6 +428,9 @@ img {
   -ms-user-select: none;
   user-select: none;
   display: inline-block; }
+  @media screen and (max-width: 768px) {
+    .triage-button {
+      width: 100%; } }
 
 .triage-button--outline {
   color: #333333;
@@ -830,7 +838,7 @@ img {
   padding-left: 0;
   padding-right: 0;
   width: 100%; }
-  @media (max-width: 78.125rem) {
+  @media (max-width: 54rem) {
     .dic-la {
       padding-right: 0; } }
   @media screen and (min-width: 64rem) {
@@ -852,7 +860,7 @@ img {
   align-items: stretch;
   background-color: #fff;
   margin: 0 auto;
-  max-width: 78.125rem; }
+  max-width: 54rem; }
 
 .dic-la-w-img {
   background-image: url(/landing.svg);
@@ -911,7 +919,7 @@ img {
   width: 200vw; }
 
 .dic-la-w-l11-h1 {
-  font-size: 2rem;
+  font-size: 1.75rem;
   line-height: 1.25;
   font-weight: 600;
   font-family: Montserrat, sans-serif;
