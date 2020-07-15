@@ -65,4 +65,8 @@ img {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1rem;
+  @media (max-width: 813px) {
+    grid-template-columns: 1fr;
+    grid-gap: 0.3rem;
+  }
 }
