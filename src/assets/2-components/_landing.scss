@@ -49,19 +49,23 @@
   -ms-flex-negative: 0;
   flex-shrink: 0;
   height: 11rem;
+  width: auto;
+  z-index: 1;
+  -ms-transform: none;
   -webkit-transform: scaleX(-1);
   -ms-transform: scaleX(-1);
   transform: scaleX(-1);
-  width: auto;
-  z-index: 1;
-  // @media screen and (min-width: 64rem) {
-  //   border-bottom: 0;
-  //   -webkit-transform: none;
-  //   -ms-transform: none;
-  //   transform: none;
-  //   width: 50%;
-  //   margin: 5rem 0;
-  // }
+  @media screen and (min-width: 30rem) {
+    background-image: url(/LegalAidNSW1.jpg);
+    -webkit-transform: none;
+    text-transform: none;
+  }
+  @media screen and (min-width: 64rem) {
+    background-image: url(/LegalAidNSW1.jpg);
+    border-bottom: 0;
+    -webkit-transform: none;
+    text-transform: none;
+  }
 }
 
 .land-la-w-l1 {
