@@ -39,7 +39,7 @@
 }
 
 .land-la-w-img {
-  background-image: url(/landing.svg);
+  background-image: url(/images/landing.svg);
   background-position: 50% 50%;
   background-size: cover;
   object-fit: none;
@@ -56,12 +56,12 @@
   -ms-transform: scaleX(-1);
   transform: scaleX(-1);
   @media screen and (min-width: 30rem) {
-    background-image: url(/LegalAidNSW1.jpg);
+    background-image: url(/images/LegalAidNSW1.jpg);
     -webkit-transform: none;
     text-transform: none;
   }
   @media screen and (min-width: 64rem) {
-    background-image: url(/LegalAidNSW1.jpg);
+    background-image: url(/images/community.svg);
     border-bottom: 0;
     -webkit-transform: none;
     text-transform: none;
