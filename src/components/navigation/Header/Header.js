@@ -4,7 +4,7 @@ import ToggleMenu from './ToggleMenu/ToggleMenu';
 import Logo from './Logo/Logo';
 import QuickExit from './QuickExit/QuickExit';
 
-const Header = () => {
+const Header = (props) => {
   return (
     <div className="app-la-wrapper">
       <header className="header-la">
@@ -16,6 +16,7 @@ const Header = () => {
           <QuickExit />
         </div>
       </header>
+      {props.children}
     </div>
   );
 };

@@ -1,0 +1,53 @@
+.bc-lay-m {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  background-color: $light10;
+  width: 100%;
+}
+
+.bc-lay-m-1 {
+  display: flex;
+  max-width: 54rem;
+  width: 100%;
+}
+
+.bc-lay-m-11 {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  max-width: 25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.bc-lay-m-111 {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.bc-lay-m-1111 {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.bc-lay-m-1111-p {
+  font-family: $font-stack;
+  font-size: 0.7rem;
+  line-height: 1.25;
+  text-align: left;
+  color: $black;
+  &__bold {
+    font-weight: bold;
+  }
+  &__arrow {
+    color: $light40;
+    font-weight: bold;
+  }
+}

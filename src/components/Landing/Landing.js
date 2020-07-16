@@ -40,9 +40,12 @@ const Landing = () => {
           </div>
           <div className="land-la-w-l11">
             <div>
-              <button className="triage-button triage-button--highlight">
+              <Link
+                className="triage-button triage-button--highlight"
+                to="/tool"
+              >
                 Start
-              </button>
+              </Link>
             </div>
             <div>
               <Link
