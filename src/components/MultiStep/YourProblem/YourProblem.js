@@ -12,6 +12,11 @@ const YourProblem = ({ searchProblem, onSearchChange, search }) => {
           searchProblem={searchProblem}
         />
       </Section>
+      <Section
+        preTitle="Not sure what you’re looking for?"
+        title="Select from these common problems"
+        grey
+      ></Section>
     </Fragment>
   );
 };

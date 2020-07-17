@@ -25,9 +25,12 @@
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
-  background-color: #fff;
+  background-color: $white;
   margin: 0 auto;
   max-width: 54rem;
+  &__grey {
+    background-color: $light10;
+  }
   // @media screen and (min-width: 64rem) {
   //   -webkit-flex-direction: row-reverse;
   //   -ms-flex-direction: row-reverse;
@@ -70,6 +73,7 @@
   -ms-flex-direction: column;
   flex-direction: column;
   width: auto;
+  margin-bottom: 1rem;
   // @media screen and (min-width: 64rem) {
   //   width: 50%;
   // }
@@ -95,7 +99,6 @@
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
   // @media screen and (min-width: 64rem) {
   //   max-width: 29.375rem;
   //   padding-left: 0;
@@ -117,12 +120,11 @@
 }
 
 .dic-la-w-l11-h1 {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   line-height: 1.25;
   font-weight: 600;
   font-family: $font-stack;
   text-align: left;
-  margin-bottom: 0.2rem;
   // @media screen and (min-width: 64rem) {
   //   font-size: 2rem;
   // }

@@ -441,7 +441,8 @@ img {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  width: auto; }
+  width: auto;
+  margin-bottom: 1rem; }
 
 .triage-button {
   font-family: Montserrat, sans-serif;
@@ -896,9 +897,11 @@ img {
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
-  background-color: #fff;
+  background-color: #ffffff;
   margin: 0 auto;
   max-width: 54rem; }
+  .dic-la-wrapper__grey {
+    background-color: #f4f4f7; }
 
 .dic-la-w-img {
   background-image: url(/landing.svg);
@@ -925,7 +928,8 @@ img {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  width: auto; }
+  width: auto;
+  margin-bottom: 1rem; }
 
 .dic-la-w-l11 {
   display: -webkit-box;
@@ -946,8 +950,7 @@ img {
   max-width: none;
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem; }
+  padding-top: 0.5rem; }
 
 .dic-la-w-l12 {
   background-color: #002664;
@@ -957,12 +960,11 @@ img {
   width: 200vw; }
 
 .dic-la-w-l11-h1 {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   line-height: 1.25;
   font-weight: 600;
   font-family: Montserrat, sans-serif;
-  text-align: left;
-  margin-bottom: 0.2rem; }
+  text-align: left; }
 
 .dic-la-w-l111 {
   display: -webkit-box;
