@@ -107,8 +107,11 @@
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
-    justify-content: left;
+    justify-content: flex-start;
     cursor: pointer;
+  }
+  &__right {
+    justify-content: flex-end;
   }
   // @media screen and (min-width: 64rem) {
   //   max-width: 29.375rem;
@@ -185,4 +188,18 @@
   line-height: 1.25;
   text-align: left;
   margin-bottom: 0.1rem;
+}
+
+.land-la-w-l1-foo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: auto;
+  // @media screen and (min-width: 64rem) {
+  //   width: 50%;
+  // }
 }

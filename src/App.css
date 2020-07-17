@@ -372,8 +372,10 @@ img {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
-    justify-content: left;
+    justify-content: flex-start;
     cursor: pointer; }
+  .land-la-w-l11__right {
+    justify-content: flex-end; }
 
 .land-la-w-l12 {
   background-color: #002664;
@@ -430,6 +432,16 @@ img {
   line-height: 1.25;
   text-align: left;
   margin-bottom: 0.1rem; }
+
+.land-la-w-l1-foo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: auto; }
 
 .triage-button {
   font-family: Montserrat, sans-serif;

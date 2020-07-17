@@ -7,7 +7,7 @@ const Section = (props) => {
         <div className="dic-la-w-l1">
           <div className="dic-la-w-l11">
             <b>{props.preTitle}</b>
-            <h1 className="dic-la-w-l11-h1">{props.title}</h1>
+            <div className="dic-la-w-l11-h1">{props.title}</div>
           </div>
           {props.children}
         </div>
