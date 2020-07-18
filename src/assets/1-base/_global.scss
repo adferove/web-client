@@ -65,8 +65,28 @@ img {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1rem;
-  @media (max-width: 813px) {
+  @media (max-width: 767px) {
     grid-template-columns: 1fr;
-    grid-gap: 0.3rem;
+    grid-gap: 0.5rem;
+  }
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  @media (max-width: 54rem) {
+    grid-template-columns: 1fr;
+    grid-gap: 0.5rem;
+  }
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  @media (max-width: 54rem) {
+    grid-template-columns: 1fr;
+    grid-gap: 0.5rem;
   }
 }

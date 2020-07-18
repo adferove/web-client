@@ -6,13 +6,17 @@ import BackButton from '../../components/BackButton/BackButton';
 const ContactLA = () => {
   const title = 'Contact Legal Aid NSW';
   const paragraph1 = (
-    <p>
+    <p className="land-la-w-l112-p">
       We are open and continue to offer our services over the phone, or via
       email or AVL. If you need legal help, <b>call 1300 888 529</b> or contact
       your local Legal Aid office
     </p>
   );
-  const paragraph2 = '9am to 5pm, Monday to Friday (excluding public holidays)';
+  const paragraph2 = (
+    <p className="land-la-w-l112-p">
+      9am to 5pm, Monday to Friday (excluding public holidays)
+    </p>
+  );
   return (
     <Fragment>
       <BasicSection

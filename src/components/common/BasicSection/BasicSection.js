@@ -8,8 +8,8 @@ const BasicSection = ({ title, paragraph1, paragraph2 }) => {
           <div className="land-la-w-l11">
             <h1 className="land-la-w-l11-h1">{title}</h1>
             <div className="land-la-w-l112">
-              <p className="land-la-w-l112-p">{paragraph1}</p>
-              <p className="land-la-w-l112-p">{paragraph2}</p>
+              {paragraph1}
+              {paragraph2}
             </div>
           </div>
         </div>
