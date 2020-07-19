@@ -4,7 +4,6 @@ import Search from './Search/Search';
 import Cards from '../Cards/Cards';
 
 const YourProblem = ({
-  searchProblem,
   onSearchChange,
   search,
   options,
@@ -13,18 +12,14 @@ const YourProblem = ({
   return (
     <Fragment>
       <Section preTitle="Using your own words" title="Describe your problem">
-        <Search
-          search={search}
-          onSearchChange={onSearchChange}
-          searchProblem={searchProblem}
-        />
+        <Search search={search} onSearchChange={onSearchChange} />
       </Section>
       <Section
         preTitle="Not sure what you’re looking for?"
         title="Select from these common problems"
         grey
       >
-        <Cards options={options} cardActivation={cardActivationHandler} />
+        <Cards />
       </Section>
     </Fragment>
   );

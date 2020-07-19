@@ -3,7 +3,7 @@ import Dictionary from '../containers/Dictionary/Dictionary';
 import FAQs from '../containers/Faqs/FAQs';
 import NotFound from '../containers/NotFound/NotFound';
 import ContactLA from '../containers/ContactLA/ContactLA';
-import MultiStep from '../containers/MultiStep/MultiStep';
+import MultiStepContainer from '../containers/MultiStep/MultiStepContainer';
 import Redirect from '../components/navigation/Header/Redirect';
 
 const routes = [
@@ -29,7 +29,7 @@ const routes = [
   },
   {
     path: '/tool',
-    component: MultiStep,
+    component: MultiStepContainer,
   },
   {
     path: undefined,

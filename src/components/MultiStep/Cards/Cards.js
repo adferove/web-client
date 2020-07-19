@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import CardItem from './CardItem/CardItem';
+import TriageContext from '../../../context/triage/triageContext';
 
-const Cards = ({ options, cardActivation }) => {
+const Cards = () => {
+  const triageContext = useContext(TriageContext);
+  const { cardActivation, problemOptions: options } = triageContext;
   return (
     <div className="dic-la-w-l11">
       <div className="grid-3">

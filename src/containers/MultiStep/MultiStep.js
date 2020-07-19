@@ -1,57 +1,34 @@
-import React, { Fragment, useState } from 'react';
+import React, { Fragment, useContext, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import Breadcrumb from '../../components/MultiStep/Breadcrumb/Breadcrumb';
 import YourProblem from '../../components/MultiStep/YourProblem/YourProblem';
 import AboutYou from '../../components/MultiStep/AboutYou/AboutYou';
 import YourGuide from '../../components/MultiStep/YourGuide/YourGuide';
 import Footer from '../../components/MultiStep/Footer/Footer';
-import topLegalProblems from '../../common/topLegalProblems.json';
+import TriageContext from '../../context/triage/triageContext';
 
 const MultiStep = () => {
   let history = useHistory();
-  const [step, setStep] = useState(1);
+  const triageContext = useContext(TriageContext);
+  const { step, problemOptions, next, back } = triageContext;
   const [search, setSearch] = useState('');
-  const [options, setOptions] = useState(topLegalProblems);
 
   const onSearchChange = (e) => {
     setSearch(e.target.value);
     console.log(e.target.value);
   };
 
-  const searchProblem = (e) => {
-    e.preventDefault();
-    if (search === '') {
-    } else {
-    }
-  };
   const nextStep = (e) => {
     e.preventDefault();
-    setStep(step + 1);
+    next();
   };
 
   const prevStep = (e) => {
     e.preventDefault();
-    setStep(step - 1);
+    back();
     if (step === 1) {
       history.goBack();
     }
-  };
-
-  const cardActivationHandler = (optionId) => {
-    const optionIndex = options.findIndex((option) => {
-      return option.id === optionId;
-    });
-    const active = options[optionIndex].active;
-    const selectedOption = { ...options[optionIndex] };
-    selectedOption.active = !active;
-    const clonedOptions = [...options];
-    const newOptions = clonedOptions.map((cloned) => {
-      cloned.active = false;
-      return cloned;
-    });
-    newOptions[optionIndex] = selectedOption;
-    setOptions(newOptions);
-    if (selectedOption.active) setStep(step + 1);
   };
 
   let currentForm = null;
@@ -63,9 +40,7 @@ const MultiStep = () => {
           <YourProblem
             search={search}
             onSearchChange={onSearchChange}
-            searchProblem={searchProblem}
-            options={options}
-            cardActivationHandler={cardActivationHandler}
+            options={problemOptions}
           />
           <Footer back={prevStep} />
         </Fragment>
