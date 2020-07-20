@@ -462,6 +462,30 @@ img {
   width: auto;
   margin-bottom: 1rem; }
 
+.land-la-problem-img {
+  background-position: 50% 50%;
+  background-size: cover;
+  object-fit: none;
+  border-bottom: 6px solid;
+  border-color: #6f192e;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 11rem;
+  width: auto;
+  z-index: 1;
+  -ms-transform: none;
+  -webkit-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+  transform: scaleX(-1); }
+  .land-la-problem-img__drink-driving {
+    background-image: url(/images/drink-driving.svg); }
+  @media screen and (min-width: 64rem) {
+    .land-la-problem-img {
+      border-bottom: 0;
+      -webkit-transform: none;
+      text-transform: none; } }
+
 .triage-button {
   font-family: Montserrat, sans-serif;
   -moz-osx-font-smoothing: grayscale;

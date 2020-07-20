@@ -2,7 +2,9 @@
   {
     "id": "1",
     "title": "Drink driving",
-    "active": false
+    "active": false,
+    "image": "drink-driving",
+    "desc": "Legal Aid NSW does provide support  for this legal matter. You will soon be provided with a guide which will help you prepare for the next steps in your legal situation."
   },
   {
     "id": "2",
