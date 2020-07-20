@@ -5,6 +5,7 @@ import {
   CARD_ACTIVATION,
   NEXT_STEP,
   BACK_STEP,
+  SEARCH_BAR,
 } from '../types';
 
 export default (state, action) => {
@@ -41,6 +42,11 @@ export default (state, action) => {
       return {
         ...state,
         step: action.payload,
+      };
+    case SEARCH_BAR:
+      return {
+        ...state,
+        search: action.payload,
       };
     default:
       return state;

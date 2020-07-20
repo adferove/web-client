@@ -11,14 +11,16 @@ import {
   CARD_ACTIVATION,
   NEXT_STEP,
   BACK_STEP,
+  SEARCH_BAR,
 } from '../types';
 
 const TriageState = (props) => {
   const initialState = {
-    step: 1,
     problemOptions: topLegalProblems,
-    selectedOption: null,
     loading: false,
+    search: '',
+    selectedOption: null,
+    step: 1,
   };
 
   const [state, dispatch] = useReducer(TriageReducer, initialState);
@@ -42,6 +44,13 @@ const TriageState = (props) => {
     dispatch({
       type: BACK_STEP,
       payload,
+    });
+  };
+
+  const searchBarChange = (input) => {
+    dispatch({
+      type: SEARCH_BAR,
+      payload: input,
     });
   };
 
@@ -84,16 +93,18 @@ const TriageState = (props) => {
   return (
     <TriageContext.Provider
       value={{
-        problemOptions: state.problemOptions,
         loading: state.loading,
-        searchProblemOptions,
-        clearResults,
-        setLoading,
-        cardActivation,
+        problemOptions: state.problemOptions,
+        search: state.search,
         selectedOption: state.selectedOption,
         step: state.step,
-        next,
         back,
+        cardActivation,
+        clearResults,
+        next,
+        searchBarChange,
+        searchProblemOptions,
+        setLoading,
       }}
     >
       {props.children}
