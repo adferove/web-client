@@ -10,6 +10,7 @@
     "aboutYouCurrent": 1,
     "aboutYouStep2Title": "Do any of these apply to you?",
     "imageAboutYou": "about-you",
+    "imageYourGuide": "your-guide",
     "aboutYouChecks": [
       {
         "id": 1,

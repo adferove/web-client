@@ -226,6 +226,9 @@
   &__about-you {
     background-image: url(/images/about-you2.svg);
   }
+  &__your-guide {
+    background-image: url(/images/your-guide.png);
+  }
   @media screen and (min-width: 64rem) {
     border-bottom: 0;
     -webkit-transform: none;
