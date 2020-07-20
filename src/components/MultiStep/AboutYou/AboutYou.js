@@ -1,6 +1,7 @@
 import React, { Fragment, useContext } from 'react';
 import TriageContext from '../../../context/triage/triageContext';
 import Section from '../../common/Section/Section';
+import CheckBox from '../../common/CheckBox/CheckBox';
 
 const AboutYou = () => {
   const triageContext = useContext(TriageContext);
@@ -51,7 +52,11 @@ const AboutYou = () => {
           >
             <div className={styleStep2} />
           </Section>
-          <Section grey></Section>
+          <Section grey>
+            {selectedOption.aboutYouChecks.map((item) => (
+              <CheckBox id={item.id} name={item.name} desc={item.desc} />
+            ))}
+          </Section>
         </Fragment>
       );
     default:

@@ -11,37 +11,53 @@
     "aboutYouStep2Title": "Do any of these apply to you?",
     "imageAboutYou": "about-you",
     "aboutYouChecks": [
-      { "id": 1, "desc": "I’m under the age of 18", "checked": false },
+      {
+        "id": 1,
+        "desc": "I’m under the age of 18",
+        "checked": false,
+        "name": "ay-chk-1"
+      },
       {
         "id": 2,
         "desc": "I’m Aboriginal or Torres Straight Islander",
-        "checked": false
+        "checked": false,
+        "name": "ay-chk-2"
       },
       {
         "id": 3,
         "desc": "I’m on the maximum Centrelink benefit",
-        "checked": false
+        "checked": false,
+        "name": "ay-chk-3"
       },
       {
         "id": 4,
         "desc": "I'm experiencing or at risk of family violence",
-        "checked": false
+        "checked": false,
+        "name": "ay-chk-4"
       },
-      { "id": 5, "desc": "I'm a refugee or asylum seeker", "checked": false },
+      {
+        "id": 5,
+        "desc": "I'm a refugee or asylum seeker",
+        "checked": false,
+        "name": "ay-chk-5"
+      },
       {
         "id": 6,
         "desc": "I'm experiencing or at risk of homelessness",
-        "checked": false
+        "checked": false,
+        "name": "ay-chk-6"
       },
       {
         "id": 7,
         "desc": "I will need an interpreter when I speak to someone",
-        "checked": false
+        "checked": false,
+        "name": "ay-chk-7"
       },
       {
         "id": 8,
         "desc": "I am deaf, hard of hearing or have a speech impairment",
-        "checked": false
+        "checked": false,
+        "name": "ay-chk-8"
       }
     ]
   },
