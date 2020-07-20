@@ -31,6 +31,10 @@
   &__grey {
     background-color: $light10;
   }
+  &__maroon {
+    background-color: $nsw-primary-highlight;
+    color: $white;
+  }
   // @media screen and (min-width: 64rem) {
   //   -webkit-flex-direction: row-reverse;
   //   -ms-flex-direction: row-reverse;
@@ -77,6 +81,9 @@
   // @media screen and (min-width: 64rem) {
   //   width: 50%;
   // }
+  &__no-mb {
+    margin-bottom: 0;
+  }
 }
 
 .dic-la-w-l11 {

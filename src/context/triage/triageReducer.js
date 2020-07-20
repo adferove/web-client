@@ -6,6 +6,7 @@ import {
   NEXT_STEP,
   BACK_STEP,
   SEARCH_BAR,
+  UPDATE_SELECTED_OPTION,
 } from '../types';
 
 export default (state, action) => {
@@ -49,6 +50,12 @@ export default (state, action) => {
       return {
         ...state,
         search: action.payload,
+      };
+    case UPDATE_SELECTED_OPTION:
+      return {
+        ...state,
+        selectedOption: action.payload.clonedOption,
+        step: action.payload.step,
       };
     default:
       return state;

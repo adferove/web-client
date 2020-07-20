@@ -10,3 +10,4 @@ export const CARD_ACTIVATION = 'CARD_ACTIVATION';
 export const NEXT_STEP = 'NEXT_STEP';
 export const BACK_STEP = 'BACK_STEP';
 export const SEARCH_BAR = 'SEARCH_BAR';
+export const UPDATE_SELECTED_OPTION = 'UPDATE_SELECTED_OPTION';

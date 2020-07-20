@@ -4,7 +4,46 @@
     "title": "Drink driving",
     "active": false,
     "image": "drink-driving",
-    "desc": "Legal Aid NSW does provide support  for this legal matter. You will soon be provided with a guide which will help you prepare for the next steps in your legal situation."
+    "desc": "Legal Aid NSW <b>does</b> provide support  for this legal matter. You will soon be provided with a guide which will help you prepare for the next steps in your legal situation.",
+    "note": "<p><strong>Please note</strong></p><p>If you answer &lsquo;YES&rsquo; to either of these questions, you should seek legal help as soon as possible:&nbsp;</p><ol> <li>Is this a mid to high range drink driving offence?</li><li>Have you been convicted of any drink driving offences in the last five years?</li></ol>",
+    "aboutYouSteps": 2,
+    "aboutYouCurrent": 1,
+    "aboutYouStep2Title": "Do any of these apply to you?",
+    "imageAboutYou": "about-you",
+    "aboutYouChecks": [
+      { "id": 1, "desc": "I’m under the age of 18", "checked": false },
+      {
+        "id": 2,
+        "desc": "I’m Aboriginal or Torres Straight Islander",
+        "checked": false
+      },
+      {
+        "id": 3,
+        "desc": "I’m on the maximum Centrelink benefit",
+        "checked": false
+      },
+      {
+        "id": 4,
+        "desc": "I'm experiencing or at risk of family violence",
+        "checked": false
+      },
+      { "id": 5, "desc": "I'm a refugee or asylum seeker", "checked": false },
+      {
+        "id": 6,
+        "desc": "I'm experiencing or at risk of homelessness",
+        "checked": false
+      },
+      {
+        "id": 7,
+        "desc": "I will need an interpreter when I speak to someone",
+        "checked": false
+      },
+      {
+        "id": 8,
+        "desc": "I am deaf, hard of hearing or have a speech impairment",
+        "checked": false
+      }
+    ]
   },
   {
     "id": "2",

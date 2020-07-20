@@ -9,16 +9,54 @@ const AboutYou = () => {
     'land-la-problem-img',
     'land-la-problem-img__' + selectedOption.image,
   ].join(' ');
-  return (
-    <Fragment>
-      <Section preTitle="Your legal problem is" title={selectedOption.title}>
-        <div className={style} />
-        <div className="land-la-w-l11">
-          <div className="land-la-w-l112-p">{selectedOption.desc}</div>
-        </div>
-      </Section>
-    </Fragment>
-  );
+
+  let styleStep2 = [
+    'land-la-problem-img',
+    'land-la-problem-img__' + selectedOption.imageAboutYou,
+  ].join(' ');
+
+  switch (selectedOption.aboutYouCurrent) {
+    case 1:
+      return (
+        <Fragment>
+          <Section
+            preTitle="Your legal problem is"
+            title={selectedOption.title}
+          >
+            <div className={style} />
+            <div className="land-la-w-l11">
+              <div
+                className="land-la-w-l112-p"
+                dangerouslySetInnerHTML={{ __html: selectedOption.desc }}
+              ></div>
+            </div>
+          </Section>
+          <Section maroon>
+            <div className="land-la-w-l11">
+              <div
+                className="land-la-w-l112-p"
+                dangerouslySetInnerHTML={{ __html: selectedOption.note }}
+              ></div>
+            </div>
+          </Section>
+        </Fragment>
+      );
+    case 2:
+      return (
+        <Fragment>
+          <Section
+            preTitle="About you"
+            title={selectedOption.aboutYouStep2Title}
+            noBottom
+          >
+            <div className={styleStep2} />
+          </Section>
+          <Section grey></Section>
+        </Fragment>
+      );
+    default:
+      return null;
+  }
 };
 
 export default AboutYou;

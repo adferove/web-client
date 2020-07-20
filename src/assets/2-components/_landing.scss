@@ -217,16 +217,19 @@
   height: 11rem;
   width: auto;
   z-index: 1;
-  -ms-transform: none;
   -webkit-transform: scaleX(-1);
   -ms-transform: scaleX(-1);
   transform: scaleX(-1);
   &__drink-driving {
     background-image: url(/images/drink-driving.svg);
   }
+  &__about-you {
+    background-image: url(/images/about-you2.svg);
+  }
   @media screen and (min-width: 64rem) {
     border-bottom: 0;
     -webkit-transform: none;
     text-transform: none;
+    transform: none;
   }
 }

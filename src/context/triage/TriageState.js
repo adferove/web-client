@@ -12,6 +12,7 @@ import {
   NEXT_STEP,
   BACK_STEP,
   SEARCH_BAR,
+  UPDATE_SELECTED_OPTION,
 } from '../types';
 
 const TriageState = (props) => {
@@ -34,10 +35,36 @@ const TriageState = (props) => {
   };
 
   const next = () => {
-    let payload = state.step + 1;
+    let payload = null;
+    if (state.step === 2) {
+      if (
+        state.selectedOption.aboutYouSteps > 1 &&
+        state.selectedOption.aboutYouCurrent <
+          state.selectedOption.aboutYouSteps
+      ) {
+        const clonedOption = { ...state.selectedOption };
+        const increment = state.selectedOption.aboutYouCurrent + 1;
+        clonedOption.aboutYouCurrent = increment;
+        updateSelectedOption(clonedOption);
+      } else {
+        payload = state.step + 1;
+      }
+    } else {
+      payload = state.step + 1;
+    }
+
+    if (payload) {
+      dispatch({
+        type: NEXT_STEP,
+        payload,
+      });
+    }
+  };
+
+  const updateSelectedOption = (clonedOption) => {
     dispatch({
-      type: NEXT_STEP,
-      payload,
+      type: UPDATE_SELECTED_OPTION,
+      payload: { clonedOption, step: state.step },
     });
   };
 
