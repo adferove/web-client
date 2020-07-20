@@ -13,7 +13,9 @@ export default (state, action) => {
     case SEARCH_PROBLEM_OPTIONS:
       return {
         ...state,
-        problemOptions: action.payload,
+        problemOptions: action.payload.problemOptions,
+        problemOptionSubtitle: action.payload.problemOptionSubtitle,
+        problemOptionTitle: action.payload.problemOptionTitle,
         loading: false,
       };
     case CLEAR_RESULTS:

@@ -16,6 +16,8 @@ import {
 
 const TriageState = (props) => {
   const initialState = {
+    problemOptionSubtitle: 'Not sure what you’re looking for?',
+    problemOptionTitle: 'Select from these common problems',
     problemOptions: topLegalProblems,
     loading: false,
     search: '',
@@ -56,7 +58,11 @@ const TriageState = (props) => {
 
   const searchProblemOptions = (text) => {
     setLoading();
-    let payload = drinkDrivingProblems;
+    let payload = {
+      problemOptions: drinkDrivingProblems,
+      problemOptionSubtitle: 'Based on your search',
+      problemOptionTitle: 'Please select your legal problem',
+    };
     dispatch({
       type: SEARCH_PROBLEM_OPTIONS,
       payload,
@@ -93,6 +99,8 @@ const TriageState = (props) => {
   return (
     <TriageContext.Provider
       value={{
+        problemOptionSubtitle: state.problemOptionSubtitle,
+        problemOptionTitle: state.problemOptionTitle,
         loading: state.loading,
         problemOptions: state.problemOptions,
         search: state.search,

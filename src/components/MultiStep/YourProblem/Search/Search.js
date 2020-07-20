@@ -7,6 +7,7 @@ const Search = () => {
   const triageContext = useContext(TriageContext);
   const { notificationHandler } = notificationContext;
   const { search, searchBarChange, searchProblemOptions } = triageContext;
+
   const onSearchChange = (e) => {
     searchBarChange(e.target.value);
     console.log(e.target.value);
