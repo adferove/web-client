@@ -696,7 +696,7 @@ img {
   .dic-la-checkbox__input:checked + .dic-la-checkbox__label::after,
   .nsw-form-radio__input:checked + .dic-la-checkbox__label::after {
     background-image: url("data:image/svg+xml,%3Csvg fill='%23ffffff' version='1.1' xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cpath d='M29.362 3.742l-18.867 19.204-7.857-7.997-2.638 2.685 9.175 9.34 1.319 1.284 1.318-1.284 20.187-20.547z'%3E%3C/path%3E%3C/svg%3E");
-    background-color: #002664; }
+    background-color: #6f192e; }
   .dic-la-checkbox__input:checked + .nsw-form-radio__label::after,
   .nsw-form-radio__input:checked + .nsw-form-radio__label::after {
     background-color: #002664; }

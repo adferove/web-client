@@ -86,7 +86,7 @@
 
   &:checked + .dic-la-checkbox__label::after {
     @include background-svg(tick, $white);
-    background-color: $nsw-primary-blue;
+    background-color: $nsw-primary-highlight;
   }
 
   &:checked + .nsw-form-radio__label::after {
