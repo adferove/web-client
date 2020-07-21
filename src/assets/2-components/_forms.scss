@@ -42,7 +42,6 @@
     cursor: not-allowed;
   }
 
-
   &[aria-invalid='true'],
   &.has-error {
     border-color: $critical;
@@ -70,22 +69,22 @@
   }
 }
 
-.nsw-form-checkbox,
+.dic-la-checkbox,
 .nsw-form-radio {
   clear: left;
 }
 
-.nsw-form-checkbox__input,
+.dic-la-checkbox__input,
 .nsw-form-radio__input {
   position: absolute;
   opacity: 0;
 
-  &:hover + .nsw-form-checkbox__label::before,
+  &:hover + .dic-la-checkbox__label::before,
   &:hover + .nsw-form-radio__label::before {
     @include nsw-hover;
   }
 
-  &:checked + .nsw-form-checkbox__label::after {
+  &:checked + .dic-la-checkbox__label::after {
     @include background-svg(tick, $white);
     background-color: $nsw-primary-blue;
   }
@@ -95,24 +94,24 @@
   }
 
   &:disabled {
-    + .nsw-form-checkbox__label,
+    + .dic-la-checkbox__label,
     + .nsw-form-radio__label {
       cursor: not-allowed;
     }
 
-    + .nsw-form-checkbox__label::before,
+    + .dic-la-checkbox__label::before,
     + .nsw-form-radio__label::before {
       border-color: $light40;
       background-color: $light10;
     }
 
-    &:checked + .nsw-form-checkbox__label::after,
+    &:checked + .dic-la-checkbox__label::after,
     &:checked + .nsw-form-radio__label::after {
       background-color: $light40;
     }
   }
 
-  &:focus + .nsw-form-checkbox__label::before {
+  &:focus + .dic-la-checkbox__label::before {
     @include nsw-focus;
   }
 
@@ -120,8 +119,8 @@
     box-shadow: 0 0 0 3px $white, 0 0 0 6px $focus-color;
   }
 
-  &[aria-invalid='true'] + .nsw-form-checkbox__label,
-  &.has-error + .nsw-form-checkbox__label {
+  &[aria-invalid='true'] + .dic-la-checkbox__label,
+  &.has-error + .dic-la-checkbox__label {
     &:hover::before {
       background-color: $critical-background;
     }
@@ -133,7 +132,7 @@
   }
 }
 
-.nsw-form-checkbox__label,
+.dic-la-checkbox__label,
 .nsw-form-radio__label {
   @include font-stack;
   @include font-size('sm');
@@ -174,7 +173,7 @@
   }
 }
 
-.nsw-form-checkbox__label {
+.dic-la-checkbox__label {
   &::before {
     @include border-radius;
   }

@@ -1,35 +1,25 @@
-import React, { Fragment, useState } from 'react';
+import React, { Fragment, useContext } from 'react';
 import { useHistory } from 'react-router-dom';
 import Breadcrumb from '../../components/MultiStep/Breadcrumb/Breadcrumb';
 import YourProblem from '../../components/MultiStep/YourProblem/YourProblem';
 import AboutYou from '../../components/MultiStep/AboutYou/AboutYou';
 import YourGuide from '../../components/MultiStep/YourGuide/YourGuide';
 import Footer from '../../components/MultiStep/Footer/Footer';
+import TriageContext from '../../context/triage/triageContext';
 
 const MultiStep = () => {
   let history = useHistory();
-  const [step, setStep] = useState(1);
-  const [search, setSearch] = useState('');
+  const triageContext = useContext(TriageContext);
+  const { step, next, back } = triageContext;
 
-  const onSearchChange = (e) => {
-    setSearch(e.target.value);
-    console.log(e.target.value);
-  };
-
-  const searchProblem = (e) => {
-    e.preventDefault();
-    if (search === '') {
-    } else {
-    }
-  };
   const nextStep = (e) => {
     e.preventDefault();
-    setStep(step + 1);
+    next();
   };
 
   const prevStep = (e) => {
     e.preventDefault();
-    setStep(step - 1);
+    back();
     if (step === 1) {
       history.goBack();
     }
@@ -41,12 +31,8 @@ const MultiStep = () => {
     case 1:
       currentForm = (
         <Fragment>
-          <YourProblem
-            search={search}
-            onSearchChange={onSearchChange}
-            searchProblem={searchProblem}
-          />
-          <Footer back={prevStep} next={nextStep} />
+          <YourProblem />
+          <Footer back={prevStep} />
         </Fragment>
       );
       break;
