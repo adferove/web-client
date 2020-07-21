@@ -480,9 +480,9 @@ img {
   .land-la-problem-img__drink-driving {
     background-image: url(/images/drink-driving.svg); }
   .land-la-problem-img__about-you {
-    background-image: url(/images/about-you2.svg); }
+    background-image: url(/images/about-you.svg); }
   .land-la-problem-img__your-guide {
-    background-image: url(/images/your-guide.png); }
+    background-image: url(/images/your-guide.svg); }
   @media screen and (min-width: 64rem) {
     .land-la-problem-img {
       border-bottom: 0;
