@@ -1,20 +1,20 @@
-import React, { Fragment, useContext } from 'react';
-import TriageContext from '../../../context/triage/triageContext';
-import Section from '../../common/Section/Section';
-import CheckBox from '../../common/CheckBox/CheckBox';
+import React, { Fragment, useContext } from "react";
+import TriageContext from "../../../context/triage/triageContext";
+import Section from "../../common/Section/Section";
+import CheckBox from "../../common/CheckBox/CheckBox";
 
 const AboutYou = () => {
   const triageContext = useContext(TriageContext);
-  const { selectedOption } = triageContext;
+  const { selectedOption, checkAboutYou } = triageContext;
   let style = [
-    'land-la-problem-img',
-    'land-la-problem-img__' + selectedOption.image,
-  ].join(' ');
+    "land-la-problem-img",
+    "land-la-problem-img__" + selectedOption.image,
+  ].join(" ");
 
   let styleStep2 = [
-    'land-la-problem-img',
-    'land-la-problem-img__' + selectedOption.imageAboutYou,
-  ].join(' ');
+    "land-la-problem-img",
+    "land-la-problem-img__" + selectedOption.imageAboutYou,
+  ].join(" ");
 
   switch (selectedOption.aboutYouCurrent) {
     case 1:
@@ -54,7 +54,14 @@ const AboutYou = () => {
           </Section>
           <Section grey>
             {selectedOption.aboutYouChecks.map((item) => (
-              <CheckBox id={item.id} name={item.name} desc={item.desc} />
+              <CheckBox
+                id={item.id}
+                name={item.name}
+                desc={item.desc}
+                chk={item.checked}
+                key={item.id}
+                clicked={() => checkAboutYou(item.id)}
+              />
             ))}
           </Section>
         </Fragment>

@@ -1,9 +1,9 @@
-import React, { useReducer } from 'react';
-import TriageContext from './triageContext';
-import TriageReducer from './triageReducer';
+import React, { useReducer } from "react";
+import TriageContext from "./triageContext";
+import TriageReducer from "./triageReducer";
 //import Api from '../../common/api';
-import topLegalProblems from '../../common/topLegalProblems.json';
-import drinkDrivingProblems from '../../common/drinkDrivingProblems.json';
+import topLegalProblems from "../../common/topLegalProblems.json";
+import drinkDrivingProblems from "../../common/drinkDrivingProblems.json";
 import {
   SEARCH_PROBLEM_OPTIONS,
   SET_LOADING,
@@ -13,15 +13,15 @@ import {
   BACK_STEP,
   SEARCH_BAR,
   UPDATE_SELECTED_OPTION,
-} from '../types';
+} from "../types";
 
 const TriageState = (props) => {
   const initialState = {
-    problemOptionSubtitle: 'Not sure what you’re looking for?',
-    problemOptionTitle: 'Select from these common problems',
+    problemOptionSubtitle: "Not sure what you’re looking for?",
+    problemOptionTitle: "Select from these common problems",
     problemOptions: topLegalProblems,
     loading: false,
-    search: '',
+    search: "",
     selectedOption: null,
     step: 1,
   };
@@ -87,8 +87,8 @@ const TriageState = (props) => {
     setLoading();
     let payload = {
       problemOptions: drinkDrivingProblems,
-      problemOptionSubtitle: 'Based on your search',
-      problemOptionTitle: 'Please select your legal problem',
+      problemOptionSubtitle: "Based on your search",
+      problemOptionTitle: "Please select your legal problem",
     };
     dispatch({
       type: SEARCH_PROBLEM_OPTIONS,
@@ -107,20 +107,36 @@ const TriageState = (props) => {
       return option.id === optionId;
     });
     const active = state.problemOptions[optionIndex].active;
-    const selectedOption = { ...state.problemOptions[optionIndex] };
-    selectedOption.active = !active;
+    let selected = { ...state.problemOptions[optionIndex] };
+    if (state.selectedOption && selected.id === state.selectedOption.id) {
+      selected = { ...state.selectedOption };
+    }
+    selected.active = !active;
     const clonedOptions = [...state.problemOptions];
     const newOptions = clonedOptions.map((cloned) => {
       cloned.active = false;
       return cloned;
     });
-    newOptions[optionIndex] = selectedOption;
+    newOptions[optionIndex] = selected;
     let step = state.step;
-    if (selectedOption.active) step = step + 1;
+    if (selected.active) step = step + 1;
+    const selectedOption = { ...selected };
     dispatch({
       type: CARD_ACTIVATION,
       payload: { problemOptions: newOptions, selectedOption, step },
     });
+  };
+
+  const checkAboutYou = (itemId) => {
+    const selectedOption = { ...state.selectedOption };
+    const checkItemIndex = selectedOption.aboutYouChecks.findIndex((item) => {
+      return item.id === itemId;
+    });
+    const checked = selectedOption.aboutYouChecks[checkItemIndex].checked;
+    const checkItem = selectedOption.aboutYouChecks[checkItemIndex];
+    checkItem.checked = !checked;
+    selectedOption.aboutYouChecks[checkItemIndex] = checkItem;
+    updateSelectedOption(selectedOption);
   };
 
   return (
@@ -135,6 +151,7 @@ const TriageState = (props) => {
         step: state.step,
         back,
         cardActivation,
+        checkAboutYou,
         clearResults,
         next,
         searchBarChange,
