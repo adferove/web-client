@@ -1,9 +1,9 @@
-import React, { useReducer } from "react";
-import TriageContext from "./triageContext";
-import TriageReducer from "./triageReducer";
+import React, { useReducer } from 'react';
+import TriageContext from './triageContext';
+import TriageReducer from './triageReducer';
 //import Api from '../../common/api';
-import topLegalProblems from "../../common/topLegalProblems.json";
-import drinkDrivingProblems from "../../common/drinkDrivingProblems.json";
+import topLegalProblems from '../../common/topLegalProblems.json';
+import drinkDrivingProblems from '../../common/drinkDrivingProblems.json';
 import {
   SEARCH_PROBLEM_OPTIONS,
   SET_LOADING,
@@ -13,15 +13,15 @@ import {
   BACK_STEP,
   SEARCH_BAR,
   UPDATE_SELECTED_OPTION,
-} from "../types";
+} from '../types';
 
 const TriageState = (props) => {
   const initialState = {
-    problemOptionSubtitle: "Not sure what you’re looking for?",
-    problemOptionTitle: "Select from these common problems",
+    problemOptionSubtitle: 'Not sure what you’re looking for?',
+    problemOptionTitle: 'Select from these common problems',
     problemOptions: topLegalProblems,
     loading: false,
-    search: "",
+    search: '',
     selectedOption: null,
     step: 1,
   };
@@ -46,6 +46,7 @@ const TriageState = (props) => {
         const increment = state.selectedOption.aboutYouCurrent + 1;
         clonedOption.aboutYouCurrent = increment;
         updateSelectedOption(clonedOption);
+        console.log('Yellow');
       } else {
         payload = state.step + 1;
       }
@@ -87,8 +88,8 @@ const TriageState = (props) => {
     setLoading();
     let payload = {
       problemOptions: drinkDrivingProblems,
-      problemOptionSubtitle: "Based on your search",
-      problemOptionTitle: "Please select your legal problem",
+      problemOptionSubtitle: 'Based on your search',
+      problemOptionTitle: 'Please select your legal problem',
     };
     dispatch({
       type: SEARCH_PROBLEM_OPTIONS,
