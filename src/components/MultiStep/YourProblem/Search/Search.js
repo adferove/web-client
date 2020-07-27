@@ -10,7 +10,6 @@ const Search = () => {
 
   const onSearchChange = (e) => {
     searchBarChange(e.target.value);
-    console.log(e.target.value);
   };
   const onSubmitSearch = (e) => {
     e.preventDefault();

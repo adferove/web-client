@@ -20,12 +20,11 @@ const MultiStep = () => {
 
   const prevStep = (e) => {
     e.preventDefault();
-    console.log('Back');
-    scrollToTop();
     back();
     if (step === 1) {
       history.goBack();
     }
+    scrollToTop();
   };
 
   const scrollToTop = () => {
