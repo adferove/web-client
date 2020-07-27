@@ -1327,3 +1327,36 @@ img {
   .bc-lay-m-1111-p__arrow {
     color: #a0a5ae;
     font-weight: bold; }
+
+.pagination {
+  display: inline-flex;
+  width: 100%;
+  max-width: 100%;
+  height: 0.5rem;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+  position: relative;
+  align-content: space-between;
+  pointer-events: none; }
+  .pagination .page-item:first-child {
+    justify-content: flex-start;
+    flex: 1; }
+  .pagination .page-item:last-child {
+    justify-content: flex-end;
+    flex: 1; }
+  .pagination li.active ~ * {
+    background-color: #a0a5ae; }
+  .pagination .page-item {
+    flex: 1;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #6f192e;
+    margin: 0.0625rem 0;
+    height: 0.3125rem;
+    background-image: none;
+    width: 0; }
+  .pagination .page-link {
+    visibility: hidden; }
+  .pagination .page-item.active {
+    background-color: #6f192e; }

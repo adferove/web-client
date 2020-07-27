@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "page": "landing",
+    "preTitle": "About this self-help tool",
+    "title": "Your questions answered",
+    "paragraphs": [
+      {
+        "id": 10001,
+        "paragraph": "We'll ask you a few questions and match you with services that may be able to assist.",
+        "icon": "info"
+      },
+      {
+        "id": 10002,
+        "paragraph": "Have more than one legal problem? Keep things simple by choosing one at a time.",
+        "icon": "message"
+      },
+      {
+        "id": 10003,
+        "paragraph": "Your information is always anonymous - you control what details you provide.",
+        "icon": "lock"
+      },
+      {
+        "id": 10004,
+        "paragraph": "When you're done, you can download a summary of your help options.",
+        "icon": "file"
+      }
+    ]
+  }
+]

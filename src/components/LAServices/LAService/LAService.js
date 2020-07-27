@@ -5,7 +5,9 @@ const LAService = (props) => {
   return (
     <div>
       <b>Legal Aid NSW state-wide services</b>
-      <ServiceElements />
+      <div className="grid-3">
+        <ServiceElements />
+      </div>
     </div>
   );
 };

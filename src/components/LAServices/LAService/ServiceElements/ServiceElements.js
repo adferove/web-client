@@ -6,6 +6,7 @@ const ServiceElements = (props) => {
     <Fragment>
       <ServiceElement title="Child Support Service" />
       <ServiceElement title="Mental Health Advocacy Service" />
+      <ServiceElement title="Mental Health Advocacy Service" />
     </Fragment>
   );
 };

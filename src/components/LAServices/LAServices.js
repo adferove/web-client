@@ -7,9 +7,7 @@ const LAServices = () => {
       <div className="land-la-wrapper land-la-wrapper__grey ">
         <div className="land-la-w-l1">
           <div className="land-la-w-l11">
-            <div className="grid-2">
-              <LAService />
-            </div>
+            <LAService />
           </div>
         </div>
       </div>
