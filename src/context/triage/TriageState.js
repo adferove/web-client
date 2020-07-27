@@ -46,7 +46,6 @@ const TriageState = (props) => {
         const increment = state.selectedOption.aboutYouCurrent + 1;
         clonedOption.aboutYouCurrent = increment;
         updateSelectedOption(clonedOption);
-        console.log('Yellow');
       } else {
         payload = state.step + 1;
       }

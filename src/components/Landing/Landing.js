@@ -2,6 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Landing = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
   return (
     <div className="land-la">
       <div className="land-la-wrapper">
@@ -41,6 +47,7 @@ const Landing = () => {
           <div className="land-la-w-l11">
             <div>
               <Link
+                onClick={scrollToTop}
                 className="triage-button triage-button--highlight"
                 to="/tool"
               >

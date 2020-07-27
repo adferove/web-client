@@ -14,15 +14,25 @@ const MultiStep = () => {
 
   const nextStep = (e) => {
     e.preventDefault();
+    scrollToTop();
     next();
   };
 
   const prevStep = (e) => {
     e.preventDefault();
+    console.log('Back');
+    scrollToTop();
     back();
     if (step === 1) {
       history.goBack();
     }
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
   };
 
   let currentForm = null;

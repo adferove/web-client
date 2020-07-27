@@ -5,12 +5,19 @@ import TriageContext from '../../../context/triage/triageContext';
 const Cards = () => {
   const triageContext = useContext(TriageContext);
   const { cardActivation, problemOptions: options } = triageContext;
+  const nextStep = (optionId) => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+    cardActivation(optionId);
+  };
   return (
     <div className="dic-la-w-l11">
       <div className="grid-3">
         {options.map((option) => (
           <CardItem
-            clicked={() => cardActivation(option.id)}
+            clicked={() => nextStep(option.id)}
             key={option.id}
             title={option.title}
             active={option.active}
