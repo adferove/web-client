@@ -224,10 +224,20 @@
     background-image: url(/images/drink-driving.svg);
   }
   &__about-you {
-    background-image: url(/images/about-you.svg);
+    background-image: url(/images/about-you1.svg);
+    @media screen and (min-width: 30rem) {
+      background-image: url(/images/about-you.svg);
+      -webkit-transform: none;
+      text-transform: none;
+    }
   }
   &__your-guide {
-    background-image: url(/images/your-guide.svg);
+    background-image: url(/images/your-guide1.svg);
+    @media screen and (min-width: 30rem) {
+      background-image: url(/images/your-guide.svg);
+      -webkit-transform: none;
+      text-transform: none;
+    }
   }
   @media screen and (min-width: 64rem) {
     border-bottom: 0;

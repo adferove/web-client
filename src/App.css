@@ -480,9 +480,19 @@ img {
   .land-la-problem-img__drink-driving {
     background-image: url(/images/drink-driving.svg); }
   .land-la-problem-img__about-you {
-    background-image: url(/images/about-you.svg); }
+    background-image: url(/images/about-you1.svg); }
+    @media screen and (min-width: 30rem) {
+      .land-la-problem-img__about-you {
+        background-image: url(/images/about-you.svg);
+        -webkit-transform: none;
+        text-transform: none; } }
   .land-la-problem-img__your-guide {
-    background-image: url(/images/your-guide.svg); }
+    background-image: url(/images/your-guide1.svg); }
+    @media screen and (min-width: 30rem) {
+      .land-la-problem-img__your-guide {
+        background-image: url(/images/your-guide.svg);
+        -webkit-transform: none;
+        text-transform: none; } }
   @media screen and (min-width: 64rem) {
     .land-la-problem-img {
       border-bottom: 0;
