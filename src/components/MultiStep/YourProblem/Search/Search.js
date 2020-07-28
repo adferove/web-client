@@ -17,6 +17,10 @@ const Search = () => {
       notificationHandler('Please enter key words', 'error');
     } else {
       searchProblemOptions();
+      window.scrollTo({
+        top: 150,
+        behavior: 'smooth',
+      });
     }
   };
 
