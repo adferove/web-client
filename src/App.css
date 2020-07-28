@@ -345,12 +345,7 @@ img {
   transform: scaleX(-1); }
   @media screen and (min-width: 30rem) {
     .land-la-w-img {
-      background-image: url(/images/LegalAidNSW1.jpg);
-      -webkit-transform: none;
-      text-transform: none; } }
-  @media screen and (min-width: 64rem) {
-    .land-la-w-img {
-      background-image: url(/images/community.svg);
+      background-image: url(/images/landingbig.svg);
       border-bottom: 0;
       -webkit-transform: none;
       text-transform: none; } }

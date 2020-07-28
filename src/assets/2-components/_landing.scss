@@ -55,13 +55,9 @@
   -webkit-transform: scaleX(-1);
   -ms-transform: scaleX(-1);
   transform: scaleX(-1);
+
   @media screen and (min-width: 30rem) {
-    background-image: url(/images/LegalAidNSW1.jpg);
-    -webkit-transform: none;
-    text-transform: none;
-  }
-  @media screen and (min-width: 64rem) {
-    background-image: url(/images/community.svg);
+    background-image: url(/images/landingbig.svg);
     border-bottom: 0;
     -webkit-transform: none;
     text-transform: none;
