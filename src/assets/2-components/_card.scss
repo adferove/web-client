@@ -37,6 +37,7 @@
     display: flex;
     flex-direction: column;
     order: 2;
+    font-weight: 600;
 
     @include breakpoint('lg') {
       @include nsw-spacing(padding, md xl xxxl xl);
@@ -107,7 +108,7 @@
   }
 
   &__cd {
-    padding: 0.5rem 1rem 1rem 1rem;
+    padding: 1.5rem 1rem 1.5rem 1rem;
     cursor: pointer;
   }
 

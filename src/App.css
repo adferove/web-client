@@ -1120,7 +1120,8 @@ img {
     border-top: solid 4px #6f192e;
     display: flex;
     flex-direction: column;
-    order: 2; }
+    order: 2;
+    font-weight: 600; }
     @media (min-width: 62em) {
       .nsw-card__content {
         font-size: 1rem; } }
@@ -1188,7 +1189,7 @@ img {
     height: 100%;
     object-fit: cover; }
   .nsw-card__cd {
-    padding: 0.5rem 1rem 1rem 1rem;
+    padding: 1.5rem 1rem 1.5rem 1rem;
     cursor: pointer; }
   .nsw-card__active {
     background-color: #0085b3;
