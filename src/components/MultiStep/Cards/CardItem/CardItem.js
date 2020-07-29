@@ -1,7 +1,7 @@
 import React from 'react';
 
 const CardItem = ({ title, active, clicked }) => {
-  let cardStyle = 'nsw-card__content nsw-card__cd';
+  let cardStyle = 'nsw-card__content nsw-card__cd nsw-card__pathway';
   if (active) {
     cardStyle = ['nsw-card__content nsw-card__cd', 'nsw-card__active'].join(
       ' '

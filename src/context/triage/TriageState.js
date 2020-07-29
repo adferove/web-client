@@ -16,10 +16,15 @@ import {
 } from '../types';
 
 const TriageState = (props) => {
+  const legalProblems = () => {
+    const results = [...topLegalProblems];
+    return results.filter((item) => item.parent === undefined);
+  };
+
   const initialState = {
     problemOptionSubtitle: 'Not sure what you’re looking for?',
     problemOptionTitle: 'Select from these common problems',
-    problemOptions: topLegalProblems,
+    problemOptions: legalProblems(),
     loading: false,
     search: '',
     selectedOption: null,
@@ -120,11 +125,21 @@ const TriageState = (props) => {
     newOptions[optionIndex] = selected;
     let step = state.step;
     if (selected.active) step = step + 1;
+
     const selectedOption = { ...selected };
+    if (selectedOption) {
+      console.log(legalProblemsByParent(selectedOption.id));
+    }
+
     dispatch({
       type: CARD_ACTIVATION,
       payload: { problemOptions: newOptions, selectedOption, step },
     });
+  };
+
+  const legalProblemsByParent = (parentId) => {
+    const results = [...topLegalProblems];
+    return results.filter((item) => item.parent === parentId);
   };
 
   const checkAboutYou = (itemId) => {
