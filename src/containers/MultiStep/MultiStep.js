@@ -24,7 +24,7 @@ const MultiStep = () => {
     if (step === 1) {
       history.goBack();
     }
-    scrollToTop();
+    //scrollToTop();
   };
 
   const scrollToTop = () => {
@@ -48,7 +48,7 @@ const MultiStep = () => {
     case 2:
       currentForm = (
         <Fragment>
-          <AboutYou />
+          <YourProblem />
           <Footer back={prevStep} next={nextStep} />
         </Fragment>
       );

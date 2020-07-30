@@ -18,7 +18,12 @@ import {
 const TriageState = (props) => {
   const legalProblems = () => {
     const results = [...topLegalProblems];
-    return results.filter((item) => item.parent === undefined);
+    return results.filter((item) => {
+      if (item.parent === undefined) {
+        item.step = 1;
+      }
+      return item;
+    });
   };
 
   const initialState = {
@@ -108,38 +113,39 @@ const TriageState = (props) => {
   };
 
   const cardActivation = (optionId) => {
-    const optionIndex = state.problemOptions.findIndex((option) => {
+    const currentStep = state.step;
+    let step = currentStep;
+    const currentOptions = state.problemOptions;
+    const optionIndex = currentOptions.findIndex((option) => {
       return option.id === optionId;
     });
-    const active = state.problemOptions[optionIndex].active;
-    let selected = { ...state.problemOptions[optionIndex] };
-    if (state.selectedOption && selected.id === state.selectedOption.id) {
-      selected = { ...state.selectedOption };
-    }
-    selected.active = !active;
-    const clonedOptions = [...state.problemOptions];
+    const active = currentOptions[optionIndex].active;
+    const selectedOption = { ...currentOptions[optionIndex] };
+    selectedOption.active = !active;
+    const clonedOptions = [...currentOptions];
     const newOptions = clonedOptions.map((cloned) => {
-      cloned.active = false;
-      return cloned;
+      const newOption = { ...cloned };
+      if (selectedOption.parent !== newOption.id) {
+        newOption.active = false;
+      }
+      return newOption;
     });
-    newOptions[optionIndex] = selected;
-    let step = state.step;
-    if (selected.active) step = step + 1;
+    newOptions[optionIndex] = selectedOption;
 
-    const selectedOption = { ...selected };
-    if (selectedOption) {
-      console.log(legalProblemsByParent(selectedOption.id));
+    if (selectedOption.active) {
+      step += 1;
+      newOptions.filter((opt) => {
+        if (opt.parent === selectedOption.id) {
+          opt.step = step;
+        }
+        return opt;
+      });
     }
-
+    console.log(newOptions);
     dispatch({
       type: CARD_ACTIVATION,
       payload: { problemOptions: newOptions, selectedOption, step },
     });
-  };
-
-  const legalProblemsByParent = (parentId) => {
-    const results = [...topLegalProblems];
-    return results.filter((item) => item.parent === parentId);
   };
 
   const checkAboutYou = (itemId) => {
