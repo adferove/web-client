@@ -60,6 +60,14 @@
         "checked": false,
         "name": "ay-chk-8"
       }
+    ],
+    "steps": [
+      {
+        "step": 1
+      },
+      {
+        "step": 2
+      }
     ]
   },
   {

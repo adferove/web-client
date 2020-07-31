@@ -2,8 +2,12 @@ import React, { Fragment, useContext } from 'react';
 import { useHistory } from 'react-router-dom';
 import Breadcrumb from '../../components/MultiStep/Breadcrumb/Breadcrumb';
 import YourProblem from '../../components/MultiStep/YourProblem/YourProblem';
-import AboutYou from '../../components/MultiStep/AboutYou/AboutYou';
-import YourGuide from '../../components/MultiStep/YourGuide/YourGuide';
+//import AboutYou from '../../components/MultiStep/AboutYou/AboutYou';
+import SelectOneOption from '../../components/MultiStep/YourProblem/SelectOneOption/SelectOneOption';
+import SelectedProblem from '../../components/MultiStep/YourProblem/SelectedProblem/SelectedProblem';
+import Question from '../../components/MultiStep/YourProblem/Question/Question';
+
+//import YourGuide from '../../components/MultiStep/YourGuide/YourGuide';
 import Footer from '../../components/MultiStep/Footer/Footer';
 import TriageContext from '../../context/triage/triageContext';
 
@@ -48,16 +52,23 @@ const MultiStep = () => {
     case 2:
       currentForm = (
         <Fragment>
-          <YourProblem />
-          <Footer back={prevStep} next={nextStep} />
+          <SelectOneOption />
+          <Footer back={prevStep} />
         </Fragment>
       );
       break;
     case 3:
       currentForm = (
         <Fragment>
-          <YourGuide />
-          <Footer back={prevStep} />
+          <SelectedProblem />
+          <Footer back={prevStep} next={nextStep} />
+        </Fragment>
+      );
+      break;
+    case 4:
+      currentForm = (
+        <Fragment>
+          <Question />
         </Fragment>
       );
       break;

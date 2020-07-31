@@ -13,6 +13,7 @@ const Cards = () => {
     cardActivation(optionId);
   };
   const filteredOptions = options.filter((opt) => opt.step === step);
+
   return (
     <div className="dic-la-w-l11">
       <div className="grid-3">

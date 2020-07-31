@@ -389,6 +389,8 @@ img {
     cursor: pointer; }
   .land-la-w-l11__right {
     justify-content: flex-end; }
+  .land-la-w-l11__bg-grey {
+    background-color: #f4f4f7; }
 
 .land-la-w-l12 {
   background-color: #002664;
@@ -982,8 +984,7 @@ img {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  width: auto;
-  margin-bottom: 1rem; }
+  width: auto; }
   .dic-la-w-l1__no-mb {
     margin-bottom: 0; }
 
@@ -1006,7 +1007,9 @@ img {
   max-width: none;
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-top: 0.5rem; }
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: 600; }
 
 .dic-la-w-l12 {
   background-color: #002664;

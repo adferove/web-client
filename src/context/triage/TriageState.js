@@ -3,7 +3,7 @@ import TriageContext from './triageContext';
 import TriageReducer from './triageReducer';
 //import Api from '../../common/api';
 import topLegalProblems from '../../common/topLegalProblems.json';
-import drinkDrivingProblems from '../../common/drinkDrivingProblems.json';
+
 import {
   SEARCH_PROBLEM_OPTIONS,
   SET_LOADING,
@@ -45,30 +45,11 @@ const TriageState = (props) => {
   };
 
   const next = () => {
-    let payload = null;
-    if (state.step === 2) {
-      if (
-        state.selectedOption.aboutYouSteps > 1 &&
-        state.selectedOption.aboutYouCurrent <
-          state.selectedOption.aboutYouSteps
-      ) {
-        const clonedOption = { ...state.selectedOption };
-        const increment = state.selectedOption.aboutYouCurrent + 1;
-        clonedOption.aboutYouCurrent = increment;
-        updateSelectedOption(clonedOption);
-      } else {
-        payload = state.step + 1;
-      }
-    } else {
-      payload = state.step + 1;
-    }
-
-    if (payload) {
-      dispatch({
-        type: NEXT_STEP,
-        payload,
-      });
-    }
+    let payload = state.step + 1;
+    dispatch({
+      type: NEXT_STEP,
+      payload,
+    });
   };
 
   const updateSelectedOption = (clonedOption) => {
@@ -95,10 +76,18 @@ const TriageState = (props) => {
 
   const searchProblemOptions = (text) => {
     setLoading();
+    const currentOptions = [...state.problemOptions];
+    let problems = currentOptions.map((problem) => {
+      if (problem.parent === '13') problem.step = 2;
+      problem.active = false;
+      return problem;
+    });
+    let step = state.step + 1;
     let payload = {
-      problemOptions: drinkDrivingProblems,
+      problemOptions: problems,
       problemOptionSubtitle: 'Based on your search',
       problemOptionTitle: 'Please select your legal problem',
+      step,
     };
     dispatch({
       type: SEARCH_PROBLEM_OPTIONS,
@@ -137,11 +126,15 @@ const TriageState = (props) => {
       newOptions.filter((opt) => {
         if (opt.parent === selectedOption.id) {
           opt.step = step;
+        } else {
+          if (opt.step === step) {
+            opt.step = null;
+          }
         }
         return opt;
       });
     }
-    console.log(newOptions);
+
     dispatch({
       type: CARD_ACTIVATION,
       payload: { problemOptions: newOptions, selectedOption, step },

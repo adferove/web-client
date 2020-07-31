@@ -26,3 +26,58 @@ if (selected.active) {
 }
 
 const selectedOption = { ...selected };
+
+switch (step) {
+  case 1:
+    currentForm = (
+      <Fragment>
+        <YourProblem />
+        <Footer back={prevStep} />
+      </Fragment>
+    );
+    break;
+  case 2:
+    currentForm = (
+      <Fragment>
+        <YourProblem />
+        <Footer back={prevStep} next={nextStep} />
+      </Fragment>
+    );
+    break;
+  case 3:
+    currentForm = (
+      <Fragment>
+        <YourGuide />
+        <Footer back={prevStep} />
+      </Fragment>
+    );
+    break;
+  default:
+    break;
+}
+
+const next = () => {
+  let payload = null;
+  if (state.step === 2) {
+    if (
+      state.selectedOption.aboutYouSteps > 1 &&
+      state.selectedOption.aboutYouCurrent < state.selectedOption.aboutYouSteps
+    ) {
+      const clonedOption = { ...state.selectedOption };
+      const increment = state.selectedOption.aboutYouCurrent + 1;
+      clonedOption.aboutYouCurrent = increment;
+      updateSelectedOption(clonedOption);
+    } else {
+      payload = state.step + 1;
+    }
+  } else {
+    payload = state.step + 1;
+  }
+
+  if (payload) {
+    dispatch({
+      type: NEXT_STEP,
+      payload,
+    });
+  }
+};

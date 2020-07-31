@@ -17,6 +17,7 @@ export default (state, action) => {
         problemOptions: action.payload.problemOptions,
         problemOptionSubtitle: action.payload.problemOptionSubtitle,
         problemOptionTitle: action.payload.problemOptionTitle,
+        step: action.payload.step,
         loading: false,
       };
     case CLEAR_RESULTS:

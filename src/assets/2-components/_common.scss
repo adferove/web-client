@@ -77,7 +77,8 @@
   -ms-flex-direction: column;
   flex-direction: column;
   width: auto;
-  margin-bottom: 1rem;
+
+  //margin-bottom: 1rem;
   // @media screen and (min-width: 64rem) {
   //   width: 50%;
   // }
@@ -106,6 +107,8 @@
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: 600;
   // @media screen and (min-width: 64rem) {
   //   max-width: 29.375rem;
   //   padding-left: 0;
