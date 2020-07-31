@@ -2,19 +2,19 @@ import React, { Fragment, useContext } from 'react';
 import { useHistory } from 'react-router-dom';
 import Breadcrumb from '../../components/MultiStep/Breadcrumb/Breadcrumb';
 import YourProblem from '../../components/MultiStep/YourProblem/YourProblem';
-//import AboutYou from '../../components/MultiStep/AboutYou/AboutYou';
+import AboutYou from '../../components/MultiStep/AboutYou/AboutYou';
 import SelectOneOption from '../../components/MultiStep/YourProblem/SelectOneOption/SelectOneOption';
 import SelectedProblem from '../../components/MultiStep/YourProblem/SelectedProblem/SelectedProblem';
 import Question from '../../components/MultiStep/YourProblem/Question/Question';
 
-//import YourGuide from '../../components/MultiStep/YourGuide/YourGuide';
+import YourGuide from '../../components/MultiStep/YourGuide/YourGuide';
 import Footer from '../../components/MultiStep/Footer/Footer';
 import TriageContext from '../../context/triage/triageContext';
 
 const MultiStep = () => {
   let history = useHistory();
   const triageContext = useContext(TriageContext);
-  const { step, next, back } = triageContext;
+  const { step, next, back, selectedOption } = triageContext;
 
   const nextStep = (e) => {
     e.preventDefault();
@@ -68,6 +68,31 @@ const MultiStep = () => {
       currentForm = (
         <Fragment>
           <Question />
+        </Fragment>
+      );
+      break;
+    case 5:
+      if (selectedOption.hasAboutYouStep) {
+        currentForm = (
+          <Fragment>
+            <AboutYou />
+            <Footer back={prevStep} next={nextStep} />
+          </Fragment>
+        );
+      } else {
+        currentForm = (
+          <Fragment>
+            <YourGuide />
+            <Footer back={prevStep} />
+          </Fragment>
+        );
+      }
+      break;
+    case 6:
+      currentForm = (
+        <Fragment>
+          <YourGuide />
+          <Footer back={prevStep} />
         </Fragment>
       );
       break;

@@ -129,6 +129,10 @@ const TriageState = (props) => {
         selectedOption.problemQuestions.length > 0
       ) {
         selectedOption.questionStep = 1;
+        //Initialize all question options to false
+        selectedOption.problemQuestions.map((pq) => {
+          return pq.options.map((opt) => (opt.checked = false));
+        });
       }
       step += 1;
       newOptions.filter((opt) => {
@@ -158,6 +162,32 @@ const TriageState = (props) => {
     const checkItem = selectedOption.aboutYouChecks[checkItemIndex];
     checkItem.checked = !checked;
     selectedOption.aboutYouChecks[checkItemIndex] = checkItem;
+    updateSelectedOption(selectedOption);
+  };
+
+  const checkQuestion = (itemId) => {
+    const currentSelectedOption = state.selectedOption;
+    const selectedOption = { ...currentSelectedOption };
+    let questionIndex = currentSelectedOption.problemQuestions.findIndex(
+      (el) => el.step === currentSelectedOption.questionStep
+    );
+    const question = currentSelectedOption.problemQuestions[questionIndex];
+    const checkItemIndex = question.options.findIndex((item) => {
+      return item.id === itemId;
+    });
+    const checked = question.options[checkItemIndex].checked;
+
+    const newQuestion = { ...question };
+    const checkItem = newQuestion.options[checkItemIndex];
+    checkItem.checked = !checked;
+    if (checkItem.checked) {
+      newQuestion.options.map((option, index) => {
+        if (index !== checkItemIndex && option.checked) option.checked = false;
+        return option;
+      });
+    } else newQuestion.options[checkItemIndex] = checkItem;
+
+    selectedOption.problemQuestions[questionIndex] = newQuestion;
     updateSelectedOption(selectedOption);
   };
 
@@ -210,6 +240,7 @@ const TriageState = (props) => {
         backQuestion,
         cardActivation,
         checkAboutYou,
+        checkQuestion,
         clearResults,
         next,
         nextQuestion,

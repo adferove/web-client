@@ -6,7 +6,12 @@ import Footer from '../../Footer/Footer';
 
 const Question = () => {
   const triageContext = useContext(TriageContext);
-  const { selectedOption, nextQuestion, backQuestion } = triageContext;
+  const {
+    selectedOption,
+    nextQuestion,
+    backQuestion,
+    checkQuestion,
+  } = triageContext;
   const nextStep = (e) => {
     e.preventDefault();
     nextQuestion();
@@ -37,6 +42,7 @@ const Question = () => {
             desc={item.desc}
             chk={item.checked}
             key={item.id}
+            clicked={() => checkQuestion(item.id)}
           />
         ))}
       </Section>
