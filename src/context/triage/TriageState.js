@@ -13,6 +13,8 @@ import {
   BACK_STEP,
   SEARCH_BAR,
   UPDATE_SELECTED_OPTION,
+  BACK_QUESTION,
+  NEXT_QUESTION,
 } from '../types';
 
 const TriageState = (props) => {
@@ -122,6 +124,12 @@ const TriageState = (props) => {
     newOptions[optionIndex] = selectedOption;
 
     if (selectedOption.active) {
+      if (
+        selectedOption.problemQuestions &&
+        selectedOption.problemQuestions.length > 0
+      ) {
+        selectedOption.questionStep = 1;
+      }
       step += 1;
       newOptions.filter((opt) => {
         if (opt.parent === selectedOption.id) {
@@ -153,6 +161,41 @@ const TriageState = (props) => {
     updateSelectedOption(selectedOption);
   };
 
+  const backQuestion = () => {
+    const currentSelectedOption = state.selectedOption;
+    const selectedOption = { ...currentSelectedOption };
+    if (
+      currentSelectedOption.questionStep > 1 &&
+      currentSelectedOption.questionStep <=
+        currentSelectedOption.problemQuestions.length
+    ) {
+      selectedOption.questionStep = currentSelectedOption.questionStep - 1;
+    } else {
+      back();
+    }
+    dispatch({
+      type: BACK_QUESTION,
+      payload: selectedOption,
+    });
+  };
+
+  const nextQuestion = () => {
+    const currentSelectedOption = state.selectedOption;
+    const selectedOption = { ...currentSelectedOption };
+    if (
+      currentSelectedOption.questionStep <
+      currentSelectedOption.problemQuestions.length
+    ) {
+      selectedOption.questionStep = currentSelectedOption.questionStep + 1;
+    } else {
+      next();
+    }
+    dispatch({
+      type: NEXT_QUESTION,
+      payload: selectedOption,
+    });
+  };
+
   return (
     <TriageContext.Provider
       value={{
@@ -164,10 +207,12 @@ const TriageState = (props) => {
         selectedOption: state.selectedOption,
         step: state.step,
         back,
+        backQuestion,
         cardActivation,
         checkAboutYou,
         clearResults,
         next,
+        nextQuestion,
         searchBarChange,
         searchProblemOptions,
         setLoading,

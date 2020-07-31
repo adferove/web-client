@@ -457,7 +457,8 @@ img {
   -ms-flex-direction: row;
   flex-direction: row;
   width: auto;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  margin-top: 1rem; }
 
 .land-la-problem-img {
   background-position: 50% 50%;

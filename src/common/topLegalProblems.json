@@ -62,7 +62,7 @@
     "imageYourGuide": "your-guide",
     "problemQuestions": [
       {
-        "id": 1,
+        "step": 1,
         "desc": "Where you in the high, medium or low range?",
         "multipleSelect": false,
         "options": [
@@ -93,7 +93,7 @@
         ]
       },
       {
-        "id": 2,
+        "step": 2,
         "desc": "Do you need to be in court in the next three days?",
         "multipleSelect": false,
         "options": [
