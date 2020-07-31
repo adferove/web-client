@@ -28,7 +28,6 @@ const MultiStep = () => {
     if (step === 1) {
       history.goBack();
     }
-    //scrollToTop();
   };
 
   const scrollToTop = () => {
