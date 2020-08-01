@@ -242,6 +242,7 @@ const TriageState = (props) => {
         checkAboutYou,
         checkQuestion,
         clearResults,
+
         next,
         nextQuestion,
         searchBarChange,

@@ -50,6 +50,7 @@
   {
     "id": "134",
     "title": "Drink Driving",
+    "key": "Drink Driving",
     "active": false,
     "parent": "13",
     "image": "drink-driving",
@@ -59,6 +60,7 @@
     "aboutYouStep2Title": "Do any of these apply to you?",
     "imageAboutYou": "about-you",
     "imageYourGuide": "your-guide",
+    "YourNextStepText": "<p>Based on the information you gave, <strong>you should get legal advice</strong></p>",
     "problemQuestions": [
       {
         "step": 1,
@@ -159,6 +161,38 @@
         "desc": "I am deaf, hard of hearing or have a speech impairment",
         "checked": false,
         "name": "ay-chk-8"
+      }
+    ],
+    "legalGuideFacts": [
+      {
+        "pos": 1,
+        "icon": "gavel",
+        "desc": "I have a Criminal Law problem",
+        "show": true
+      },
+      {
+        "pos": 2,
+        "icon": "driving",
+        "desc": "It's about Drink Driving (High Range)",
+        "show": true
+      },
+      {
+        "pos": 3,
+        "icon": "calendar",
+        "desc": "I need to be in court in the next 3 days",
+        "show": true
+      }
+    ],
+    "legalGuideSections": [
+      {
+        "pos": 1,
+        "title": "Who you can connect",
+        "content": "<p><strong>Call our helpline</strong></p><p>A telephone helpline that gives free legal information, referrals to other services and legal advice in some cases. Call 1300 888 529 or visit <a href='http://www.lawaccess.nsw.gov.au' target='_blank'><span style='color: rgb(111, 25, 46);'>www.lawaccess.nsw.gov.au</span></a></p><p><strong>Get help at court on the day</strong></p><p>On your court date there will be a duty lawyer available who can give you legal advice.&nbsp;</p>"
+      },
+      {
+        "pos": 2,
+        "title": "Where you can find more information",
+        "content": "<p><strong>&lsquo;Drink driving charges and you&rsquo; </strong></p><p>This brochure helps you prepare for court and explains the penalties for drink driving: &nbsp;<a href='http://www.legalaid.nsw.gov.au/publications/factsheets-and-resources/drink-driving-charges-and-you-pamphlet' rel='noopener noreferrer' target='_blank'><span style='color: rgb(111, 25, 46);'>www.legalaid.nsw.gov.au/publications/factsheets-and-resources/drink-driving-charges-and-you-pamphlet</span></a></p>"
       }
     ]
   },

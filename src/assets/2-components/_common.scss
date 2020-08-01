@@ -109,6 +109,9 @@
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   font-weight: 600;
+  &__no-bold {
+    font-weight: 500;
+  }
   // @media screen and (min-width: 64rem) {
   //   max-width: 29.375rem;
   //   padding-left: 0;
@@ -188,4 +191,34 @@
   line-height: 1.25;
   text-align: left;
   margin-bottom: 0.1rem;
+}
+
+.dic-yg-2 {
+  padding: 0.9375rem 1.25rem 0.9375rem 3.125rem;
+  background-position: 0.9375rem 1.2rem;
+}
+
+.dic-yg-2-img {
+  background-size: 1.625rem;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-position-x: 0.5rem;
+  &__gavel {
+    background-image: url(/images/gavel.svg);
+  }
+  &__calendar {
+    background-image: url(/images/calendar.svg);
+  }
+  &__debt {
+    background-image: url(/images/debt.svg);
+  }
+  &__driving {
+    background-image: url(/images/driving.svg);
+  }
+  &__family {
+    background-image: url(/images/family.svg);
+  }
+  &__individual {
+    background-image: url(/images/individual.svg);
+  }
 }

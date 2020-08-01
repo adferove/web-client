@@ -1011,6 +1011,8 @@ img {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   font-weight: 600; }
+  .dic-la-w-l11__no-bold {
+    font-weight: 500; }
 
 .dic-la-w-l12 {
   background-color: #002664;
@@ -1070,6 +1072,28 @@ img {
   line-height: 1.25;
   text-align: left;
   margin-bottom: 0.1rem; }
+
+.dic-yg-2 {
+  padding: 0.9375rem 1.25rem 0.9375rem 3.125rem;
+  background-position: 0.9375rem 1.2rem; }
+
+.dic-yg-2-img {
+  background-size: 1.625rem;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-position-x: 0.5rem; }
+  .dic-yg-2-img__gavel {
+    background-image: url(/images/gavel.svg); }
+  .dic-yg-2-img__calendar {
+    background-image: url(/images/calendar.svg); }
+  .dic-yg-2-img__debt {
+    background-image: url(/images/debt.svg); }
+  .dic-yg-2-img__driving {
+    background-image: url(/images/driving.svg); }
+  .dic-yg-2-img__family {
+    background-image: url(/images/family.svg); }
+  .dic-yg-2-img__individual {
+    background-image: url(/images/individual.svg); }
 
 .nsw-card {
   font-family: Montserrat, sans-serif;
