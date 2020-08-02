@@ -6,12 +6,14 @@ const Breadcrumb = ({ step, form }) => {
   let yourProblem = <Step title="Your problem" />;
   let aboutYou = <Step title="About you" />;
   let yourGuide = <Step title="Your guide" />;
+  let steps = 5;
   switch (form) {
     case 'YourProblem':
       yourProblem = <Step title="Your problem" active />;
       break;
     case 'AboutYou':
       aboutYou = <Step title="About you" active />;
+      steps = 6;
       break;
     case 'YourGuide':
       yourGuide = <Step title="Your guide" active />;
@@ -20,6 +22,15 @@ const Breadcrumb = ({ step, form }) => {
       yourProblem = <Step title="Your problem" active />;
       break;
   }
+
+  const current = step - 1;
+  const progressBar = Array(steps)
+    .fill(null)
+    .map((_, i) => {
+      if (i === current) return <li key={i} className="page-item active"></li>;
+      else return <li key={i} className="page-item "></li>;
+    });
+
   return (
     <Fragment>
       <div className="app-la-wrapper app-la-wrapper__breadcrumb">
@@ -41,13 +52,7 @@ const Breadcrumb = ({ step, form }) => {
         <div className="dic-la">
           <div className="dic-la-wrapper">
             <div className="bc-lay-m-1">
-              <ul className="pagination">
-                <li className="page-item "></li>
-                <li className="page-item"></li>
-                <li className="page-item"></li>
-                <li className="page-item active"></li>
-                <li className="page-item "></li>
-              </ul>
+              <ul className="pagination">{progressBar.map((item) => item)}</ul>
             </div>
           </div>
         </div>
