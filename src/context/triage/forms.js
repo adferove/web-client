@@ -1,0 +1,6 @@
+export const YOUR_PROBLEM = 'YOUR_PROBLEM';
+export const SELECT_ONE_OPTION = 'SELECT_ONE_OPTION';
+export const SELECTED_PROBLEM = 'SELECTED_PROBLEM';
+export const QUESTION = 'QUESTION';
+export const ABOUT_YOU = 'ABOUT_YOU';
+export const YOUR_LEGAL_GUIDE = 'YOUR_LEGAL_GUIDE';

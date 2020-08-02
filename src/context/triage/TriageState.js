@@ -54,10 +54,14 @@ const TriageState = (props) => {
     });
   };
 
-  const updateSelectedOption = (clonedOption) => {
+  const beforeNext = () => {
+    next();
+  };
+
+  const updateSelectedOption = (selectedOption) => {
     dispatch({
       type: UPDATE_SELECTED_OPTION,
-      payload: { clonedOption, step: state.step },
+      payload: selectedOption,
     });
   };
 
@@ -218,7 +222,7 @@ const TriageState = (props) => {
     ) {
       selectedOption.questionStep = currentSelectedOption.questionStep + 1;
     } else {
-      next();
+      beforeNext();
     }
     dispatch({
       type: NEXT_QUESTION,
@@ -229,20 +233,20 @@ const TriageState = (props) => {
   return (
     <TriageContext.Provider
       value={{
-        problemOptionSubtitle: state.problemOptionSubtitle,
-        problemOptionTitle: state.problemOptionTitle,
         loading: state.loading,
         problemOptions: state.problemOptions,
+        problemOptionSubtitle: state.problemOptionSubtitle,
+        problemOptionTitle: state.problemOptionTitle,
         search: state.search,
         selectedOption: state.selectedOption,
         step: state.step,
         back,
         backQuestion,
+        beforeNext,
         cardActivation,
         checkAboutYou,
         checkQuestion,
         clearResults,
-
         next,
         nextQuestion,
         searchBarChange,

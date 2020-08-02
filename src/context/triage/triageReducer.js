@@ -57,8 +57,7 @@ export default (state, action) => {
     case UPDATE_SELECTED_OPTION:
       return {
         ...state,
-        selectedOption: action.payload.clonedOption,
-        step: action.payload.step,
+        selectedOption: action.payload,
       };
     case BACK_QUESTION:
       return {
@@ -70,6 +69,7 @@ export default (state, action) => {
         ...state,
         selectedOption: action.payload,
       };
+
     default:
       return state;
   }

@@ -14,12 +14,12 @@ import TriageContext from '../../context/triage/triageContext';
 const MultiStep = () => {
   let history = useHistory();
   const triageContext = useContext(TriageContext);
-  const { step, next, back, selectedOption } = triageContext;
+  const { step, beforeNext, back, selectedOption } = triageContext;
 
   const nextStep = (e) => {
     e.preventDefault();
     scrollToTop();
-    next();
+    beforeNext();
   };
 
   const prevStep = (e) => {
