@@ -240,7 +240,7 @@ const TriageState = (props) => {
           })
           .filter((item) => item);
         const fixedFacts = selectedOption.legalGuideFacts.filter(
-          (item) => item.fixed
+          (item) => item.firm
         );
         fixedFacts.push(...yourLegalFacts);
         selectedOption.legalGuideFacts = fixedFacts;

@@ -182,7 +182,7 @@
         "icon": "gavel",
         "desc": "I have a Criminal Law problem",
         "show": true,
-        "fixed": true
+        "firm": true
       }
     ],
     "legalGuideSections": [
