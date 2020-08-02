@@ -56,6 +56,7 @@
     "image": "drink-driving",
     "desc": "Legal Aid NSW <b>does</b> provide support  for this legal matter. You will soon be provided with a guide which will help you prepare for the next steps in your legal situation.",
     "note": "<p><strong>Please note</strong></p><p>If you answer &lsquo;YES&rsquo; to either of these questions, you should seek legal help as soon as possible:&nbsp;</p><ol> <li>Is this a mid to high range drink driving offence?</li><li>Have you been convicted of any drink driving offences in the last five years?</li></ol>",
+    "hasSelectedProblemStep": true,
     "hasAboutYouStep": false,
     "aboutYouStep2Title": "Do any of these apply to you?",
     "imageAboutYou": "about-you",

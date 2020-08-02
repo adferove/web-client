@@ -6,6 +6,7 @@ import AboutYou from '../../components/MultiStep/AboutYou/AboutYou';
 import SelectOneOption from '../../components/MultiStep/YourProblem/SelectOneOption/SelectOneOption';
 import SelectedProblem from '../../components/MultiStep/YourProblem/SelectedProblem/SelectedProblem';
 import Question from '../../components/MultiStep/YourProblem/Question/Question';
+import WorkInProgress from '../../components/MultiStep/YourProblem/WorkInProgress/WorkInProgress';
 
 import YourGuide from '../../components/MultiStep/YourGuide/YourGuide';
 import Footer from '../../components/MultiStep/Footer/Footer';
@@ -14,7 +15,13 @@ import TriageContext from '../../context/triage/triageContext';
 const MultiStep = () => {
   let history = useHistory();
   const triageContext = useContext(TriageContext);
-  const { step, beforeNext, back, selectedOption } = triageContext;
+  const {
+    step,
+    beforeNext,
+    back,
+    selectedOption,
+    problemOptions,
+  } = triageContext;
 
   const nextStep = (e) => {
     e.preventDefault();
@@ -49,20 +56,39 @@ const MultiStep = () => {
       );
       break;
     case 2:
-      currentForm = (
-        <Fragment>
-          <SelectOneOption />
-          <Footer back={prevStep} />
-        </Fragment>
-      );
+      const existStep2 = problemOptions.find((problem) => problem.step === 2);
+      if (existStep2) {
+        currentForm = (
+          <Fragment>
+            <SelectOneOption />
+            <Footer back={prevStep} />
+          </Fragment>
+        );
+      } else {
+        currentForm = (
+          <Fragment>
+            <WorkInProgress />
+            <Footer back={prevStep} />
+          </Fragment>
+        );
+      }
       break;
     case 3:
-      currentForm = (
-        <Fragment>
-          <SelectedProblem />
-          <Footer back={prevStep} next={nextStep} />
-        </Fragment>
-      );
+      if (selectedOption.hasSelectedProblemStep) {
+        currentForm = (
+          <Fragment>
+            <SelectedProblem />
+            <Footer back={prevStep} next={nextStep} />
+          </Fragment>
+        );
+      } else {
+        currentForm = (
+          <Fragment>
+            <WorkInProgress />
+            <Footer back={prevStep} />
+          </Fragment>
+        );
+      }
       break;
     case 4:
       currentForm = (
