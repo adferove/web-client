@@ -45,7 +45,7 @@ const MultiStep = () => {
   };
 
   let currentForm = null;
-
+  let form = 'YourProblem';
   switch (step) {
     case 1:
       currentForm = (
@@ -99,6 +99,7 @@ const MultiStep = () => {
       break;
     case 5:
       if (selectedOption.hasAboutYouStep) {
+        form = 'AboutYou';
         currentForm = (
           <Fragment>
             <AboutYou />
@@ -106,6 +107,7 @@ const MultiStep = () => {
           </Fragment>
         );
       } else {
+        form = 'YourGuide';
         currentForm = (
           <Fragment>
             <YourGuide />
@@ -115,6 +117,7 @@ const MultiStep = () => {
       }
       break;
     case 6:
+      form = 'YourGuide';
       currentForm = (
         <Fragment>
           <YourGuide />
@@ -127,7 +130,7 @@ const MultiStep = () => {
   }
   return (
     <Fragment>
-      <Breadcrumb step={step} />
+      <Breadcrumb step={step} form={form} />
       {currentForm}
     </Fragment>
   );

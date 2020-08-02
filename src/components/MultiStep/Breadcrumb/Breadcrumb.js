@@ -2,18 +2,18 @@ import React, { Fragment } from 'react';
 import Step from './Step/Step';
 import Arrow from './Arrow/Arrow';
 
-const Breadcrumb = ({ step }) => {
+const Breadcrumb = ({ step, form }) => {
   let yourProblem = <Step title="Your problem" />;
   let aboutYou = <Step title="About you" />;
   let yourGuide = <Step title="Your guide" />;
-  switch (step) {
-    case 1:
+  switch (form) {
+    case 'YourProblem':
       yourProblem = <Step title="Your problem" active />;
       break;
-    case 2:
+    case 'AboutYou':
       aboutYou = <Step title="About you" active />;
       break;
-    case 3:
+    case 'YourGuide':
       yourGuide = <Step title="Your guide" active />;
       break;
     default:
