@@ -1,20 +1,32 @@
 import React, { Fragment, useContext } from 'react';
 import TriageContext from '../../../../context/triage/triageContext';
+import NotificationContext from '../../../../context/notification/notificationContext';
+import Notification from '../../../../UI/Notification/Notification';
 import Section from '../../../common/Section/Section';
 import CheckBox from '../../../common/CheckBox/CheckBox';
 import Footer from '../../Footer/Footer';
 
 const Question = () => {
+  const notificationContext = useContext(NotificationContext);
   const triageContext = useContext(TriageContext);
+
+  const { notificationHandler } = notificationContext;
+
   const {
     selectedOption,
     nextQuestion,
     backQuestion,
     checkQuestion,
   } = triageContext;
+
   const nextStep = (e) => {
     e.preventDefault();
-    nextQuestion();
+    let question = selectedOption.problemQuestions.find(
+      (el) => el.step === selectedOption.questionStep
+    );
+    const selection = question.options.find((option) => option.checked);
+    if (selection) nextQuestion();
+    else notificationHandler('Please select one option', 'error');
   };
 
   const prevStep = (e) => {
@@ -30,6 +42,7 @@ const Question = () => {
 
   return (
     <Fragment>
+      <Notification />
       <Section preTitle={stepOf} title={selectedOption.title}></Section>
       <Section grey>
         <div className="land-la-w-l11">

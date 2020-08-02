@@ -12,6 +12,10 @@ const YourGuide = () => {
     'land-la-problem-img__' + selectedOption.imageYourGuide,
   ].join(' ');
 
+  const activeFacts = selectedOption.legalGuideFacts.filter(
+    (item) => item.show
+  );
+
   return (
     <Fragment>
       <Section
@@ -22,10 +26,10 @@ const YourGuide = () => {
       </Section>
       <Section grey>
         <div className="dic-la-w-l11 dic-la-w-l11__no-bold">
-          {selectedOption.legalGuideFacts.map((fact) => {
-            let style = `dic-yg-2 dic-yg-2-img dic-yg-2-img__${fact.icon}`;
+          {activeFacts.map((fact) => {
+            let factStyle = `dic-yg-2 dic-yg-2-img dic-yg-2-img__${fact.icon}`;
             return (
-              <div key={fact.pos} className={style}>
+              <div key={fact.pos} className={factStyle}>
                 {fact.desc}
               </div>
             );

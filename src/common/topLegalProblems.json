@@ -50,7 +50,7 @@
   {
     "id": "134",
     "title": "Drink Driving",
-    "key": "Drink Driving",
+    "key": "Drink driving",
     "active": false,
     "parent": "13",
     "image": "drink-driving",
@@ -66,30 +66,39 @@
         "step": 1,
         "desc": "Where you in the high, medium or low range?",
         "multipleSelect": false,
+        "icon": "driving",
         "options": [
           {
             "id": 1,
             "desc": "Low",
             "checked": false,
-            "name": "ay-chk-1"
+            "name": "ay-chk-1",
+            "showResult": true,
+            "resultLabel": "It's about Drink Driving (Low Range)"
           },
           {
             "id": 2,
             "desc": "Medium",
             "checked": false,
-            "name": "ay-chk-2"
+            "name": "ay-chk-2",
+            "showResult": true,
+            "resultLabel": "It's about Drink Driving (Medium Range)"
           },
           {
             "id": 3,
             "desc": "High",
             "checked": false,
-            "name": "ay-chk-3"
+            "name": "ay-chk-3",
+            "showResult": true,
+            "resultLabel": "It's about Drink Driving (High Range)"
           },
           {
             "id": 4,
             "desc": "I'm not sure",
             "checked": false,
-            "name": "ay-chk-4"
+            "name": "ay-chk-4",
+            "showResult": true,
+            "resultLabel": "It's about Drink Driving (I'm not sure about the range)"
           }
         ]
       },
@@ -97,18 +106,22 @@
         "step": 2,
         "desc": "Do you need to be in court in the next three days?",
         "multipleSelect": false,
+        "icon": "calendar",
         "options": [
           {
             "id": 1,
             "desc": "Yes",
             "checked": false,
-            "name": "ay-chk-1"
+            "name": "ay-chk-1",
+            "showResult": true,
+            "resultLabel": "I need to be in court in the next 3 days"
           },
           {
             "id": 2,
             "desc": "No",
             "checked": false,
-            "name": "ay-chk-2"
+            "name": "ay-chk-2",
+            "showResult": false
           }
         ]
       }
@@ -168,19 +181,8 @@
         "pos": 1,
         "icon": "gavel",
         "desc": "I have a Criminal Law problem",
-        "show": true
-      },
-      {
-        "pos": 2,
-        "icon": "driving",
-        "desc": "It's about Drink Driving (High Range)",
-        "show": true
-      },
-      {
-        "pos": 3,
-        "icon": "calendar",
-        "desc": "I need to be in court in the next 3 days",
-        "show": true
+        "show": true,
+        "fixed": true
       }
     ],
     "legalGuideSections": [
