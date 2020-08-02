@@ -13,8 +13,6 @@ import {
   BACK_STEP,
   SEARCH_BAR,
   UPDATE_SELECTED_OPTION,
-  BACK_QUESTION,
-  NEXT_QUESTION,
 } from '../types';
 
 const TriageState = (props) => {
@@ -47,7 +45,8 @@ const TriageState = (props) => {
   };
 
   const next = () => {
-    let payload = state.step + 1;
+    const step = state.step;
+    let payload = step + 1;
     dispatch({
       type: NEXT_STEP,
       payload,
@@ -109,7 +108,6 @@ const TriageState = (props) => {
 
   const cardActivation = (optionId) => {
     const currentStep = state.step;
-    let step = currentStep;
     const currentOptions = state.problemOptions;
     const optionIndex = currentOptions.findIndex((option) => {
       return option.id === optionId;
@@ -138,7 +136,8 @@ const TriageState = (props) => {
           return pq.options.map((opt) => (opt.checked = false));
         });
       }
-      step += 1;
+      beforeNext();
+      let step = currentStep + 1;
       newOptions.filter((opt) => {
         if (opt.parent === selectedOption.id) {
           opt.step = step;
@@ -150,10 +149,10 @@ const TriageState = (props) => {
         return opt;
       });
     }
-
+    updateSelectedOption(selectedOption);
     dispatch({
       type: CARD_ACTIVATION,
-      payload: { problemOptions: newOptions, selectedOption, step },
+      payload: newOptions,
     });
   };
 
@@ -207,10 +206,7 @@ const TriageState = (props) => {
     } else {
       back();
     }
-    dispatch({
-      type: BACK_QUESTION,
-      payload: selectedOption,
-    });
+    updateSelectedOption(selectedOption);
   };
 
   const nextQuestion = () => {
@@ -224,10 +220,7 @@ const TriageState = (props) => {
     } else {
       beforeNext();
     }
-    dispatch({
-      type: NEXT_QUESTION,
-      payload: selectedOption,
-    });
+    updateSelectedOption(selectedOption);
   };
 
   return (

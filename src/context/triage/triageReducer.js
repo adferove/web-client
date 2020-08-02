@@ -7,8 +7,6 @@ import {
   BACK_STEP,
   SEARCH_BAR,
   UPDATE_SELECTED_OPTION,
-  BACK_QUESTION,
-  NEXT_QUESTION,
 } from '../types';
 
 export default (state, action) => {
@@ -35,9 +33,7 @@ export default (state, action) => {
     case CARD_ACTIVATION:
       return {
         ...state,
-        problemOptions: action.payload.problemOptions,
-        selectedOption: action.payload.selectedOption,
-        step: action.payload.step,
+        problemOptions: action.payload,
       };
     case NEXT_STEP:
       return {
@@ -59,17 +55,6 @@ export default (state, action) => {
         ...state,
         selectedOption: action.payload,
       };
-    case BACK_QUESTION:
-      return {
-        ...state,
-        selectedOption: action.payload,
-      };
-    case NEXT_QUESTION:
-      return {
-        ...state,
-        selectedOption: action.payload,
-      };
-
     default:
       return state;
   }
