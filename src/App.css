@@ -477,6 +477,8 @@ img {
   transform: scaleX(-1); }
   .land-la-problem-img__drink-driving {
     background-image: url(/images/drink-driving.svg); }
+  .land-la-problem-img__parenting-arrangements {
+    background-image: url(/images/parenting-arrangements.svg); }
   .land-la-problem-img__about-you {
     background-image: url(/images/about-you1.svg); }
     @media screen and (min-width: 30rem) {

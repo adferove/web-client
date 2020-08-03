@@ -30,6 +30,191 @@
     "active": false
   },
   {
+    "id": "111",
+    "title": "Adoption",
+    "active": false,
+    "parent": "11"
+  },
+  {
+    "id": "112",
+    "title": "Care Arrangements",
+    "active": false,
+    "parent": "11"
+  },
+  {
+    "id": "113",
+    "title": "Child Support",
+    "active": false,
+    "parent": "11"
+  },
+  {
+    "id": "114",
+    "title": "Divorce",
+    "active": false,
+    "parent": "11"
+  },
+  {
+    "id": "115",
+    "title": "Domestic Violence",
+    "active": false,
+    "parent": "11"
+  },
+  {
+    "id": "116",
+    "title": "Family Law Children",
+    "active": false,
+    "parent": "11"
+  },
+  {
+    "id": "117",
+    "title": "Guardianship",
+    "active": false,
+    "parent": "11"
+  },
+
+  {
+    "id": "118",
+    "title": "Parenting Arrangements",
+    "key": "Parenting arrangements",
+    "active": false,
+    "parent": "11",
+    "image": "parenting-arrangements",
+    "desc": "Legal Aid NSW <b>does</b> give support for this legal matter.",
+    "note": "You will be asked a few questions to find out what information might help and if you need legal advice.",
+    "hasSelectedProblemStep": true,
+    "hasAboutYouStep": true,
+    "aboutYouStep2Title": "Do any of these apply to you?",
+    "imageAboutYou": "about-you",
+    "imageYourGuide": "your-guide",
+    "YourNextStepText": "<p>Based on the information you gave, <strong>you should get legal advice</strong></p>",
+    "problemQuestions": [
+      {
+        "step": 1,
+        "desc": "Are you worried about the immediate safety of your children?",
+        "multipleSelect": false,
+        "icon": "driving",
+        "options": [
+          {
+            "id": 1,
+            "desc": "Yes",
+            "checked": false,
+            "name": "ay-chk-1",
+            "showResult": false,
+            "resultLabel": "It's about "
+          },
+          {
+            "id": 2,
+            "desc": "No",
+            "checked": false,
+            "name": "ay-chk-2",
+            "showResult": false,
+            "resultLabel": "It's about "
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "desc": "Do you need help with parenting arrangements for your children?",
+        "multipleSelect": false,
+        "icon": "driving",
+        "options": [
+          {
+            "id": 1,
+            "desc": "Yes",
+            "checked": false,
+            "name": "ay-chk-1",
+            "showResult": false,
+            "resultLabel": "It's about "
+          },
+          {
+            "id": 2,
+            "desc": "No",
+            "checked": false,
+            "name": "ay-chk-2",
+            "showResult": false,
+            "resultLabel": "It's about "
+          }
+        ]
+      }
+    ],
+    "aboutYouChecks": [
+      {
+        "id": 1,
+        "desc": "I’m under the age of 18",
+        "checked": false,
+        "name": "ay-chk-1"
+      },
+      {
+        "id": 2,
+        "desc": "I’m Aboriginal or Torres Straight Islander",
+        "checked": false,
+        "name": "ay-chk-2"
+      },
+      {
+        "id": 3,
+        "desc": "I’m on the maximum Centrelink benefit",
+        "checked": false,
+        "name": "ay-chk-3"
+      },
+      {
+        "id": 4,
+        "desc": "I'm experiencing or at risk of family violence",
+        "checked": false,
+        "name": "ay-chk-4"
+      },
+      {
+        "id": 5,
+        "desc": "I'm a refugee or asylum seeker",
+        "checked": false,
+        "name": "ay-chk-5"
+      },
+      {
+        "id": 6,
+        "desc": "I'm experiencing or at risk of homelessness",
+        "checked": false,
+        "name": "ay-chk-6"
+      },
+      {
+        "id": 7,
+        "desc": "None of these",
+        "checked": false,
+        "name": "ay-chk-7"
+      }
+    ],
+    "legalGuideFacts": [
+      {
+        "pos": 1,
+        "icon": "gavel",
+        "desc": "I have a <strong>Family Law</strong> problem",
+        "show": true,
+        "firm": true
+      }
+    ],
+    "legalGuideSections": [
+      {
+        "pos": 1,
+        "title": "Who you can connect",
+        "content": "<p><strong>Contact your local Legal Aid NSW office to book an appointment</strong></p><p><a href='//www.legalaid.nsw.gov.au/contact-us/legal-aid-nsw-offices' target='_blank'><span style='color: rgb(111, 25, 46);'>www.legalaid.nsw.gov.au/contact-us/legal-aid-nsw-offices</span></a></p><p>Before your appointment, you can find out more about your problem</p>"
+      },
+      {
+        "pos": 2,
+        "title": "Where you can find more information",
+        "content": "<p><strong>&lsquo;What happens when your relationship ends&rsquo; </strong></p><p>A factsheet with answers to questions about your family, your children and your property: <a href='https://www.legalaid.nsw.gov.au/publications/factsheets-and-resources/what-happens-when-your-relationship-ends' target='_blank'><span style='color: rgb(111, 25, 46);'>https://www.legalaid.nsw.gov.au/publications/factsheets-and-resources/what-happens-when-your-relationship-ends</span></a>&nbsp;</p>"
+      },
+      {
+        "pos": 3,
+        "title": "Use a self-help tool",
+        "content": "<p><strong>Arrangements for children </strong></p><p>&lsquo;Can I make arrangements for my children without going to court?&rsquo; <a href='https://familyviolencelaw.gov.au/family-law/arrangements-for-children/how-to-make-arrangments-for-children-without-going-to-court/' rel='noopener noreferrer' target='_blank'><span style='color: rgb(111, 25, 46);'>https://familyviolencelaw.gov.au/family-law/arrangements-for-children/how-to-make-arrangments-for-children-without-going-to-court/</span></a></p><p><strong>&lsquo;amica&rsquo; &nbsp;</strong></p><p>amica helps separated couples to: make parenting arrangements if they have children, and divide their money and property simply. <a href='https://amica.gov.au/' rel='noopener noreferrer' target='_blank'><span style='color: rgb(111, 25, 46);'>https://amica.gov.au/</span></a></p>"
+      }
+    ]
+  },
+  {
+    "id": "119",
+    "title": "Parenting Plan",
+    "active": false,
+    "parent": "11"
+  },
+  {
     "id": "131",
     "title": "Apprehended Violence Orders (AVOs)",
     "active": false,
@@ -210,5 +395,19 @@
     "title": "Juvenile Justice",
     "active": false,
     "parent": "13"
+  },
+  {
+    "id": "141",
+    "title": "Fences",
+    "key": "Fences",
+    "active": false,
+    "parent": "14"
+  },
+  {
+    "id": "151",
+    "title": "Debts Between People",
+    "key": "Debts between people",
+    "active": false,
+    "parent": "15"
   }
 ]
