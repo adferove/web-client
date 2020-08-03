@@ -2,7 +2,7 @@ import React, { useReducer } from 'react';
 import TriageContext from './triageContext';
 import TriageReducer from './triageReducer';
 import Api from '../../common/api';
-import topLegalProblems from '../../common/topLegalProblems.json';
+import LegalProblems from '../../common/data/legalProblems.json';
 
 import {
   SEARCH_PROBLEM_OPTIONS,
@@ -20,7 +20,7 @@ import { DRINK_DRIVING } from './problems';
 
 const TriageState = (props) => {
   const legalProblems = () => {
-    const results = [...topLegalProblems];
+    const results = [...LegalProblems];
     return results.filter((item) => {
       if (item.parent === undefined) {
         item.step = 1;
