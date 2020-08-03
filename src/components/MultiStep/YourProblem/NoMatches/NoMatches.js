@@ -4,13 +4,13 @@ const NoMatches = () => {
   return (
     <div className="dic-la-w-l11 dic-la-w-l11__no-bold">
       <p>
-        <strong>Sugestions</strong>
+        <strong>Suggestions</strong>
       </p>
       <ul>
         <li>Make sure all words are spelled correctly</li>
         <li>Try different search terms</li>
         <li>Try more general search terms</li>
-        <li>Try fewers search terms</li>
+        <li>Try fewer search terms</li>
       </ul>
 
       <p>
