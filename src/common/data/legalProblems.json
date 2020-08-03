@@ -54,8 +54,8 @@
     "active": false,
     "parent": "13",
     "image": "drink-driving",
-    "desc": "Legal Aid NSW <b>does</b> provide support  for this legal matter. You will soon be provided with a guide which will help you prepare for the next steps in your legal situation.",
-    "note": "<p><strong>Please note</strong></p><p>If you answer &lsquo;YES&rsquo; to either of these questions, you should seek legal help as soon as possible:&nbsp;</p><ol> <li>Is this a mid to high range drink driving offence?</li><li>Have you been convicted of any drink driving offences in the last five years?</li></ol>",
+    "desc": "Legal Aid NSW <b>does</b> give support for this legal matter.",
+    "note": "You will be asked a few questions to find out what information might help and if you need legal advice.",
     "hasSelectedProblemStep": true,
     "hasAboutYouStep": false,
     "aboutYouStep2Title": "Do any of these apply to you?",
@@ -75,7 +75,7 @@
             "checked": false,
             "name": "ay-chk-1",
             "showResult": true,
-            "resultLabel": "It's about Drink Driving (Low Range)"
+            "resultLabel": "It's about Drink Driving (<strong>Low Range</strong>)"
           },
           {
             "id": 2,
@@ -83,7 +83,7 @@
             "checked": false,
             "name": "ay-chk-2",
             "showResult": true,
-            "resultLabel": "It's about Drink Driving (Medium Range)"
+            "resultLabel": "It's about Drink Driving (<strong>Medium Range</strong>)"
           },
           {
             "id": 3,
@@ -91,7 +91,7 @@
             "checked": false,
             "name": "ay-chk-3",
             "showResult": true,
-            "resultLabel": "It's about Drink Driving (High Range)"
+            "resultLabel": "It's about Drink Driving (<strong>High Range</strong>)"
           },
           {
             "id": 4,
@@ -99,7 +99,7 @@
             "checked": false,
             "name": "ay-chk-4",
             "showResult": true,
-            "resultLabel": "It's about Drink Driving (I'm not sure about the range)"
+            "resultLabel": "It's about Drink Driving (<strong>I'm not sure about the range</strong>)"
           }
         ]
       },
@@ -115,7 +115,7 @@
             "checked": false,
             "name": "ay-chk-1",
             "showResult": true,
-            "resultLabel": "I need to be in court in the next 3 days"
+            "resultLabel": "I need to be in court in the <strong>next 3 days</strong>"
           },
           {
             "id": 2,
@@ -181,7 +181,7 @@
       {
         "pos": 1,
         "icon": "gavel",
-        "desc": "I have a Criminal Law problem",
+        "desc": "I have a <strong>Criminal Law</strong> problem",
         "show": true,
         "firm": true
       }
@@ -190,7 +190,7 @@
       {
         "pos": 1,
         "title": "Who you can connect",
-        "content": "<p><strong>Call our helpline</strong></p><p>A telephone helpline that gives free legal information, referrals to other services and legal advice in some cases. Call 1300 888 529 or visit <a href='http://www.lawaccess.nsw.gov.au' target='_blank'><span style='color: rgb(111, 25, 46);'>www.lawaccess.nsw.gov.au</span></a></p><p><strong>Get help at court on the day</strong></p><p>On your court date there will be a duty lawyer available who can give you legal advice.&nbsp;</p>"
+        "content": "<p><strong>Call our helpline</strong></p><p>A telephone helpline that gives free legal information, referrals to other services and legal advice in some cases. Call <strong>1300 888 529</strong> or visit <a href='http://www.lawaccess.nsw.gov.au' target='_blank'><span style='color: rgb(111, 25, 46);'>www.lawaccess.nsw.gov.au</span></a></p><p><strong>Get help at court on the day</strong></p><p>On your court date there will be a duty lawyer available who can give you legal advice.&nbsp;</p>"
       },
       {
         "pos": 2,

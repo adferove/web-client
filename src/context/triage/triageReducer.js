@@ -16,8 +16,6 @@ export default (state, action) => {
       return {
         ...state,
         problemOptions: action.payload.problemOptions,
-        problemOptionSubtitle: action.payload.problemOptionSubtitle,
-        problemOptionTitle: action.payload.problemOptionTitle,
         step: action.payload.step,
         loading: false,
         noMatches: action.payload.noMatches,

@@ -18,10 +18,7 @@ const YourGuide = () => {
 
   return (
     <Fragment>
-      <Section
-        preTitle={`Legal problem: ${selectedOption.title}`}
-        title="Your legal guide"
-      >
+      <Section preTitle="Your results summary" title="Legal guide">
         <div className={style} />
       </Section>
       <Section grey>
@@ -29,9 +26,11 @@ const YourGuide = () => {
           {activeFacts.map((fact) => {
             let factStyle = `dic-yg-2 dic-yg-2-img dic-yg-2-img__${fact.icon}`;
             return (
-              <div key={fact.pos} className={factStyle}>
-                {fact.desc}
-              </div>
+              <div
+                key={fact.pos}
+                className={factStyle}
+                dangerouslySetInnerHTML={{ __html: fact.desc }}
+              ></div>
             );
           })}
         </div>

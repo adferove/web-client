@@ -9,17 +9,15 @@ import TriageContext from '../../../context/triage/triageContext';
 
 const YourProblem = () => {
   const triageContext = useContext(TriageContext);
-  const {
-    problemOptionSubtitle,
-    problemOptionTitle,
-    loading,
-    noMatches,
-  } = triageContext;
+  const { loading, noMatches } = triageContext;
   console.log(noMatches);
   return (
     <Fragment>
       <Notification />
-      <Section preTitle="Using your own words" title="Describe your problem">
+      <Section
+        preTitle="Using your own words"
+        title="Tell us about your problem"
+      >
         <Search />
         {loading && <Loading />}
       </Section>
@@ -31,7 +29,11 @@ const YourProblem = () => {
           <Section></Section>
         </Fragment>
       )}
-      <Section preTitle={problemOptionSubtitle} title={problemOptionTitle} grey>
+      <Section
+        preTitle="Not sure what you’re looking for?"
+        title="Choose from these common problems"
+        grey
+      >
         <Cards />
       </Section>
     </Fragment>

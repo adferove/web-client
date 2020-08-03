@@ -31,8 +31,6 @@ const TriageState = (props) => {
 
   const initialState = {
     noMatches: false,
-    problemOptionSubtitle: 'Not sure what you’re looking for?',
-    problemOptionTitle: 'Select from these common problems',
     problemOptions: legalProblems(),
     loading: false,
     search: '',
@@ -107,8 +105,6 @@ const TriageState = (props) => {
       let step = state.step + 1;
       let payload = {
         problemOptions: problems,
-        problemOptionSubtitle: 'Based on your search',
-        problemOptionTitle: 'Please select your legal problem',
         step,
         noMatches: false,
       };
@@ -276,8 +272,7 @@ const TriageState = (props) => {
         loading: state.loading,
         noMatches: state.noMatches,
         problemOptions: state.problemOptions,
-        problemOptionSubtitle: state.problemOptionSubtitle,
-        problemOptionTitle: state.problemOptionTitle,
+
         search: state.search,
         selectedOption: state.selectedOption,
         step: state.step,
