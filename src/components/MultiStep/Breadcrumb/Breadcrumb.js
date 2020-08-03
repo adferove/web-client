@@ -2,24 +2,35 @@ import React, { Fragment } from 'react';
 import Step from './Step/Step';
 import Arrow from './Arrow/Arrow';
 
-const Breadcrumb = ({ step }) => {
+const Breadcrumb = ({ step, form }) => {
   let yourProblem = <Step title="Your problem" />;
   let aboutYou = <Step title="About you" />;
   let yourGuide = <Step title="Your guide" />;
-  switch (step) {
-    case 1:
+  let steps = 5;
+  switch (form) {
+    case 'YourProblem':
       yourProblem = <Step title="Your problem" active />;
       break;
-    case 2:
+    case 'AboutYou':
       aboutYou = <Step title="About you" active />;
+      steps = 6;
       break;
-    case 3:
+    case 'YourGuide':
       yourGuide = <Step title="Your guide" active />;
       break;
     default:
       yourProblem = <Step title="Your problem" active />;
       break;
   }
+
+  const current = step - 1;
+  const progressBar = Array(steps)
+    .fill(null)
+    .map((_, i) => {
+      if (i === current) return <li key={i} className="page-item active"></li>;
+      else return <li key={i} className="page-item "></li>;
+    });
+
   return (
     <Fragment>
       <div className="app-la-wrapper app-la-wrapper__breadcrumb">
@@ -37,17 +48,11 @@ const Breadcrumb = ({ step }) => {
           </div>
         </div>
       </div>
-      {false && (
+      {true && (
         <div className="dic-la">
           <div className="dic-la-wrapper">
             <div className="bc-lay-m-1">
-              <ul className="pagination">
-                <li className="page-item "></li>
-                <li className="page-item"></li>
-                <li className="page-item"></li>
-                <li className="page-item active"></li>
-                <li className="page-item "></li>
-              </ul>
+              <ul className="pagination">{progressBar.map((item) => item)}</ul>
             </div>
           </div>
         </div>

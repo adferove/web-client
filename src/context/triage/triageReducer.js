@@ -7,6 +7,7 @@ import {
   BACK_STEP,
   SEARCH_BAR,
   UPDATE_SELECTED_OPTION,
+  NO_MATCHES,
 } from '../types';
 
 export default (state, action) => {
@@ -17,7 +18,9 @@ export default (state, action) => {
         problemOptions: action.payload.problemOptions,
         problemOptionSubtitle: action.payload.problemOptionSubtitle,
         problemOptionTitle: action.payload.problemOptionTitle,
+        step: action.payload.step,
         loading: false,
+        noMatches: action.payload.noMatches,
       };
     case CLEAR_RESULTS:
       return {
@@ -32,9 +35,7 @@ export default (state, action) => {
     case CARD_ACTIVATION:
       return {
         ...state,
-        problemOptions: action.payload.problemOptions,
-        selectedOption: action.payload.selectedOption,
-        step: action.payload.step,
+        problemOptions: action.payload,
       };
     case NEXT_STEP:
       return {
@@ -54,8 +55,13 @@ export default (state, action) => {
     case UPDATE_SELECTED_OPTION:
       return {
         ...state,
-        selectedOption: action.payload.clonedOption,
-        step: action.payload.step,
+        selectedOption: action.payload,
+      };
+    case NO_MATCHES:
+      return {
+        ...state,
+        loading: false,
+        noMatches: action.payload,
       };
     default:
       return state;

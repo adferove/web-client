@@ -1,9 +1,9 @@
 import React, { useReducer } from 'react';
 import TriageContext from './triageContext';
 import TriageReducer from './triageReducer';
-//import Api from '../../common/api';
+import Api from '../../common/api';
 import topLegalProblems from '../../common/topLegalProblems.json';
-import drinkDrivingProblems from '../../common/drinkDrivingProblems.json';
+
 import {
   SEARCH_PROBLEM_OPTIONS,
   SET_LOADING,
@@ -13,13 +13,27 @@ import {
   BACK_STEP,
   SEARCH_BAR,
   UPDATE_SELECTED_OPTION,
+  NO_MATCHES,
 } from '../types';
 
+import { DRINK_DRIVING } from './problems';
+
 const TriageState = (props) => {
+  const legalProblems = () => {
+    const results = [...topLegalProblems];
+    return results.filter((item) => {
+      if (item.parent === undefined) {
+        item.step = 1;
+      }
+      return item;
+    });
+  };
+
   const initialState = {
+    noMatches: false,
     problemOptionSubtitle: 'Not sure what you’re looking for?',
     problemOptionTitle: 'Select from these common problems',
-    problemOptions: topLegalProblems,
+    problemOptions: legalProblems(),
     loading: false,
     search: '',
     selectedOption: null,
@@ -35,36 +49,29 @@ const TriageState = (props) => {
   };
 
   const next = () => {
-    let payload = null;
-    if (state.step === 2) {
-      if (
-        state.selectedOption.aboutYouSteps > 1 &&
-        state.selectedOption.aboutYouCurrent <
-          state.selectedOption.aboutYouSteps
-      ) {
-        const clonedOption = { ...state.selectedOption };
-        const increment = state.selectedOption.aboutYouCurrent + 1;
-        clonedOption.aboutYouCurrent = increment;
-        updateSelectedOption(clonedOption);
-      } else {
-        payload = state.step + 1;
-      }
-    } else {
-      payload = state.step + 1;
-    }
-
-    if (payload) {
-      dispatch({
-        type: NEXT_STEP,
-        payload,
-      });
-    }
+    const step = state.step;
+    let payload = step + 1;
+    dispatch({
+      type: NEXT_STEP,
+      payload,
+    });
   };
 
-  const updateSelectedOption = (clonedOption) => {
+  const beforeNext = () => {
+    next();
+  };
+
+  const updateSelectedOption = (selectedOption) => {
     dispatch({
       type: UPDATE_SELECTED_OPTION,
-      payload: { clonedOption, step: state.step },
+      payload: selectedOption,
+    });
+  };
+
+  const updateNoMatches = (noMatches) => {
+    dispatch({
+      type: NO_MATCHES,
+      payload: noMatches,
     });
   };
 
@@ -83,17 +90,35 @@ const TriageState = (props) => {
     });
   };
 
-  const searchProblemOptions = (text) => {
+  const searchProblemOptions = async (text) => {
+    const currentOptions = [...state.problemOptions];
     setLoading();
-    let payload = {
-      problemOptions: drinkDrivingProblems,
-      problemOptionSubtitle: 'Based on your search',
-      problemOptionTitle: 'Please select your legal problem',
-    };
-    dispatch({
-      type: SEARCH_PROBLEM_OPTIONS,
-      payload,
-    });
+    const res = await Api.getDefinitionsByText('matter', text);
+    if (res && res.dictionary && res.dictionary.length) {
+      const searchResults = res.dictionary;
+      let problems = currentOptions.map((problem) => {
+        problem.active = false;
+        let match = searchResults.filter((item) => item.key === problem.key);
+        if (match.length > 0) {
+          problem.step = 2;
+        } else if (problem.step === 2) problem.step = null;
+        return problem;
+      });
+      let step = state.step + 1;
+      let payload = {
+        problemOptions: problems,
+        problemOptionSubtitle: 'Based on your search',
+        problemOptionTitle: 'Please select your legal problem',
+        step,
+        noMatches: false,
+      };
+      dispatch({
+        type: SEARCH_PROBLEM_OPTIONS,
+        payload,
+      });
+    } else {
+      updateNoMatches(true);
+    }
   };
 
   const clearResults = () => {
@@ -103,27 +128,53 @@ const TriageState = (props) => {
   };
 
   const cardActivation = (optionId) => {
-    const optionIndex = state.problemOptions.findIndex((option) => {
+    const currentStep = state.step;
+    const currentOptions = state.problemOptions;
+    const optionIndex = currentOptions.findIndex((option) => {
       return option.id === optionId;
     });
-    const active = state.problemOptions[optionIndex].active;
-    let selected = { ...state.problemOptions[optionIndex] };
-    if (state.selectedOption && selected.id === state.selectedOption.id) {
-      selected = { ...state.selectedOption };
-    }
-    selected.active = !active;
-    const clonedOptions = [...state.problemOptions];
+    const active = currentOptions[optionIndex].active;
+    const selectedOption = { ...currentOptions[optionIndex] };
+    selectedOption.active = !active;
+    const clonedOptions = [...currentOptions];
     const newOptions = clonedOptions.map((cloned) => {
-      cloned.active = false;
-      return cloned;
+      const newOption = { ...cloned };
+      if (selectedOption.parent !== newOption.id) {
+        newOption.active = false;
+      }
+      return newOption;
     });
-    newOptions[optionIndex] = selected;
-    let step = state.step;
-    if (selected.active) step = step + 1;
-    const selectedOption = { ...selected };
+    newOptions[optionIndex] = selectedOption;
+
+    if (selectedOption.active) {
+      if (
+        selectedOption.problemQuestions &&
+        selectedOption.problemQuestions.length > 0
+      ) {
+        selectedOption.questionStep = 1;
+        //Initialize all question options to false
+        selectedOption.problemQuestions.map((pq) => {
+          return pq.options.map((opt) => (opt.checked = false));
+        });
+      }
+      beforeNext();
+      let step = currentStep + 1;
+      newOptions.filter((opt) => {
+        if (opt.parent === selectedOption.id) {
+          opt.step = step;
+        } else {
+          if (opt.step === step) {
+            opt.step = null;
+          }
+        }
+        return opt;
+      });
+    }
+    updateSelectedOption(selectedOption);
+    updateNoMatches(false);
     dispatch({
       type: CARD_ACTIVATION,
-      payload: { problemOptions: newOptions, selectedOption, step },
+      payload: newOptions,
     });
   };
 
@@ -139,21 +190,106 @@ const TriageState = (props) => {
     updateSelectedOption(selectedOption);
   };
 
+  const checkQuestion = (itemId) => {
+    const currentSelectedOption = state.selectedOption;
+    const selectedOption = { ...currentSelectedOption };
+    let questionIndex = currentSelectedOption.problemQuestions.findIndex(
+      (el) => el.step === currentSelectedOption.questionStep
+    );
+    const question = currentSelectedOption.problemQuestions[questionIndex];
+    const checkItemIndex = question.options.findIndex((item) => {
+      return item.id === itemId;
+    });
+    const checked = question.options[checkItemIndex].checked;
+
+    const newQuestion = { ...question };
+    const checkItem = newQuestion.options[checkItemIndex];
+    checkItem.checked = !checked;
+    if (checkItem.checked) {
+      newQuestion.options.map((option, index) => {
+        if (index !== checkItemIndex && option.checked) option.checked = false;
+        return option;
+      });
+    } else newQuestion.options[checkItemIndex] = checkItem;
+
+    selectedOption.problemQuestions[questionIndex] = newQuestion;
+    updateSelectedOption(selectedOption);
+  };
+
+  const backQuestion = () => {
+    const currentSelectedOption = state.selectedOption;
+    const selectedOption = { ...currentSelectedOption };
+    if (
+      currentSelectedOption.questionStep > 1 &&
+      currentSelectedOption.questionStep <=
+        currentSelectedOption.problemQuestions.length
+    ) {
+      selectedOption.questionStep = currentSelectedOption.questionStep - 1;
+    } else {
+      back();
+    }
+    updateSelectedOption(selectedOption);
+  };
+
+  const nextQuestion = () => {
+    const currentSelectedOption = state.selectedOption;
+    const selectedOption = { ...currentSelectedOption };
+    if (
+      currentSelectedOption.questionStep <
+      currentSelectedOption.problemQuestions.length
+    ) {
+      selectedOption.questionStep = currentSelectedOption.questionStep + 1;
+    } else {
+      if (selectedOption.key === DRINK_DRIVING) {
+        const factsLength = selectedOption.legalGuideFacts.length;
+        let pos = factsLength;
+        const yourLegalFacts = selectedOption.problemQuestions
+          .map((question) => {
+            const answer = question.options.find(
+              (option) => option.checked && option.showResult
+            );
+            if (answer) {
+              pos += 1;
+              return {
+                pos,
+                icon: question.icon,
+                desc: answer.resultLabel,
+                show: true,
+              };
+            } else return null;
+          })
+          .filter((item) => item);
+        const fixedFacts = selectedOption.legalGuideFacts.filter(
+          (item) => item.firm
+        );
+        fixedFacts.push(...yourLegalFacts);
+        selectedOption.legalGuideFacts = fixedFacts;
+      }
+      beforeNext();
+    }
+    updateSelectedOption(selectedOption);
+  };
+
   return (
     <TriageContext.Provider
       value={{
+        loading: state.loading,
+        noMatches: state.noMatches,
+        problemOptions: state.problemOptions,
         problemOptionSubtitle: state.problemOptionSubtitle,
         problemOptionTitle: state.problemOptionTitle,
-        loading: state.loading,
-        problemOptions: state.problemOptions,
         search: state.search,
         selectedOption: state.selectedOption,
         step: state.step,
         back,
+        backQuestion,
+        beforeNext,
         cardActivation,
         checkAboutYou,
+        checkQuestion,
         clearResults,
         next,
+        nextQuestion,
         searchBarChange,
         searchProblemOptions,
         setLoading,

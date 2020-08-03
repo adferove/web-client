@@ -109,6 +109,10 @@
   &__right {
     justify-content: flex-end;
   }
+
+  &__bg-grey {
+    background-color: $light10;
+  }
   // @media screen and (min-width: 64rem) {
   //   max-width: 29.375rem;
   //   padding-left: 0;
@@ -196,6 +200,7 @@
   flex-direction: row;
   width: auto;
   margin-bottom: 2rem;
+  margin-top: 1rem;
   // @media screen and (min-width: 64rem) {
   //   width: 50%;
   // }

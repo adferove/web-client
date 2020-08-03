@@ -389,6 +389,8 @@ img {
     cursor: pointer; }
   .land-la-w-l11__right {
     justify-content: flex-end; }
+  .land-la-w-l11__bg-grey {
+    background-color: #f4f4f7; }
 
 .land-la-w-l12 {
   background-color: #002664;
@@ -455,7 +457,8 @@ img {
   -ms-flex-direction: row;
   flex-direction: row;
   width: auto;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  margin-top: 1rem; }
 
 .land-la-problem-img {
   background-position: 50% 50%;
@@ -982,8 +985,7 @@ img {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  width: auto;
-  margin-bottom: 1rem; }
+  width: auto; }
   .dic-la-w-l1__no-mb {
     margin-bottom: 0; }
 
@@ -1006,7 +1008,11 @@ img {
   max-width: none;
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-top: 0.5rem; }
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: 600; }
+  .dic-la-w-l11__no-bold {
+    font-weight: 500; }
 
 .dic-la-w-l12 {
   background-color: #002664;
@@ -1067,6 +1073,32 @@ img {
   text-align: left;
   margin-bottom: 0.1rem; }
 
+.dic-yg-2 {
+  padding: 0.9375rem 1.25rem 0.9375rem 3.125rem;
+  background-position: 0.9375rem 1.2rem; }
+
+.dic-yg-2-img {
+  background-size: 1.625rem;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-position-x: 0.5rem; }
+  .dic-yg-2-img__gavel {
+    background-image: url(/images/gavel.svg); }
+  .dic-yg-2-img__calendar {
+    background-image: url(/images/calendar.svg); }
+  .dic-yg-2-img__debt {
+    background-image: url(/images/debt.svg); }
+  .dic-yg-2-img__driving {
+    background-image: url(/images/driving.svg); }
+  .dic-yg-2-img__family {
+    background-image: url(/images/family.svg); }
+  .dic-yg-2-img__individual {
+    background-image: url(/images/individual.svg); }
+
+.dic-wip {
+  width: 80%;
+  margin: auto; }
+
 .nsw-card {
   font-family: Montserrat, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -1116,7 +1148,7 @@ img {
     display: flex;
     flex-direction: column;
     order: 2;
-    font-weight: 600; }
+    height: 100%; }
     @media (min-width: 62em) {
       .nsw-card__content {
         font-size: 1rem; } }
@@ -1190,6 +1222,8 @@ img {
     background-color: #0085b3;
     font-weight: bold;
     color: #ffffff; }
+  .nsw-card__pathway {
+    font-weight: 600; }
 
 .nsw-card--headline .nsw-card__title {
   font-size: 1.625rem;
@@ -1200,7 +1234,8 @@ img {
 
 .gel-notify {
   padding: 0.9375rem 1.25rem 0.9375rem 3.125rem;
-  background-position: 0.9375rem 1.2rem; }
+  background-position: 0.9375rem 1.2rem;
+  font-weight: 500; }
 
 .gel-notify p {
   margin: 0.25rem 0 0.25rem 1rem; }
