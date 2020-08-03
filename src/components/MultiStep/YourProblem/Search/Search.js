@@ -16,7 +16,7 @@ const Search = () => {
     if (search === '') {
       notificationHandler('Please enter key words', 'error');
     } else {
-      searchProblemOptions();
+      searchProblemOptions(search);
       window.scrollTo({
         top: 150,
         behavior: 'smooth',

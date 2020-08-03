@@ -1,7 +1,7 @@
 import React, { useReducer } from 'react';
 import TriageContext from './triageContext';
 import TriageReducer from './triageReducer';
-//import Api from '../../common/api';
+import Api from '../../common/api';
 import topLegalProblems from '../../common/topLegalProblems.json';
 
 import {
@@ -13,6 +13,7 @@ import {
   BACK_STEP,
   SEARCH_BAR,
   UPDATE_SELECTED_OPTION,
+  NO_MATCHES,
 } from '../types';
 
 import { DRINK_DRIVING } from './problems';
@@ -29,6 +30,7 @@ const TriageState = (props) => {
   };
 
   const initialState = {
+    noMatches: false,
     problemOptionSubtitle: 'Not sure what you’re looking for?',
     problemOptionTitle: 'Select from these common problems',
     problemOptions: legalProblems(),
@@ -66,6 +68,13 @@ const TriageState = (props) => {
     });
   };
 
+  const updateNoMatches = (noMatches) => {
+    dispatch({
+      type: NO_MATCHES,
+      payload: noMatches,
+    });
+  };
+
   const back = () => {
     let payload = state.step - 1;
     dispatch({
@@ -81,25 +90,35 @@ const TriageState = (props) => {
     });
   };
 
-  const searchProblemOptions = (text) => {
-    setLoading();
+  const searchProblemOptions = async (text) => {
     const currentOptions = [...state.problemOptions];
-    let problems = currentOptions.map((problem) => {
-      if (problem.parent === '13') problem.step = 2;
-      problem.active = false;
-      return problem;
-    });
-    let step = state.step + 1;
-    let payload = {
-      problemOptions: problems,
-      problemOptionSubtitle: 'Based on your search',
-      problemOptionTitle: 'Please select your legal problem',
-      step,
-    };
-    dispatch({
-      type: SEARCH_PROBLEM_OPTIONS,
-      payload,
-    });
+    setLoading();
+    const res = await Api.getDefinitionsByText('matter', text);
+    if (res && res.dictionary && res.dictionary.length) {
+      const searchResults = res.dictionary;
+      let problems = currentOptions.map((problem) => {
+        problem.active = false;
+        let match = searchResults.filter((item) => item.key === problem.key);
+        if (match.length > 0) {
+          problem.step = 2;
+        } else if (problem.step === 2) problem.step = null;
+        return problem;
+      });
+      let step = state.step + 1;
+      let payload = {
+        problemOptions: problems,
+        problemOptionSubtitle: 'Based on your search',
+        problemOptionTitle: 'Please select your legal problem',
+        step,
+        noMatches: false,
+      };
+      dispatch({
+        type: SEARCH_PROBLEM_OPTIONS,
+        payload,
+      });
+    } else {
+      updateNoMatches(true);
+    }
   };
 
   const clearResults = () => {
@@ -152,6 +171,7 @@ const TriageState = (props) => {
       });
     }
     updateSelectedOption(selectedOption);
+    updateNoMatches(false);
     dispatch({
       type: CARD_ACTIVATION,
       payload: newOptions,
@@ -254,6 +274,7 @@ const TriageState = (props) => {
     <TriageContext.Provider
       value={{
         loading: state.loading,
+        noMatches: state.noMatches,
         problemOptions: state.problemOptions,
         problemOptionSubtitle: state.problemOptionSubtitle,
         problemOptionTitle: state.problemOptionTitle,

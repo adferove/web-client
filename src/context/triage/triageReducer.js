@@ -7,6 +7,7 @@ import {
   BACK_STEP,
   SEARCH_BAR,
   UPDATE_SELECTED_OPTION,
+  NO_MATCHES,
 } from '../types';
 
 export default (state, action) => {
@@ -19,6 +20,7 @@ export default (state, action) => {
         problemOptionTitle: action.payload.problemOptionTitle,
         step: action.payload.step,
         loading: false,
+        noMatches: action.payload.noMatches,
       };
     case CLEAR_RESULTS:
       return {
@@ -54,6 +56,12 @@ export default (state, action) => {
       return {
         ...state,
         selectedOption: action.payload,
+      };
+    case NO_MATCHES:
+      return {
+        ...state,
+        loading: false,
+        noMatches: action.payload,
       };
     default:
       return state;
