@@ -10,7 +10,7 @@ import TriageContext from '../../../context/triage/triageContext';
 const YourProblem = () => {
   const triageContext = useContext(TriageContext);
   const { loading, noMatches } = triageContext;
-  console.log(noMatches);
+
   return (
     <Fragment>
       <Notification />
