@@ -9,7 +9,7 @@ const BackButton = () => {
   return (
     <div className="land-la">
       <div className="land-la-wrapper">
-        <div className="land-la-w-l1">
+        <div className="land-la-w-l1-foo">
           <div className="land-la-w-l11 land-la-w-l11__row" onClick={goBack}>
             <i id="btn-quick-exit" className="material-icons">
               keyboard_backspace

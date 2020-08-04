@@ -27,5 +27,91 @@
         "icon": "file"
       }
     ]
+  },
+  {
+    "id": 2,
+    "page": "i-dont-feel-safe",
+    "title": "Contact Legal Aid NSW",
+    "paragraph": "<p>We are open and continue to offer our services over the phone, or via email or AVL. If you need legal help, <strong>call 1300 888 529</strong> or contact your local Legal Aid office</p><p>9am to 5pm, Monday to Friday (excluding public holidays)</p>",
+    "services": [
+      {
+        "id": 1,
+        "title": "Legal Aid NSW state-wide services",
+        "particularServices": [
+          {
+            "id": 1,
+            "desc": "Child Support Service"
+          },
+          {
+            "id": 2,
+            "desc": "Mental Health Advocacy Service"
+          },
+          {
+            "id": 3,
+            "desc": "Veterans Advocacy Service"
+          },
+          {
+            "id": 4,
+            "desc": "Youth Hotline"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Help at court",
+        "particularServices": [
+          {
+            "id": 1,
+            "desc": "Legal Aid NSW court services"
+          },
+          {
+            "id": 2,
+            "desc": "Women's Domestic Violence Court Advocacy Services"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Other legal services",
+        "particularServices": [
+          {
+            "id": 1,
+            "desc": "Community legal centres"
+          },
+          {
+            "id": 2,
+            "desc": "Aboriginal Legal Service"
+          },
+          {
+            "id": 3,
+            "desc": "Law Society of NSW Solicitor Referral Service"
+          },
+          {
+            "id": 4,
+            "desc": "Pro bono help"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Translating and Interpreting Service",
+        "particularServices": [
+          {
+            "id": 1,
+            "desc": "TIS National services"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Services for people with disability",
+        "particularServices": [
+          {
+            "id": 1,
+            "desc": "National Relay Service"
+          }
+        ]
+      }
+    ]
   }
 ]

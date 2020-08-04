@@ -1,12 +1,12 @@
 import React from 'react';
 import ServiceElements from './ServiceElements/ServiceElements';
 
-const LAService = (props) => {
+const LAService = ({ title, services }) => {
   return (
-    <div>
-      <b>Legal Aid NSW state-wide services</b>
+    <div className="la-mar">
+      <b>{title}</b>
       <div className="grid-3">
-        <ServiceElements />
+        <ServiceElements services={services} />
       </div>
     </div>
   );

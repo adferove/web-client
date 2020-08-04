@@ -1,12 +1,12 @@
 import React, { Fragment } from 'react';
 import ServiceElement from './ServiceElement/ServiceElement';
 
-const ServiceElements = (props) => {
+const ServiceElements = ({ services }) => {
   return (
     <Fragment>
-      <ServiceElement title="Child Support Service" />
-      <ServiceElement title="Mental Health Advocacy Service" />
-      <ServiceElement title="Mental Health Advocacy Service" />
+      {services.map((item) => (
+        <ServiceElement title={item.desc} />
+      ))}
     </Fragment>
   );
 };

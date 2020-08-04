@@ -1,30 +1,22 @@
 import React, { Fragment } from 'react';
-import BasicSection from '../../components/common/BasicSection/BasicSection';
+import Section from '../../components/common/Section/Section';
 import LAServices from '../../components/LAServices/LAServices';
 import BackButton from '../../components/BackButton/BackButton';
+import pages from '../../common/data/pages.json';
 
 const ContactLA = () => {
-  const title = 'Contact Legal Aid NSW';
-  const paragraph1 = (
-    <p className="land-la-w-l112-p">
-      We are open and continue to offer our services over the phone, or via
-      email or AVL. If you need legal help, <b>call 1300 888 529</b> or contact
-      your local Legal Aid office
-    </p>
-  );
-  const paragraph2 = (
-    <p className="land-la-w-l112-p">
-      9am to 5pm, Monday to Friday (excluding public holidays)
-    </p>
-  );
+  const page = pages.find((item) => item.page === 'i-dont-feel-safe');
   return (
     <Fragment>
-      <BasicSection
-        title={title}
-        paragraph1={paragraph1}
-        paragraph2={paragraph2}
-      />
-      <LAServices />
+      <Section title={page.title}>
+        <div className="land-la-w-l11">
+          <div
+            className="land-la-w-l112-p"
+            dangerouslySetInnerHTML={{ __html: page.paragraph }}
+          ></div>
+        </div>
+      </Section>
+      <LAServices services={page.services} />
       <BackButton />
     </Fragment>
   );

@@ -502,6 +502,9 @@ img {
       text-transform: none;
       transform: none; } }
 
+.la-mar {
+  margin-top: 1rem; }
+
 .triage-button {
   font-family: Montserrat, sans-serif;
   -moz-osx-font-smoothing: grayscale;
