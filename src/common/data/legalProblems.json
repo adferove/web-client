@@ -148,8 +148,9 @@
         "desc": "I’m under the age of 18",
         "checked": false,
         "name": "ay-chk-1",
-        "showResult": false,
-        "resultLabel": "It's about "
+        "showResult": true,
+        "resultLabel": "I’m <strong>under the age of 18</strong>",
+        "icon": "individual"
       },
       {
         "id": 2,
@@ -165,8 +166,9 @@
         "desc": "I’m on the maximum Centrelink benefit",
         "checked": false,
         "name": "ay-chk-3",
-        "showResult": false,
-        "resultLabel": "It's about "
+        "showResult": true,
+        "resultLabel": "I’m on the maximum Centrelink benefit",
+        "icon": "individual"
       },
       {
         "id": 4,
@@ -214,17 +216,17 @@
       {
         "pos": 1,
         "title": "Who you can connect",
-        "content": "<p><strong>Contact your local Legal Aid NSW office to book an appointment</strong></p><p><a href='//www.legalaid.nsw.gov.au/contact-us/legal-aid-nsw-offices' target='_blank'><span style='color: rgb(111, 25, 46);'>www.legalaid.nsw.gov.au/contact-us/legal-aid-nsw-offices</span></a></p><p>Before your appointment, you can find out more about your problem</p>"
+        "content": "<p><strong>Contact your local Legal Aid NSW office to book an appointment</strong></p><p><a href='//www.legalaid.nsw.gov.au/contact-us/legal-aid-nsw-offices' target='_blank'><span style='color: rgb(111, 25, 46); overflow-wrap: break-word;'>www.legalaid.nsw.gov.au/contact-us/legal-aid-nsw-offices</span></a></p><p>Before your appointment, you can find out more about your problem</p>"
       },
       {
         "pos": 2,
         "title": "Where you can find more information",
-        "content": "<p><strong>&lsquo;What happens when your relationship ends&rsquo; </strong></p><p>A factsheet with answers to questions about your family, your children and your property: <a href='https://www.legalaid.nsw.gov.au/publications/factsheets-and-resources/what-happens-when-your-relationship-ends' target='_blank'><span style='color: rgb(111, 25, 46);'>https://www.legalaid.nsw.gov.au/publications/factsheets-and-resources/what-happens-when-your-relationship-ends</span></a>&nbsp;</p>"
+        "content": "<p><strong>&lsquo;What happens when your relationship ends&rsquo; </strong></p><p>A factsheet with answers to questions about your family, your children and your property: <a href='https://www.legalaid.nsw.gov.au/publications/factsheets-and-resources/what-happens-when-your-relationship-ends' target='_blank'><span style='color: rgb(111, 25, 46); overflow-wrap: break-word;'>https://www.legalaid.nsw.gov.au/publications/factsheets-and-resources/what-happens-when-your-relationship-ends</span></a>&nbsp;</p>"
       },
       {
         "pos": 3,
         "title": "Use a self-help tool",
-        "content": "<p><strong>Arrangements for children </strong></p><p>&lsquo;Can I make arrangements for my children without going to court?&rsquo; <a href='https://familyviolencelaw.gov.au/family-law/arrangements-for-children/how-to-make-arrangments-for-children-without-going-to-court/' rel='noopener noreferrer' target='_blank'><span style='color: rgb(111, 25, 46);'>https://familyviolencelaw.gov.au/family-law/arrangements-for-children/how-to-make-arrangments-for-children-without-going-to-court/</span></a></p><p><strong>&lsquo;amica&rsquo; &nbsp;</strong></p><p>amica helps separated couples to: make parenting arrangements if they have children, and divide their money and property simply. <a href='https://amica.gov.au/' rel='noopener noreferrer' target='_blank'><span style='color: rgb(111, 25, 46);'>https://amica.gov.au/</span></a></p>"
+        "content": "<p><strong>Arrangements for children </strong></p><p>&lsquo;Can I make arrangements for my children without going to court?&rsquo; <a href='https://familyviolencelaw.gov.au/family-law/arrangements-for-children/how-to-make-arrangments-for-children-without-going-to-court/' rel='noopener noreferrer' target='_blank'><span style='color: rgb(111, 25, 46); overflow-wrap: break-word;'>https://familyviolencelaw.gov.au/family-law/arrangements-for-children/how-to-make-arrangments-for-children-without-going-to-court/</span></a></p><p><strong>&lsquo;amica&rsquo; &nbsp;</strong></p><p>amica helps separated couples to: make parenting arrangements if they have children, and divide their money and property simply. <a href='https://amica.gov.au/' rel='noopener noreferrer' target='_blank'><span style='color: rgb(111, 25, 46);'>https://amica.gov.au/</span></a></p>"
       }
     ]
   },
@@ -395,12 +397,12 @@
       {
         "pos": 1,
         "title": "Who you can connect",
-        "content": "<p><strong>Call our helpline</strong></p><p>A telephone helpline that gives free legal information, referrals to other services and legal advice in some cases. Call <strong>1300 888 529</strong> or visit <a href='http://www.lawaccess.nsw.gov.au' target='_blank'><span style='color: rgb(111, 25, 46);'>www.lawaccess.nsw.gov.au</span></a></p><p><strong>Get help at court on the day</strong></p><p>On your court date there will be a duty lawyer available who can give you legal advice.&nbsp;</p>"
+        "content": "<p><strong>Call our helpline</strong></p><p>A telephone helpline that gives free legal information, referrals to other services and legal advice in some cases. Call <strong>1300 888 529</strong> or visit <a href='http://www.lawaccess.nsw.gov.au' target='_blank'><span style='color: rgb(111, 25, 46); overflow-wrap: break-word;'>www.lawaccess.nsw.gov.au</span></a></p><p><strong>Get help at court on the day</strong></p><p>On your court date there will be a duty lawyer available who can give you legal advice.&nbsp;</p>"
       },
       {
         "pos": 2,
         "title": "Where you can find more information",
-        "content": "<p><strong>&lsquo;Drink driving charges and you&rsquo; </strong></p><p>This brochure helps you prepare for court and explains the penalties for drink driving: &nbsp;<a href='http://www.legalaid.nsw.gov.au/publications/factsheets-and-resources/drink-driving-charges-and-you-pamphlet' rel='noopener noreferrer' target='_blank'><span style='color: rgb(111, 25, 46);'>www.legalaid.nsw.gov.au/publications/factsheets-and-resources/drink-driving-charges-and-you-pamphlet</span></a></p>"
+        "content": "<p><strong>&lsquo;Drink driving charges and you&rsquo; </strong></p><p>This brochure helps you prepare for court and explains the penalties for drink driving: &nbsp;<a href='http://www.legalaid.nsw.gov.au/publications/factsheets-and-resources/drink-driving-charges-and-you-pamphlet' rel='noopener noreferrer' target='_blank'><span style='color: rgb(111, 25, 46); overflow-wrap: break-word;'>www.legalaid.nsw.gov.au/publications/factsheets-and-resources/drink-driving-charges-and-you-pamphlet</span></a></p>"
       }
     ]
   },
@@ -428,6 +430,131 @@
     "title": "Debts Between People",
     "key": "Debts between people",
     "active": false,
-    "parent": "17"
+    "parent": "17",
+    "image": "debts-between-people",
+    "desc": "Legal Aid NSW <b>does</b> give support for this legal matter.",
+    "note": "You will be asked a few questions to find out what information might help and if you need legal advice.",
+    "hasSelectedProblemStep": true,
+    "hasAboutYouStep": true,
+    "aboutYouStep2Title": "Do any of these apply to you?",
+    "imageAboutYou": "about-you",
+    "imageYourGuide": "your-guide",
+    "YourNextStepText": "<p>Based on the information you gave, <strong>you should get legal advice</strong></p>",
+    "problemQuestions": [
+      {
+        "step": 1,
+        "desc": "Does this impact on your ability to afford basics such as rent, food, bills?",
+        "multipleSelect": false,
+        "icon": "driving",
+        "options": [
+          {
+            "id": 1,
+            "desc": "Yes",
+            "checked": false,
+            "name": "ay-chk-1",
+            "showResult": false,
+            "resultLabel": "It's about"
+          },
+          {
+            "id": 2,
+            "desc": "No",
+            "checked": false,
+            "name": "ay-chk-2",
+            "showResult": false,
+            "resultLabel": "It's about"
+          }
+        ]
+      }
+    ],
+    "aboutYouChecks": [
+      {
+        "id": 1,
+        "desc": "I’m under the age of 18",
+        "checked": false,
+        "name": "ay-chk-1",
+        "showResult": true,
+        "resultLabel": "I’m <strong>under the age of 18</strong>",
+        "icon": "individual"
+      },
+      {
+        "id": 2,
+        "desc": "I’m Aboriginal or Torres Straight Islander",
+        "checked": false,
+        "name": "ay-chk-2",
+        "showResult": true,
+        "resultLabel": "I’m <strong>Aboriginal or Torres Straight Islander</strong>",
+        "icon": "individual"
+      },
+      {
+        "id": 3,
+        "desc": "I’m on the maximum Centrelink benefit",
+        "checked": false,
+        "name": "ay-chk-3",
+        "showResult": true,
+        "resultLabel": "I’m on the maximum Centrelink benefit",
+        "icon": "individual"
+      },
+      {
+        "id": 4,
+        "desc": "I'm experiencing or at risk of family violence",
+        "checked": false,
+        "name": "ay-chk-4",
+        "showResult": true,
+        "resultLabel": "I'm <strong>experiencing or at risk of family violence</strong>",
+        "icon": "individual"
+      },
+      {
+        "id": 5,
+        "desc": "I'm a refugee or asylum seeker",
+        "checked": false,
+        "name": "ay-chk-5",
+        "showResult": false,
+        "resultLabel": "It's about "
+      },
+      {
+        "id": 6,
+        "desc": "I'm experiencing or at risk of homelessness",
+        "checked": false,
+        "name": "ay-chk-6",
+        "showResult": false,
+        "resultLabel": "It's about "
+      },
+      {
+        "id": 7,
+        "desc": "None of these",
+        "checked": false,
+        "name": "ay-chk-7",
+        "showResult": false,
+        "resultLabel": "It's about "
+      }
+    ],
+    "legalGuideFacts": [
+      {
+        "pos": 1,
+        "icon": "gavel",
+        "desc": "I have a <strong>Civil Law</strong> problem",
+        "show": true,
+        "firm": true
+      },
+      {
+        "pos": 2,
+        "icon": "debt",
+        "desc": "It's about <strong>debts between individuals</strong>",
+        "show": true,
+        "firm": true
+      }
+    ],
+    "legalGuideSections": [
+      {
+        "pos": 1,
+        "title": "Who you can connect",
+        "content": "<p><strong>Call our helpline</strong></p><p>A telephone helpline that gives free legal information, referrals to other services and legal advice in some cases. Call <strong>1300 888 529</strong> or visit <a href='//www.lawaccess.nsw.gov.au' rel='noopener noreferrer' target='_blank'><span style='color: rgb(111, 25, 46); overflow-wrap: break-word;'>www.lawaccess.nsw.gov.au</span></a></p>"
+      },
+      {
+        "pos": 2,
+        "title": "Where you can find more information",
+        "content": "<p>&lsquo;Does someone owe you money or goods?&rsquo;&nbsp;</p><p>This section has step-by-step information for people who want to start a small claim in court to recover money, goods or the cost ... <a href='//www.lawaccess.nsw.gov.au/Pages/representing/Local_courts_small_claims/owed_money/does_someone_owe_you_money_or_goods.aspx' rel='noopener noreferrer' target='_blank'><span style='color: rgb(111, 25, 46); overflow-wrap: break-word; '>www.lawaccess.nsw.gov.au/Pages/representing/Local_courts_small_claims/owed_money/does_someone_owe_you_money_or_goods.aspx</span></a></p>"
+      }
+    ]
   }
 ]
