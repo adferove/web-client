@@ -5,7 +5,7 @@ const ServiceElements = ({ services }) => {
   return (
     <Fragment>
       {services.map((item) => (
-        <ServiceElement title={item.desc} />
+        <ServiceElement key={item.id} title={item.desc} />
       ))}
     </Fragment>
   );
