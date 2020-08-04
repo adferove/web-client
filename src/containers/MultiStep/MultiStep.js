@@ -38,10 +38,9 @@ const MultiStep = () => {
 
   const prevStep = (e) => {
     e.preventDefault();
-    back();
     if (step === 1) {
       history.goBack();
-    }
+    } else back();
   };
 
   const scrollToTop = () => {
