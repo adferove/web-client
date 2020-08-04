@@ -13,7 +13,7 @@ const YourGuide = () => {
   ].join(' ');
 
   const activeFacts = selectedOption.legalGuideFacts.filter(
-    (item) => item.show
+    (item) => item && item.show
   );
 
   return (

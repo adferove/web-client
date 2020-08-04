@@ -90,9 +90,11 @@ const TriageState = (props) => {
     const currentOptions = [...state.problemOptions];
     setLoading();
     const res = await Api.getDefinitionsByText('matter', text);
+    console.log(res);
     if (res && res.dictionary && res.dictionary.length) {
       const searchResults = res.dictionary;
       let problems = currentOptions.map((problem) => {
+        console.log(problem);
         problem.active = false;
         let match = searchResults.filter((item) => item.key === problem.key);
         if (match.length > 0) {
@@ -150,6 +152,11 @@ const TriageState = (props) => {
         selectedOption.problemQuestions.map((pq) => {
           return pq.options.map((opt) => (opt.checked = false));
         });
+        if (selectedOption.hasAboutYouStep) {
+          selectedOption.aboutYouChecks.map(
+            (checkbox) => (checkbox.checked = false)
+          );
+        }
       }
       beforeNext();
       let step = currentStep + 1;
@@ -227,39 +234,59 @@ const TriageState = (props) => {
 
   const nextQuestion = () => {
     const currentSelectedOption = state.selectedOption;
-    const selectedOption = { ...currentSelectedOption };
     if (
       currentSelectedOption.questionStep <
       currentSelectedOption.problemQuestions.length
     ) {
+      const selectedOption = { ...currentSelectedOption };
       selectedOption.questionStep = currentSelectedOption.questionStep + 1;
+      updateSelectedOption(selectedOption);
     } else {
-      const factsLength = selectedOption.legalGuideFacts.length;
-      let pos = factsLength;
-      const yourLegalFacts = selectedOption.problemQuestions
-        .map((question) => {
-          const answer = question.options.find(
-            (option) => option.checked && option.showResult
-          );
-          if (answer) {
-            pos += 1;
-            return {
-              pos,
-              icon: question.icon,
-              desc: answer.resultLabel,
-              show: true,
-            };
-          } else return null;
-        })
-        .filter((item) => item);
-      const fixedFacts = selectedOption.legalGuideFacts.filter(
-        (item) => item.firm
-      );
-      fixedFacts.push(...yourLegalFacts);
-      selectedOption.legalGuideFacts = fixedFacts;
-
+      updateFacts();
       beforeNext();
     }
+  };
+
+  const updateFacts = () => {
+    const currentSelectedOption = state.selectedOption;
+    const selectedOption = { ...currentSelectedOption };
+    const factsLength = selectedOption.legalGuideFacts.length;
+    let pos = factsLength;
+    const yourLegalFacts = selectedOption.problemQuestions
+      .map((question) => {
+        const answer = question.options.find(
+          (option) => option.checked && option.showResult
+        );
+        if (answer) {
+          pos += 1;
+          return {
+            pos,
+            icon: question.icon,
+            desc: answer.resultLabel,
+            show: true,
+          };
+        } else return null;
+      })
+      .filter((item) => item);
+    const fixedFacts = selectedOption.legalGuideFacts.filter(
+      (item) => item && item.firm
+    );
+    fixedFacts.push(...yourLegalFacts);
+    if (selectedOption.hasAboutYouStep) {
+      const aboutYouFacts = selectedOption.aboutYouChecks.map((checkbox) => {
+        if (checkbox.checked && checkbox.showResult) {
+          pos += 1;
+          return {
+            pos,
+            icon: checkbox.icon,
+            desc: checkbox.resultLabel,
+            show: true,
+          };
+        } else return null;
+      });
+      fixedFacts.push(...aboutYouFacts);
+    }
+    selectedOption.legalGuideFacts = fixedFacts;
     updateSelectedOption(selectedOption);
   };
 
@@ -285,6 +312,7 @@ const TriageState = (props) => {
         searchBarChange,
         searchProblemOptions,
         setLoading,
+        updateFacts,
       }}
     >
       {props.children}

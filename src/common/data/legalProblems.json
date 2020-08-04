@@ -147,43 +147,58 @@
         "id": 1,
         "desc": "I’m under the age of 18",
         "checked": false,
-        "name": "ay-chk-1"
+        "name": "ay-chk-1",
+        "showResult": false,
+        "resultLabel": "It's about "
       },
       {
         "id": 2,
         "desc": "I’m Aboriginal or Torres Straight Islander",
         "checked": false,
-        "name": "ay-chk-2"
+        "name": "ay-chk-2",
+        "showResult": true,
+        "resultLabel": "I’m <strong>Aboriginal or Torres Straight Islander</strong>",
+        "icon": "individual"
       },
       {
         "id": 3,
         "desc": "I’m on the maximum Centrelink benefit",
         "checked": false,
-        "name": "ay-chk-3"
+        "name": "ay-chk-3",
+        "showResult": false,
+        "resultLabel": "It's about "
       },
       {
         "id": 4,
         "desc": "I'm experiencing or at risk of family violence",
         "checked": false,
-        "name": "ay-chk-4"
+        "name": "ay-chk-4",
+        "showResult": false,
+        "resultLabel": "It's about "
       },
       {
         "id": 5,
         "desc": "I'm a refugee or asylum seeker",
         "checked": false,
-        "name": "ay-chk-5"
+        "name": "ay-chk-5",
+        "showResult": false,
+        "resultLabel": "It's about "
       },
       {
         "id": 6,
         "desc": "I'm experiencing or at risk of homelessness",
         "checked": false,
-        "name": "ay-chk-6"
+        "name": "ay-chk-6",
+        "showResult": false,
+        "resultLabel": "It's about "
       },
       {
         "id": 7,
         "desc": "None of these",
         "checked": false,
-        "name": "ay-chk-7"
+        "name": "ay-chk-7",
+        "showResult": false,
+        "resultLabel": "It's about "
       }
     ],
     "legalGuideFacts": [

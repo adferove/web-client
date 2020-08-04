@@ -103,7 +103,6 @@ const MultiStep = () => {
         currentForm = (
           <Fragment>
             <AboutYou />
-            <Footer back={prevStep} next={nextStep} />
           </Fragment>
         );
       } else {
