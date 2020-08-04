@@ -242,7 +242,7 @@ const TriageState = (props) => {
       selectedOption.questionStep = currentSelectedOption.questionStep + 1;
       updateSelectedOption(selectedOption);
     } else {
-      updateFacts();
+      if (!currentSelectedOption.hasAboutYouStep) updateFacts();
       beforeNext();
     }
   };
