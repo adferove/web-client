@@ -15,6 +15,11 @@
     "active": false
   },
   {
+    "id": "17",
+    "title": "Debts & Money Problems",
+    "active": false
+  },
+  {
     "id": "14",
     "title": "Neighbours",
     "active": false
@@ -116,15 +121,15 @@
         "step": 2,
         "desc": "Do you need help with parenting arrangements for your children?",
         "multipleSelect": false,
-        "icon": "driving",
+        "icon": "family",
         "options": [
           {
             "id": 1,
             "desc": "Yes",
             "checked": false,
             "name": "ay-chk-1",
-            "showResult": false,
-            "resultLabel": "It's about "
+            "showResult": true,
+            "resultLabel": "It's about <strong>Parenting Arrangements</strong>"
           },
           {
             "id": 2,
@@ -404,10 +409,10 @@
     "parent": "14"
   },
   {
-    "id": "151",
+    "id": "171",
     "title": "Debts Between People",
     "key": "Debts between people",
     "active": false,
-    "parent": "15"
+    "parent": "17"
   }
 ]

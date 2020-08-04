@@ -16,8 +16,6 @@ import {
   NO_MATCHES,
 } from '../types';
 
-import { DRINK_DRIVING } from './problems';
-
 const TriageState = (props) => {
   const legalProblems = () => {
     const results = [...LegalProblems];
@@ -236,31 +234,30 @@ const TriageState = (props) => {
     ) {
       selectedOption.questionStep = currentSelectedOption.questionStep + 1;
     } else {
-      if (selectedOption.key === DRINK_DRIVING) {
-        const factsLength = selectedOption.legalGuideFacts.length;
-        let pos = factsLength;
-        const yourLegalFacts = selectedOption.problemQuestions
-          .map((question) => {
-            const answer = question.options.find(
-              (option) => option.checked && option.showResult
-            );
-            if (answer) {
-              pos += 1;
-              return {
-                pos,
-                icon: question.icon,
-                desc: answer.resultLabel,
-                show: true,
-              };
-            } else return null;
-          })
-          .filter((item) => item);
-        const fixedFacts = selectedOption.legalGuideFacts.filter(
-          (item) => item.firm
-        );
-        fixedFacts.push(...yourLegalFacts);
-        selectedOption.legalGuideFacts = fixedFacts;
-      }
+      const factsLength = selectedOption.legalGuideFacts.length;
+      let pos = factsLength;
+      const yourLegalFacts = selectedOption.problemQuestions
+        .map((question) => {
+          const answer = question.options.find(
+            (option) => option.checked && option.showResult
+          );
+          if (answer) {
+            pos += 1;
+            return {
+              pos,
+              icon: question.icon,
+              desc: answer.resultLabel,
+              show: true,
+            };
+          } else return null;
+        })
+        .filter((item) => item);
+      const fixedFacts = selectedOption.legalGuideFacts.filter(
+        (item) => item.firm
+      );
+      fixedFacts.push(...yourLegalFacts);
+      selectedOption.legalGuideFacts = fixedFacts;
+
       beforeNext();
     }
     updateSelectedOption(selectedOption);
