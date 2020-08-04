@@ -1098,6 +1098,14 @@ img {
     background-image: url(/images/family.svg); }
   .dic-yg-2-img__individual {
     background-image: url(/images/individual.svg); }
+  .dic-yg-2-img__info {
+    background-image: url(/images/info.svg); }
+  .dic-yg-2-img__message {
+    background-image: url(/images/message.svg); }
+  .dic-yg-2-img__lock {
+    background-image: url(/images/lock.svg); }
+  .dic-yg-2-img__file {
+    background-image: url(/images/file.svg); }
 
 .dic-wip {
   width: 80%;
