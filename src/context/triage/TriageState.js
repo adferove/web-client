@@ -94,7 +94,6 @@ const TriageState = (props) => {
     if (res && res.dictionary && res.dictionary.length) {
       const searchResults = res.dictionary;
       let problems = currentOptions.map((problem) => {
-        console.log(problem);
         problem.active = false;
         let match = searchResults.filter((item) => item.key === problem.key);
         if (match.length > 0) {

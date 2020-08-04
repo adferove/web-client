@@ -228,6 +228,24 @@
         "title": "Use a self-help tool",
         "content": "<p><strong>Arrangements for children </strong></p><p>&lsquo;Can I make arrangements for my children without going to court?&rsquo; <a href='https://familyviolencelaw.gov.au/family-law/arrangements-for-children/how-to-make-arrangments-for-children-without-going-to-court/' rel='noopener noreferrer' target='_blank'><span style='color: rgb(111, 25, 46); overflow-wrap: break-word;'>https://familyviolencelaw.gov.au/family-law/arrangements-for-children/how-to-make-arrangments-for-children-without-going-to-court/</span></a></p><p><strong>&lsquo;amica&rsquo; &nbsp;</strong></p><p>amica helps separated couples to: make parenting arrangements if they have children, and divide their money and property simply. <a href='https://amica.gov.au/' rel='noopener noreferrer' target='_blank'><span style='color: rgb(111, 25, 46);'>https://amica.gov.au/</span></a></p>"
       }
+    ],
+    "journeySteps": [
+      {
+        "step": 3,
+        "form": "SELECTED_PROBLEM"
+      },
+      {
+        "step": 4,
+        "form": "QUESTION"
+      },
+      {
+        "step": 5,
+        "form": "ABOUT_YOU"
+      },
+      {
+        "step": 6,
+        "form": "YOUR_LEGAL_GUIDE"
+      }
     ]
   },
   {
@@ -404,6 +422,20 @@
         "title": "Where you can find more information",
         "content": "<p><strong>&lsquo;Drink driving charges and you&rsquo; </strong></p><p>This brochure helps you prepare for court and explains the penalties for drink driving: &nbsp;<a href='http://www.legalaid.nsw.gov.au/publications/factsheets-and-resources/drink-driving-charges-and-you-pamphlet' rel='noopener noreferrer' target='_blank'><span style='color: rgb(111, 25, 46); overflow-wrap: break-word;'>www.legalaid.nsw.gov.au/publications/factsheets-and-resources/drink-driving-charges-and-you-pamphlet</span></a></p>"
       }
+    ],
+    "journeySteps": [
+      {
+        "step": 3,
+        "form": "SELECTED_PROBLEM"
+      },
+      {
+        "step": 4,
+        "form": "QUESTION"
+      },
+      {
+        "step": 5,
+        "form": "YOUR_LEGAL_GUIDE"
+      }
     ]
   },
   {
@@ -423,7 +455,36 @@
     "title": "Fences",
     "key": "Fences",
     "active": false,
-    "parent": "14"
+    "parent": "14",
+    "imageYourGuide": "your-guide",
+    "YourNextStepText": "<p>Legal Aid NSW <strong>does not</strong> provide advice service on this matter - Use online resources to resolve yourself -- call LA to find out where you can get legal advice</p>",
+    "legalGuideFacts": [
+      {
+        "pos": 1,
+        "icon": "gavel",
+        "desc": "I have a <strong>Civil Law</strong> problem",
+        "show": true,
+        "firm": true
+      }
+    ],
+    "legalGuideSections": [
+      {
+        "pos": 1,
+        "title": "Who you can connect",
+        "content": ""
+      },
+      {
+        "pos": 2,
+        "title": "Where you can find more information",
+        "content": ""
+      }
+    ],
+    "journeySteps": [
+      {
+        "step": 3,
+        "form": "YOUR_LEGAL_GUIDE"
+      }
+    ]
   },
   {
     "id": "171",
@@ -554,6 +615,24 @@
         "pos": 2,
         "title": "Where you can find more information",
         "content": "<p>&lsquo;Does someone owe you money or goods?&rsquo;&nbsp;</p><p>This section has step-by-step information for people who want to start a small claim in court to recover money, goods or the cost ... <a href='//www.lawaccess.nsw.gov.au/Pages/representing/Local_courts_small_claims/owed_money/does_someone_owe_you_money_or_goods.aspx' rel='noopener noreferrer' target='_blank'><span style='color: rgb(111, 25, 46); overflow-wrap: break-word; '>www.lawaccess.nsw.gov.au/Pages/representing/Local_courts_small_claims/owed_money/does_someone_owe_you_money_or_goods.aspx</span></a></p>"
+      }
+    ],
+    "journeySteps": [
+      {
+        "step": 3,
+        "form": "SELECTED_PROBLEM"
+      },
+      {
+        "step": 4,
+        "form": "QUESTION"
+      },
+      {
+        "step": 5,
+        "form": "ABOUT_YOU"
+      },
+      {
+        "step": 6,
+        "form": "YOUR_LEGAL_GUIDE"
       }
     ]
   }

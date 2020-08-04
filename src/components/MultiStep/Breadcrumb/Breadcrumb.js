@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import Step from './Step/Step';
 import Arrow from './Arrow/Arrow';
+import { ABOUT_YOU, YOUR_LEGAL_GUIDE } from '../../../context/triage/forms';
 
 const Breadcrumb = ({ step, form }) => {
   let yourProblem = <Step title="Your problem" />;
@@ -8,14 +9,11 @@ const Breadcrumb = ({ step, form }) => {
   let yourGuide = <Step title="Your guide" />;
   let steps = 5;
   switch (form) {
-    case 'YourProblem':
-      yourProblem = <Step title="Your problem" active />;
-      break;
-    case 'AboutYou':
+    case ABOUT_YOU:
       aboutYou = <Step title="About you" active />;
       steps = 6;
       break;
-    case 'YourGuide':
+    case YOUR_LEGAL_GUIDE:
       yourGuide = <Step title="Your guide" active />;
       break;
     default:
@@ -48,7 +46,7 @@ const Breadcrumb = ({ step, form }) => {
           </div>
         </div>
       </div>
-      {true && (
+      {false && (
         <div className="dic-la">
           <div className="dic-la-wrapper">
             <div className="bc-lay-m-1">

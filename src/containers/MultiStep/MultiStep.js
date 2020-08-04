@@ -11,6 +11,13 @@ import WorkInProgress from '../../components/MultiStep/YourProblem/WorkInProgres
 import YourGuide from '../../components/MultiStep/YourGuide/YourGuide';
 import Footer from '../../components/MultiStep/Footer/Footer';
 import TriageContext from '../../context/triage/triageContext';
+import {
+  YOUR_PROBLEM,
+  SELECTED_PROBLEM,
+  QUESTION,
+  ABOUT_YOU,
+  YOUR_LEGAL_GUIDE,
+} from '../../context/triage/forms';
 
 const MultiStep = () => {
   let history = useHistory();
@@ -44,8 +51,67 @@ const MultiStep = () => {
     });
   };
 
+  const wipForm = (
+    <Fragment>
+      <WorkInProgress />
+      <Footer back={prevStep} />
+    </Fragment>
+  );
+
+  const getForm = () => {
+    if (selectedOption.journeySteps === undefined)
+      return {
+        currentForm: wipForm,
+      };
+
+    const activeStep = selectedOption.journeySteps.find(
+      (journeyStep) => journeyStep.step === step
+    );
+
+    switch (activeStep.form) {
+      case SELECTED_PROBLEM:
+        return {
+          currentForm: (
+            <Fragment>
+              <SelectedProblem />
+              <Footer back={prevStep} next={nextStep} />
+            </Fragment>
+          ),
+        };
+      case QUESTION:
+        return {
+          currentForm: (
+            <Fragment>
+              <Question />
+            </Fragment>
+          ),
+        };
+      case ABOUT_YOU:
+        return {
+          currentForm: (
+            <Fragment>
+              <AboutYou />
+            </Fragment>
+          ),
+          form: ABOUT_YOU,
+        };
+      case YOUR_LEGAL_GUIDE:
+        return {
+          currentForm: (
+            <Fragment>
+              <YourGuide />
+              <Footer back={prevStep} />
+            </Fragment>
+          ),
+          form: YOUR_LEGAL_GUIDE,
+        };
+      default:
+        break;
+    }
+  };
+
   let currentForm = null;
-  let form = 'YourProblem';
+  let form = YOUR_PROBLEM;
   switch (step) {
     case 1:
       currentForm = (
@@ -65,66 +131,13 @@ const MultiStep = () => {
           </Fragment>
         );
       } else {
-        currentForm = (
-          <Fragment>
-            <WorkInProgress />
-            <Footer back={prevStep} />
-          </Fragment>
-        );
+        currentForm = wipForm;
       }
-      break;
-    case 3:
-      if (selectedOption.hasSelectedProblemStep) {
-        currentForm = (
-          <Fragment>
-            <SelectedProblem />
-            <Footer back={prevStep} next={nextStep} />
-          </Fragment>
-        );
-      } else {
-        currentForm = (
-          <Fragment>
-            <WorkInProgress />
-            <Footer back={prevStep} />
-          </Fragment>
-        );
-      }
-      break;
-    case 4:
-      currentForm = (
-        <Fragment>
-          <Question />
-        </Fragment>
-      );
-      break;
-    case 5:
-      if (selectedOption.hasAboutYouStep) {
-        form = 'AboutYou';
-        currentForm = (
-          <Fragment>
-            <AboutYou />
-          </Fragment>
-        );
-      } else {
-        form = 'YourGuide';
-        currentForm = (
-          <Fragment>
-            <YourGuide />
-            <Footer back={prevStep} />
-          </Fragment>
-        );
-      }
-      break;
-    case 6:
-      form = 'YourGuide';
-      currentForm = (
-        <Fragment>
-          <YourGuide />
-          <Footer back={prevStep} />
-        </Fragment>
-      );
       break;
     default:
+      const selectedForm = getForm();
+      form = selectedForm.form;
+      currentForm = selectedForm.currentForm;
       break;
   }
   return (
