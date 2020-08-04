@@ -3,15 +3,13 @@ import Step from './Step/Step';
 import Arrow from './Arrow/Arrow';
 import { ABOUT_YOU, YOUR_LEGAL_GUIDE } from '../../../context/triage/forms';
 
-const Breadcrumb = ({ step, form }) => {
+const Breadcrumb = ({ step, form, stepQTy }) => {
   let yourProblem = <Step title="Your problem" />;
   let aboutYou = <Step title="About you" />;
   let yourGuide = <Step title="Your guide" />;
-  let steps = 5;
   switch (form) {
     case ABOUT_YOU:
       aboutYou = <Step title="About you" active />;
-      steps = 6;
       break;
     case YOUR_LEGAL_GUIDE:
       yourGuide = <Step title="Your guide" active />;
@@ -22,7 +20,7 @@ const Breadcrumb = ({ step, form }) => {
   }
 
   const current = step - 1;
-  const progressBar = Array(steps)
+  const progressBar = Array(stepQTy)
     .fill(null)
     .map((_, i) => {
       if (i === current) return <li key={i} className="page-item active"></li>;
@@ -46,7 +44,7 @@ const Breadcrumb = ({ step, form }) => {
           </div>
         </div>
       </div>
-      {false && (
+      {
         <div className="dic-la">
           <div className="dic-la-wrapper">
             <div className="bc-lay-m-1">
@@ -54,7 +52,7 @@ const Breadcrumb = ({ step, form }) => {
             </div>
           </div>
         </div>
-      )}
+      }
     </Fragment>
   );
 };

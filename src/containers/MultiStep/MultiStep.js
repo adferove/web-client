@@ -57,6 +57,11 @@ const MultiStep = () => {
     </Fragment>
   );
 
+  let stepQTy = 2;
+  if (selectedOption && selectedOption.journeySteps) {
+    stepQTy += selectedOption.journeySteps.length;
+  } else stepQTy = 6;
+
   const getForm = () => {
     if (selectedOption.journeySteps === undefined)
       return {
@@ -141,7 +146,7 @@ const MultiStep = () => {
   }
   return (
     <Fragment>
-      <Breadcrumb step={step} form={form} />
+      <Breadcrumb step={step} form={form} stepQTy={stepQTy} />
       {currentForm}
     </Fragment>
   );
