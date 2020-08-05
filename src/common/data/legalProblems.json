@@ -452,12 +452,15 @@
   },
   {
     "id": "141",
-    "title": "Fences",
+    "title": "Neighbourhood disputes (Fences)",
     "key": "Fences",
     "active": false,
     "parent": "14",
+    "image": "fences",
+    "desc": "Legal Aid NSW <b>does not</b> provide advice on this matter.",
+    "note": "We can only provide you with information and contact details to other services if you require further legal support.",
     "imageYourGuide": "your-guide",
-    "YourNextStepText": "<p>Legal Aid NSW <strong>does not</strong> provide advice service on this matter - Use online resources to resolve yourself -- call LA to find out where you can get legal advice</p>",
+    "YourNextStepText": "<p>Based on the information you gave, you cannot get legal advice from Legal Aid NSW. <br>Please use the information and alternative services for your problem.</p>",
     "legalGuideFacts": [
       {
         "pos": 1,
@@ -465,23 +468,39 @@
         "desc": "I have a <strong>Civil Law</strong> problem",
         "show": true,
         "firm": true
+      },
+      {
+        "pos": 2,
+        "icon": "debt",
+        "desc": "It's about <strong>Neighbourhood disputes (fences)</strong>",
+        "show": true,
+        "firm": true
       }
     ],
     "legalGuideSections": [
       {
         "pos": 1,
-        "title": "Who you can connect",
-        "content": ""
+        "title": "Where you can find more information",
+        "content": "<p><strong>&lsquo;Fences &rsquo; </strong></p><p>This topic gives you information about the law on dividing fences. It also gives you information about boundary disputes and retaining walls...</p><p><a href='http://www.lawaccess.nsw.gov.au/Pages/representing/lawassist_fences/lawassist_fences.aspx' rel='noopener noreferrer' target='_blank'><span style='color: rgb(111, 25, 46);overflow-wrap: break-word;'>www.lawaccess.nsw.gov.au/Pages/representing/lawassist_fences/lawassist_fences.aspx</span></a></p>"
       },
       {
         "pos": 2,
-        "title": "Where you can find more information",
-        "content": ""
+        "title": "Use a self-help tool",
+        "content": "<p><strong>&lsquo;Resolving Fencing Disputes &rsquo; </strong></p><p>This topic gives you information about the law on dividing fences. It also gives you information about boundary disputes and retaining walls...</p><p><a href='http://www.lawaccess.nsw.gov.au/Pages/representing/lawassist_fences/lawassist_fences.aspx' rel='noopener noreferrer' target='_blank'><span style='color: rgb(111, 25, 46); overflow-wrap: break-word;'>www.lawaccess.nsw.gov.au/Pages/representing/lawassist_fences/lawassist_fences.aspx</span></a></p>"
+      },
+      {
+        "pos": 3,
+        "title": "Who you can contact",
+        "content": "<p><strong>The Solicitor Referral Service of the Law Society of New South Wales</strong></p><p>helps members of the public find a private firm of solicitors or accredited specialists in specific areas of law.&nbsp;</p><p><a href='http://www.lawsociety.com.au/for-the-public/going-court-and-working-with-lawyers/solicitor-referral-service' rel='noopener noreferrer' target='_blank'><span style='color: rgb(111, 25, 46);overflow-wrap: break-word;'>www.lawsociety.com.au/for-the-public/going-court-and-working-with-lawyers/solicitor-referral-service</span></a></p><p><strong>Community Justice Centres </strong></p><p>provide quick and impartial dispute resolution services for minor matters e.g. neighbourhood disputes. &nbsp; &nbsp;</p><p><strong>Phone</strong>: 1800 990 777<br /><strong>Hours</strong>: 9am to 5pm, Monday to Friday</p><p><strong>Community Legal Centres NSW Recommendation Service</strong></p><p>This app will ask you a few questions to direct you to community legal centres that are suitable for your situation.</p><p><a href='https://applications-au.neotalogic.com/a/clcnsw-recommendation-service' rel='noopener noreferrer' target='_blank'><span style='color: rgb(111, 25, 46); overflow-wrap: break-word;'>https://applications-au.neotalogic.com/a/clcnsw-recommendation-service</span></a></p>"
       }
     ],
     "journeySteps": [
       {
         "step": 3,
+        "form": "SELECTED_PROBLEM"
+      },
+      {
+        "step": 4,
         "form": "YOUR_LEGAL_GUIDE"
       }
     ]

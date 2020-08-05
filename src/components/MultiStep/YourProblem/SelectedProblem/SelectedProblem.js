@@ -20,6 +20,7 @@ const SelectedProblem = () => {
             className="land-la-w-l112-p"
             dangerouslySetInnerHTML={{ __html: selectedOption.desc }}
           ></div>
+          <br />
           <div
             className="land-la-w-l112-p"
             dangerouslySetInnerHTML={{ __html: selectedOption.note }}
