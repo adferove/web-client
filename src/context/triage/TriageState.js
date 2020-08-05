@@ -93,14 +93,21 @@ const TriageState = (props) => {
     console.log(res);
     if (res && res.dictionary && res.dictionary.length) {
       const searchResults = res.dictionary;
+      const qty = searchResults.length + 1;
       let problems = currentOptions.map((problem) => {
         problem.active = false;
-        let match = searchResults.filter((item) => item.key === problem.key);
-        if (match.length > 0) {
+        let problemMatch = searchResults.find(
+          (item) => item.key === problem.key
+        );
+        problem.pos = qty;
+        if (problemMatch) {
           problem.step = 2;
+          problem.pos = problemMatch.pos;
         } else if (problem.step === 2) problem.step = null;
         return problem;
       });
+      // sort by position
+      problems.sort((a, b) => a.pos - b.pos);
       let step = state.step + 1;
       let payload = {
         problemOptions: problems,
