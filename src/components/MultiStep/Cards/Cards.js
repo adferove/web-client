@@ -23,6 +23,7 @@ const Cards = () => {
             key={option.id}
             title={option.title}
             active={option.active}
+            image={option.cardImage}
           />
         ))}
       </div>

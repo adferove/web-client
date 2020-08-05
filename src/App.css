@@ -479,10 +479,25 @@ img {
     background-image: url(/images/drink-driving.svg); }
   .land-la-problem-img__parenting-arrangements {
     background-image: url(/images/parenting-arrangements.svg); }
+    @media screen and (min-width: 30rem) {
+      .land-la-problem-img__parenting-arrangements {
+        background-image: url(/images/parenting-arrangements-large.svg);
+        -webkit-transform: none;
+        text-transform: none; } }
   .land-la-problem-img__debts-between-people {
     background-image: url(/images/debts-between-people.svg); }
+    @media screen and (min-width: 30rem) {
+      .land-la-problem-img__debts-between-people {
+        background-image: url(/images/debt-with-people.svg);
+        -webkit-transform: none;
+        text-transform: none; } }
   .land-la-problem-img__fences {
     background-image: url(/images/fences.svg); }
+    @media screen and (min-width: 30rem) {
+      .land-la-problem-img__fences {
+        background-image: url(/images/fencing-neighbours.svg);
+        -webkit-transform: none;
+        text-transform: none; } }
   .land-la-problem-img__about-you {
     background-image: url(/images/about-you1.svg); }
     @media screen and (min-width: 30rem) {
@@ -1112,6 +1127,10 @@ img {
   .dic-yg-2-img__file {
     background-image: url(/images/file.svg); }
 
+.dic-card-img__crime {
+  background-repeat: no-repeat;
+  background-image: url(/images/crime.svg); }
+
 .dic-wip {
   width: 80%;
   margin: auto; }
@@ -1229,9 +1248,29 @@ img {
     order: 1;
     height: 12.5rem; }
   .nsw-card__image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; }
+    width: 6rem;
+    height: 6rem;
+    object-fit: cover;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto; }
+    .nsw-card__image__crime {
+      background-image: url(/images/crime.svg); }
+    .nsw-card__image__neighbours {
+      background-image: url(/images/neighbours.svg); }
+    .nsw-card__image__family-relationship {
+      background-image: url(/images/family-relationship.svg); }
+    .nsw-card__image__debt-money {
+      background-image: url(/images/debt-money.svg); }
+    .nsw-card__image__parenting {
+      background-image: url(/images/parenting.svg); }
+    .nsw-card__image__drinkdrive {
+      background-image: url(/images/drinkdrive.svg); }
+    .nsw-card__image__debt-people {
+      background-image: url(/images/debt-people.svg); }
+    .nsw-card__image__fencing {
+      background-image: url(/images/fencing.svg); }
   .nsw-card__cd {
     padding: 1.5rem 1rem 1.5rem 1rem;
     cursor: pointer; }

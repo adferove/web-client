@@ -100,11 +100,38 @@
     order: 1;
     height: rem(200px);
   }
-
   &__image {
-    width: 100%;
-    height: 100%;
+    width: 6rem;
+    height: 6rem;
     object-fit: cover;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+    &__crime {
+      background-image: url(/images/crime.svg);
+    }
+    &__neighbours {
+      background-image: url(/images/neighbours.svg);
+    }
+    &__family-relationship {
+      background-image: url(/images/family-relationship.svg);
+    }
+    &__debt-money {
+      background-image: url(/images/debt-money.svg);
+    }
+    &__parenting {
+      background-image: url(/images/parenting.svg);
+    }
+    &__drinkdrive {
+      background-image: url(/images/drinkdrive.svg);
+    }
+    &__debt-people {
+      background-image: url(/images/debt-people.svg);
+    }
+    &__fencing {
+      background-image: url(/images/fencing.svg);
+    }
   }
 
   &__cd {

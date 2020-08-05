@@ -226,12 +226,27 @@
   }
   &__parenting-arrangements {
     background-image: url(/images/parenting-arrangements.svg);
+    @media screen and (min-width: 30rem) {
+      background-image: url(/images/parenting-arrangements-large.svg);
+      -webkit-transform: none;
+      text-transform: none;
+    }
   }
   &__debts-between-people {
     background-image: url(/images/debts-between-people.svg);
+    @media screen and (min-width: 30rem) {
+      background-image: url(/images/debt-with-people.svg);
+      -webkit-transform: none;
+      text-transform: none;
+    }
   }
   &__fences {
     background-image: url(/images/fences.svg);
+    @media screen and (min-width: 30rem) {
+      background-image: url(/images/fencing-neighbours.svg);
+      -webkit-transform: none;
+      text-transform: none;
+    }
   }
   &__about-you {
     background-image: url(/images/about-you1.svg);

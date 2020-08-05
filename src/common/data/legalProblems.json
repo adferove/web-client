@@ -2,7 +2,8 @@
   {
     "id": "11",
     "title": "Family and Relationships",
-    "active": false
+    "active": false,
+    "cardImage": "family-relationship"
   },
   {
     "id": "12",
@@ -12,17 +13,20 @@
   {
     "id": "13",
     "title": "Crime and offences",
-    "active": false
+    "active": false,
+    "cardImage": "crime"
   },
   {
     "id": "17",
     "title": "Debts & Money Problems",
-    "active": false
+    "active": false,
+    "cardImage": "debt-money"
   },
   {
     "id": "14",
     "title": "Neighbours",
-    "active": false
+    "active": false,
+    "cardImage": "neighbours"
   },
   {
     "id": "15",
@@ -84,6 +88,7 @@
     "active": false,
     "parent": "11",
     "image": "parenting-arrangements",
+    "cardImage": "parenting",
     "desc": "Legal Aid NSW <b>does</b> give support for this legal matter.",
     "note": "You will be asked a few questions to find out what information might help and if you need legal advice.",
     "hasSelectedProblemStep": true,
@@ -279,6 +284,7 @@
     "active": false,
     "parent": "13",
     "image": "drink-driving",
+    "cardImage": "drinkdrive",
     "desc": "Legal Aid NSW <b>does</b> give support for this legal matter.",
     "note": "You will be asked a few questions to find out what information might help and if you need legal advice.",
     "hasSelectedProblemStep": true,
@@ -457,6 +463,7 @@
     "active": false,
     "parent": "14",
     "image": "fences",
+    "cardImage": "fencing",
     "desc": "Legal Aid NSW <b>does not</b> provide advice on this matter.",
     "note": "We can only provide you with information and contact details to other services if you require further legal support.",
     "imageYourGuide": "your-guide",
@@ -512,6 +519,7 @@
     "active": false,
     "parent": "17",
     "image": "debts-between-people",
+    "cardImage": "debt-people",
     "desc": "Legal Aid NSW <b>does</b> give support for this legal matter.",
     "note": "You will be asked a few questions to find out what information might help and if you need legal advice.",
     "hasSelectedProblemStep": true,

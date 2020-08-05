@@ -235,6 +235,13 @@
   }
 }
 
+.dic-card-img {
+  &__crime {
+    background-repeat: no-repeat;
+    background-image: url(/images/crime.svg);
+  }
+}
+
 .dic-wip {
   width: 80%;
   margin: auto;
