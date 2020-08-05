@@ -42,7 +42,7 @@ const Landing = () => {
               Start
             </Link>
           </div>
-          <div>
+          <div className="la-btn-idf">
             <Link
               className="triage-button triage-button--outline"
               to="/contact-legal-aid"
