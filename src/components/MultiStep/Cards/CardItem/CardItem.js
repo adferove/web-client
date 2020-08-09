@@ -1,9 +1,14 @@
 import React from 'react';
 
-const CardItem = ({ title, active, clicked, image }) => {
+const CardItem = ({ title, active, clicked, image, disabled }) => {
   let cardStyle = 'nsw-card__content nsw-card__cd nsw-card__pathway';
   if (active) {
     cardStyle = ['nsw-card__content nsw-card__cd', 'nsw-card__active'].join(
+      ' '
+    );
+  }
+  if (disabled) {
+    cardStyle = ['nsw-card__content nsw-card__cd', 'nsw-card__disabled'].join(
       ' '
     );
   }

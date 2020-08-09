@@ -102,7 +102,7 @@
   }
   &__image {
     width: 6rem;
-    height: 6rem;
+    height: 7rem;
     object-fit: cover;
     background-size: 100%;
     background-position: center;
@@ -132,6 +132,15 @@
     &__fencing {
       background-image: url(/images/fencing.svg);
     }
+    &__court {
+      background-image: url(/images/court.svg);
+    }
+    &__traffic {
+      background-image: url(/images/traffic.svg);
+    }
+    &__children {
+      background-image: url(/images/children.svg);
+    }
   }
 
   &__cd {
@@ -147,6 +156,14 @@
 
   &__pathway {
     font-weight: 600;
+  }
+
+  &__disabled {
+    border-top: solid 4px $dark60;
+    background-color: $light40;
+    cursor: default;
+    font-weight: bold;
+    color: $dark80;
   }
 }
 

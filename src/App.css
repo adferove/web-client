@@ -1252,7 +1252,7 @@ img {
     height: 12.5rem; }
   .nsw-card__image {
     width: 6rem;
-    height: 6rem;
+    height: 7rem;
     object-fit: cover;
     background-size: 100%;
     background-position: center;
@@ -1274,6 +1274,12 @@ img {
       background-image: url(/images/debt-people.svg); }
     .nsw-card__image__fencing {
       background-image: url(/images/fencing.svg); }
+    .nsw-card__image__court {
+      background-image: url(/images/court.svg); }
+    .nsw-card__image__traffic {
+      background-image: url(/images/traffic.svg); }
+    .nsw-card__image__children {
+      background-image: url(/images/children.svg); }
   .nsw-card__cd {
     padding: 1.5rem 1rem 1.5rem 1rem;
     cursor: pointer; }
@@ -1283,6 +1289,12 @@ img {
     color: #ffffff; }
   .nsw-card__pathway {
     font-weight: 600; }
+  .nsw-card__disabled {
+    border-top: solid 4px #6d7079;
+    background-color: #a0a5ae;
+    cursor: default;
+    font-weight: bold;
+    color: #333333; }
 
 .nsw-card--headline .nsw-card__title {
   font-size: 1.625rem;
