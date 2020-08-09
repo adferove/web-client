@@ -469,7 +469,7 @@ img {
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  height: 11rem;
+  height: 9rem;
   width: auto;
   z-index: 1;
   -webkit-transform: scaleX(-1);
@@ -964,7 +964,10 @@ img {
   @media screen and (min-width: 64rem) {
     .dic-la {
       padding-left: 1rem;
-      padding-right: 1rem; } }
+      padding-right: 1rem; }
+      .dic-la__dic-your-guide {
+        padding-left: 0;
+        padding-right: 0; } }
 
 .dic-la-wrapper {
   display: -webkit-box;
@@ -997,7 +1000,7 @@ img {
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  height: 11rem;
+  height: 9rem;
   -webkit-transform: scaleX(-1);
   -ms-transform: scaleX(-1);
   transform: scaleX(-1);
