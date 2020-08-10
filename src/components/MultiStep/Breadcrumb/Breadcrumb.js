@@ -26,6 +26,8 @@ const Breadcrumb = ({ step, form, stepQTy }) => {
       if (i === current) return <li key={i} className="page-item active"></li>;
       else return <li key={i} className="page-item "></li>;
     });
+  let showProgress = true;
+  if (step === stepQTy) showProgress = false;
 
   return (
     <Fragment>
@@ -44,7 +46,7 @@ const Breadcrumb = ({ step, form, stepQTy }) => {
           </div>
         </div>
       </div>
-      {
+      {showProgress && (
         <div className="dic-la">
           <div className="dic-la-wrapper">
             <div className="bc-lay-m-1">
@@ -52,7 +54,7 @@ const Breadcrumb = ({ step, form, stepQTy }) => {
             </div>
           </div>
         </div>
-      }
+      )}
     </Fragment>
   );
 };
