@@ -1142,25 +1142,41 @@ img {
   margin: auto; }
 
 .dic-def {
+  border-top: solid 4px #6f192e;
   position: fixed;
   top: 10rem;
   width: 52rem;
   max-width: 90%;
-  margin: auto;
   z-index: 200;
-  background-color: #f4f4f7;
-  padding: 32px 16px;
+  background-color: #ffffff;
+  padding: 16px 16px;
   box-sizing: border-box;
-  border-radius: 0.5rem; }
+  border-radius: 0.25rem;
+  font-size: 1.5rem;
+  overflow-y: auto;
+  max-height: calc(100vh - 13.125rem); }
   @media screen and (min-width: 64rem) {
     .dic-def {
       top: 20rem; } }
+  .dic-def__no-bold {
+    font-weight: 500; }
+
+.dic-def-close {
+  float: right;
+  cursor: pointer; }
 
 .dic-def-nav {
   transform: translateX(0); }
 
 .dic-def-nav {
   transform: translateX(-100%); }
+
+.dic-sug {
+  display: flex;
+  align-items: center; }
+
+.dic-color-i {
+  color: #6f192e; }
 
 .nsw-card {
   font-family: Montserrat, sans-serif;
@@ -1227,7 +1243,8 @@ img {
     position: relative;
     margin-left: 1rem;
     margin-top: 0.25rem;
-    cursor: pointer; }
+    cursor: pointer;
+    color: #6f192e; }
   .nsw-card__link {
     text-decoration: none;
     color: #002664; }

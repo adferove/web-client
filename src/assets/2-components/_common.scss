@@ -252,19 +252,31 @@
 }
 
 .dic-def {
+  border-top: solid 4px $nsw-primary-highlight;
   position: fixed;
   top: 10rem;
   width: 52rem;
   max-width: 90%;
-  margin: auto;
+  //margin: auto;
   z-index: 200;
-  background-color: $light10;
-  padding: 32px 16px;
+  background-color: $white;
+  padding: 16px 16px;
   box-sizing: border-box;
-  border-radius: 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 1.5rem;
+  overflow-y: auto;
+  max-height: calc(100vh - 13.125rem);
   @media screen and (min-width: 64rem) {
     top: 20rem;
   }
+  &__no-bold {
+    font-weight: 500;
+  }
+}
+
+.dic-def-close {
+  float: right;
+  cursor: pointer;
 }
 
 .dic-def-nav {
@@ -273,4 +285,13 @@
 
 .dic-def-nav {
   transform: translateX(-100%);
+}
+
+.dic-sug {
+  display: flex;
+  align-items: center;
+}
+
+.dic-color-i {
+  color: $nsw-primary-highlight;
 }

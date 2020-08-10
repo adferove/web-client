@@ -1,7 +1,8 @@
 import React, { Fragment, useState } from 'react';
+import WordDefinition from './WordDefinition';
 import Backdrop from '../../../../UI/Backdrop/Backdrop';
 
-const CardItem = ({ title, active, clicked, image, disabled }) => {
+const CardItem = ({ title, active, clicked, image, disabled, definition }) => {
   const [open, setOpen] = useState(false);
   let mainStyle = 'nsw-card';
   let cardStyle = 'nsw-card__content nsw-card__cd nsw-card__pathway';
@@ -33,13 +34,21 @@ const CardItem = ({ title, active, clicked, image, disabled }) => {
           {title}
           {image && <div className={imgStyle}></div>}
         </div>
-        <div onClick={showDefinition} className="nsw-card__icon">
-          <i id="btn-quick-exit" className="material-icons">
-            help_outline
-          </i>
-        </div>
+        {definition && (
+          <div onClick={showDefinition} className="nsw-card__icon">
+            <i id="btn-quick-exit2" className="material-icons">
+              help_outline
+            </i>
+          </div>
+        )}
       </div>
-      {open && <div className="dic-def">{title}</div>}
+      {open && (
+        <WordDefinition
+          word={title}
+          close={closeModal}
+          definition={definition}
+        />
+      )}
     </Fragment>
   );
 };

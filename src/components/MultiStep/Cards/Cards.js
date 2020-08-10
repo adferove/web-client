@@ -18,12 +18,23 @@ const Cards = () => {
 
   return (
     <div className="dic-la-w-l11">
+      <div className="dic-sug">
+        <i id="help-i" className="material-icons dic-color-i">
+          help_outline
+        </i>
+
+        <p className="dic-def__no-bold">
+          Click on the icon to find out the meaning of the words.
+        </p>
+      </div>
+
       <div className="grid-3">
         {filteredOptions.map((option) => (
           <CardItem
             clicked={() => nextStep(option.id, option.disabled)}
             key={option.id}
             title={option.title}
+            definition={option.definition}
             active={option.active}
             image={option.cardImage}
             disabled={option.disabled}
