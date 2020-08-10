@@ -31,21 +31,12 @@
   }
 
   &__content {
-    @include font-size('sm');
-    @include nsw-spacing(padding, md md xxxl md);
+    padding: 1rem;
     border-top: solid 4px $nsw-primary-highlight;
     display: flex;
     flex-direction: column;
     order: 2;
     height: 100%;
-
-    @include breakpoint('lg') {
-      @include nsw-spacing(padding, md xl xxxl xl);
-    }
-
-    p {
-      @include nsw-spacing(margin, none none sm none);
-    }
   }
 
   &__tag {
@@ -69,16 +60,10 @@
   }
 
   &__icon {
-    @include nsw-spacing(margin, md none none none);
-    @include nsw-spacing(bottom, md);
-    position: absolute;
-    width: rem(16px);
-    height: rem(16px);
-
-    @include breakpoint('md') {
-      width: rem(20px);
-      height: rem(20px);
-    }
+    position: relative;
+    margin-left: 1rem;
+    margin-top: 0.25rem;
+    cursor: pointer;
   }
 
   &__link {
@@ -159,7 +144,6 @@
   }
 
   &__disabled {
-    border-top: solid 4px $dark60;
     background-color: $light40;
     cursor: default;
     font-weight: bold;

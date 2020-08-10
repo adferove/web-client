@@ -1141,6 +1141,27 @@ img {
   width: 80%;
   margin: auto; }
 
+.dic-def {
+  position: fixed;
+  top: 10rem;
+  width: 52rem;
+  max-width: 90%;
+  margin: auto;
+  z-index: 200;
+  background-color: #f4f4f7;
+  padding: 32px 16px;
+  box-sizing: border-box;
+  border-radius: 0.5rem; }
+  @media screen and (min-width: 64rem) {
+    .dic-def {
+      top: 20rem; } }
+
+.dic-def-nav {
+  transform: translateX(0); }
+
+.dic-def-nav {
+  transform: translateX(-100%); }
+
 .nsw-card {
   font-family: Montserrat, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -1180,31 +1201,12 @@ img {
       .nsw-card__title {
         font-size: 1.25rem; } }
   .nsw-card__content {
-    font-size: 1rem;
-    line-height: 1.25;
     padding: 1rem;
-    padding: 1rem 1rem;
-    padding: 1rem 1rem 4rem;
-    padding: 1rem 1rem 4rem 1rem;
     border-top: solid 4px #6f192e;
     display: flex;
     flex-direction: column;
     order: 2;
     height: 100%; }
-    @media (min-width: 62em) {
-      .nsw-card__content {
-        font-size: 1rem; } }
-    @media (min-width: 62em) {
-      .nsw-card__content {
-        padding: 1rem;
-        padding: 1rem 2rem;
-        padding: 1rem 2rem 4rem;
-        padding: 1rem 2rem 4rem 2rem; } }
-    .nsw-card__content p {
-      margin: 0rem;
-      margin: 0rem 0rem;
-      margin: 0rem 0rem 0.75rem;
-      margin: 0rem 0rem 0.75rem 0rem; }
   .nsw-card__tag {
     font-family: Montserrat, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -1222,18 +1224,10 @@ img {
   .nsw-card__title, .nsw-card__copy, .nsw-card__icon {
     order: 3; }
   .nsw-card__icon {
-    margin: 1rem;
-    margin: 1rem 0rem;
-    margin: 1rem 0rem 0rem;
-    margin: 1rem 0rem 0rem 0rem;
-    bottom: 1rem;
-    position: absolute;
-    width: 1rem;
-    height: 1rem; }
-    @media (min-width: 48em) {
-      .nsw-card__icon {
-        width: 1.25rem;
-        height: 1.25rem; } }
+    position: relative;
+    margin-left: 1rem;
+    margin-top: 0.25rem;
+    cursor: pointer; }
   .nsw-card__link {
     text-decoration: none;
     color: #002664; }
@@ -1293,7 +1287,6 @@ img {
   .nsw-card__pathway {
     font-weight: 600; }
   .nsw-card__disabled {
-    border-top: solid 4px #6d7079;
     background-color: #a0a5ae;
     cursor: default;
     font-weight: bold;

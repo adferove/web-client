@@ -250,3 +250,27 @@
   width: 80%;
   margin: auto;
 }
+
+.dic-def {
+  position: fixed;
+  top: 10rem;
+  width: 52rem;
+  max-width: 90%;
+  margin: auto;
+  z-index: 200;
+  background-color: $light10;
+  padding: 32px 16px;
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+  @media screen and (min-width: 64rem) {
+    top: 20rem;
+  }
+}
+
+.dic-def-nav {
+  transform: translateX(0);
+}
+
+.dic-def-nav {
+  transform: translateX(-100%);
+}
