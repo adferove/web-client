@@ -4,6 +4,7 @@ import driving from '../assets/images/driving.svg';
 import family from '../assets/images/family.svg';
 import yourGuide from '../assets/images/your-guide.svg';
 import individual from '../assets/images/individual.svg';
+import debt from '../assets/images/debt.svg';
 
 class Images {
   static getImageByName(imageName) {
@@ -26,6 +27,9 @@ class Images {
         break;
       case 'individual':
         image = individual;
+        break;
+      case 'debt':
+        image = debt;
         break;
       default:
         break;
