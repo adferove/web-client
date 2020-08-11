@@ -28,7 +28,7 @@ const YourGuide = () => {
           />
         </Section>
         <Section grey>
-          <div className="dic-la-w-l11 dic-la-w-l11__no-bold">
+          <div className="dic-la-w-l11 dic-la-w-l11__no-bold dic-la-w-l11__print">
             {activeFacts.map((fact) => {
               let image = Images.getImageByName(fact.icon);
 
@@ -52,7 +52,7 @@ const YourGuide = () => {
         </Section>
         <Section maroon title="Your Next Steps">
           <div
-            className="dic-la-w-l11 dic-la-w-l11__no-bold"
+            className="dic-la-w-l11 dic-la-w-l11__no-bold dic-la-w-l11__print"
             dangerouslySetInnerHTML={{
               __html: selectedOption.YourNextStepText,
             }}
@@ -62,7 +62,7 @@ const YourGuide = () => {
         {selectedOption.legalGuideSections.map((legalSection) => (
           <Section key={legalSection.pos} grey title={legalSection.title}>
             <div
-              className="dic-la-w-l11 dic-la-w-l11__no-bold"
+              className="dic-la-w-l11 dic-la-w-l11__no-bold dic-la-w-l11__print"
               dangerouslySetInnerHTML={{
                 __html: legalSection.content,
               }}

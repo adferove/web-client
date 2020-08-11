@@ -3,6 +3,7 @@ import calendar from '../assets/images/calendar.svg';
 import driving from '../assets/images/driving.svg';
 import family from '../assets/images/family.svg';
 import yourGuide from '../assets/images/your-guide.svg';
+import individual from '../assets/images/individual.svg';
 
 class Images {
   static getImageByName(imageName) {
@@ -22,6 +23,9 @@ class Images {
         break;
       case 'yourGuide':
         image = yourGuide;
+        break;
+      case 'individual':
+        image = individual;
         break;
       default:
         break;

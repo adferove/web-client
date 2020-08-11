@@ -116,6 +116,11 @@
   &__no-bold {
     font-weight: 500;
   }
+  &__print {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 0.2rem;
+  }
   // @media screen and (min-width: 64rem) {
   //   max-width: 29.375rem;
   //   padding-left: 0;

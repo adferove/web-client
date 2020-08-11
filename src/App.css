@@ -1066,6 +1066,10 @@ img {
   font-weight: 600; }
   .dic-la-w-l11__no-bold {
     font-weight: 500; }
+  .dic-la-w-l11__print {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 0.2rem; }
 
 .dic-la-w-l12 {
   background-color: #002664;
