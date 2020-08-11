@@ -1425,7 +1425,6 @@ img {
   flex-direction: column;
   -webkit-box-flex: 1;
   flex-grow: 1;
-  max-width: 25rem;
   padding-left: 1rem;
   padding-right: 1rem; }
 

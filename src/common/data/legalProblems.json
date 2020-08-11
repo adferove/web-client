@@ -252,18 +252,14 @@
     "journeySteps": [
       {
         "step": 3,
-        "form": "SELECTED_PROBLEM"
-      },
-      {
-        "step": 4,
         "form": "QUESTION"
       },
       {
-        "step": 5,
+        "step": 4,
         "form": "ABOUT_YOU"
       },
       {
-        "step": 6,
+        "step": 5,
         "form": "YOUR_LEGAL_GUIDE"
       }
     ]
@@ -454,14 +450,10 @@
     "journeySteps": [
       {
         "step": 3,
-        "form": "SELECTED_PROBLEM"
-      },
-      {
-        "step": 4,
         "form": "QUESTION"
       },
       {
-        "step": 5,
+        "step": 4,
         "form": "YOUR_LEGAL_GUIDE"
       }
     ]
@@ -528,10 +520,6 @@
     "journeySteps": [
       {
         "step": 3,
-        "form": "SELECTED_PROBLEM"
-      },
-      {
-        "step": 4,
         "form": "YOUR_LEGAL_GUIDE"
       }
     ]
@@ -671,18 +659,14 @@
     "journeySteps": [
       {
         "step": 3,
-        "form": "SELECTED_PROBLEM"
-      },
-      {
-        "step": 4,
         "form": "QUESTION"
       },
       {
-        "step": 5,
+        "step": 4,
         "form": "ABOUT_YOU"
       },
       {
-        "step": 6,
+        "step": 5,
         "form": "YOUR_LEGAL_GUIDE"
       }
     ]
