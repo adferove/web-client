@@ -525,6 +525,29 @@ img {
 .la-btn-idf {
   margin-bottom: 2rem; }
 
+.land-text-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: none;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem; }
+
+.land-text-pointer {
+  display: inline-flex;
+  cursor: pointer;
+  text-align: center; }
+
 .triage-button {
   font-family: Montserrat, sans-serif;
   -moz-osx-font-smoothing: grayscale;

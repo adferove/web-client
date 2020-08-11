@@ -5,6 +5,7 @@ import Notification from '../../../../UI/Notification/Notification';
 import Section from '../../../common/Section/Section';
 import CheckBox from '../../../common/CheckBox/CheckBox';
 import Footer from '../../Footer/Footer';
+import RichSentence from '../../RichSentence/RichSentence';
 
 const Question = () => {
   const notificationContext = useContext(NotificationContext);
@@ -45,8 +46,10 @@ const Question = () => {
       <Notification />
       <Section preTitle={stepOf} title={selectedOption.title}></Section>
       <Section grey>
-        <div className="land-la-w-l11">
-          <div className="land-la-w-l112-p">{question.desc}</div>
+        <div className="land-text-row">
+          <p>
+            <RichSentence questions={question.questions} />
+          </p>
         </div>
         {question.options.map((item) => (
           <CheckBox

@@ -116,6 +116,12 @@
       {
         "step": 1,
         "desc": "Are you worried about the immediate safety of your children?",
+        "questions": [
+          {
+            "pos": 0,
+            "sentence": "Are you worried about the immediate safety of your children?"
+          }
+        ],
         "multipleSelect": false,
         "icon": "driving",
         "options": [
@@ -140,6 +146,21 @@
       {
         "step": 2,
         "desc": "Do you need help with parenting arrangements for your children?",
+        "questions": [
+          {
+            "pos": 0,
+            "sentence": "Do you need help with "
+          },
+          {
+            "pos": 1,
+            "sentence": "parenting arrangements ",
+            "def": "Definition of the words"
+          },
+          {
+            "pos": 2,
+            "sentence": "for your children?"
+          }
+        ],
         "multipleSelect": false,
         "icon": "family",
         "options": [
@@ -315,6 +336,12 @@
       {
         "step": 1,
         "desc": "Where you in the high, medium or low range?",
+        "questions": [
+          {
+            "pos": 0,
+            "sentence": "Where you in the high, medium or low range?"
+          }
+        ],
         "multipleSelect": false,
         "icon": "driving",
         "options": [
@@ -355,6 +382,12 @@
       {
         "step": 2,
         "desc": "Do you need to be in court in the next three days?",
+        "questions": [
+          {
+            "pos": 0,
+            "sentence": "Do you need to be in court in the next three days?"
+          }
+        ],
         "multipleSelect": false,
         "icon": "calendar",
         "options": [
@@ -544,6 +577,12 @@
       {
         "step": 1,
         "desc": "Does this impact on your ability to afford basics such as rent, food, bills?",
+        "questions": [
+          {
+            "pos": 0,
+            "sentence": "Does this impact on your ability to afford basics such as rent, food, bills?"
+          }
+        ],
         "multipleSelect": false,
         "icon": "driving",
         "options": [

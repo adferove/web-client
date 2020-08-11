@@ -8,7 +8,7 @@ const WordDefinition = ({ word, definition, close }) => (
           close
         </i>
       </div>
-      {word}
+      <strong>{word}</strong>
       <div
         className="dic-def__no-bold"
         dangerouslySetInnerHTML={{ __html: definition }}
