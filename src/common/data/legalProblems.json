@@ -95,7 +95,7 @@
     "id": "117",
     "title": "Guardianship",
     "active": false,
-    "parent": ["11"],
+    "parent": ["11", "17"],
     "disabled": true
   },
 
@@ -388,7 +388,16 @@
         "questions": [
           {
             "pos": 0,
-            "sentence": "Do you need to be in court in the next three days?"
+            "sentence": "Do you need to be in "
+          },
+          {
+            "pos": 1,
+            "sentence": "court",
+            "def": "A body that resolves disputes between parties. There are different tribunals that deal with specific matters.</p><p>For example, the NSW Civil and Administrative Tribunal (NCAT) deals with a broad and diverse range of matters from disputes about residential tenancy and building works to guardianship and administrative review of government decisions. Orders made by a tribunal are legally enforceable."
+          },
+          {
+            "pos": 2,
+            "sentence": " in the next three days?"
           }
         ],
         "multipleSelect": false,
@@ -509,8 +518,15 @@
     "disabled": true
   },
   {
+    "id": "142",
+    "title": "Animals",
+    "active": false,
+    "parent": ["14"],
+    "disabled": true
+  },
+  {
     "id": "141",
-    "title": "Neighbourhood disputes (Fences)",
+    "title": "Fences",
     "key": "Fences",
     "active": false,
     "parent": ["14"],
@@ -559,6 +575,55 @@
         "form": "YOUR_LEGAL_GUIDE"
       }
     ]
+  },
+  {
+    "id": "143",
+    "title": "Neighbours disputes",
+    "active": false,
+    "parent": ["14"],
+    "disabled": true
+  },
+  {
+    "id": "144",
+    "title": "Noise",
+    "active": false,
+    "parent": ["14"],
+    "disabled": true
+  },
+  {
+    "id": "145",
+    "title": "Nuisanceages",
+    "active": false,
+    "parent": ["14"],
+    "disabled": true
+  },
+  {
+    "id": "146",
+    "title": "Trees",
+    "active": false,
+    "parent": ["14"],
+    "disabled": true
+  },
+  {
+    "id": "172",
+    "title": "Banking",
+    "active": false,
+    "parent": ["17"],
+    "disabled": true
+  },
+  {
+    "id": "173",
+    "title": "Bankruptcy",
+    "active": false,
+    "parent": ["17"],
+    "disabled": true
+  },
+  {
+    "id": "174",
+    "title": "Credit",
+    "active": false,
+    "parent": ["17"],
+    "disabled": true
   },
   {
     "id": "171",
@@ -712,5 +777,12 @@
         "form": "YOUR_LEGAL_GUIDE"
       }
     ]
+  },
+  {
+    "id": "175",
+    "title": "Mortgages",
+    "active": false,
+    "parent": ["17"],
+    "disabled": true
   }
 ]

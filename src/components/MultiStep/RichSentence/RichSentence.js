@@ -24,7 +24,7 @@ const RichSentence = ({ questions }) => {
         <Fragment key={q.pos}>
           <Backdrop showBackdrop={open} hideBackdrop={closeModal} />
           <strong className="land-text-pointer" onClick={showDefinition}>
-            {q.sentence}
+            &nbsp;{q.sentence}
             <i id="help-i" className="material-icons dic-color-i">
               help_outline
             </i>
