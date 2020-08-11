@@ -3,7 +3,7 @@ import { useReactToPrint } from 'react-to-print';
 import { Link } from 'react-router-dom';
 import TriageContext from '../../../context/triage/triageContext';
 import Section from '../../common/Section/Section';
-import yourGuide from '../../../assets/images/your-guide.svg';
+import Images from '../../../common/images';
 
 const YourGuide = () => {
   const triageContext = useContext(TriageContext);
@@ -16,7 +16,7 @@ const YourGuide = () => {
   const activeFacts = selectedOption.legalGuideFacts.filter(
     (item) => item && item.show
   );
-
+  let yourGuide = Images.getImageByName('yourGuide');
   return (
     <Fragment>
       <div className="dic-la" ref={componentRef}>
@@ -30,14 +30,21 @@ const YourGuide = () => {
         <Section grey>
           <div className="dic-la-w-l11 dic-la-w-l11__no-bold">
             {activeFacts.map((fact) => {
-              let factStyle = `dic-yg-2 dic-yg-2-img dic-yg-2-img__${fact.icon}`;
+              let image = Images.getImageByName(fact.icon);
+
               return (
                 <Fragment>
-                  <div
-                    key={fact.pos}
-                    className={factStyle}
-                    dangerouslySetInnerHTML={{ __html: fact.desc }}
-                  ></div>
+                  <div className="your-guide-group">
+                    <img
+                      className="your-guide-icon"
+                      src={image}
+                      alt={fact.icon}
+                    />
+                    <div
+                      key={fact.pos}
+                      dangerouslySetInnerHTML={{ __html: fact.desc }}
+                    ></div>
+                  </div>
                 </Fragment>
               );
             })}
@@ -66,7 +73,6 @@ const YourGuide = () => {
       <Section grey>
         <div className="dic-la-w-l11">
           <div>
-            {/* <PrintButton id={id} label="Download my summary" /> */}
             <button
               onClick={handlePrint}
               className="triage-button triage-button--highlight"

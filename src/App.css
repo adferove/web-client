@@ -1075,7 +1075,7 @@ img {
   width: 200vw; }
 
 .dic-la-w-l11-h1 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   line-height: 1.25;
   font-weight: 600;
   font-family: Montserrat, sans-serif;
@@ -1200,6 +1200,15 @@ img {
 
 .dic-color-i {
   color: #6f192e; }
+
+.your-guide-icon {
+  width: 1.625rem;
+  height: 1.625rem;
+  margin-right: 1rem; }
+
+.your-guide-group {
+  display: flex;
+  padding: 0.5rem; }
 
 .nsw-card {
   font-family: Montserrat, sans-serif;

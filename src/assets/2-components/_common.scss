@@ -137,7 +137,7 @@
 }
 
 .dic-la-w-l11-h1 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   line-height: 1.25;
   font-weight: 600;
   font-family: $font-stack;
@@ -294,4 +294,15 @@
 
 .dic-color-i {
   color: $nsw-primary-highlight;
+}
+
+.your-guide-icon {
+  width: 1.625rem;
+  height: 1.625rem;
+  margin-right: 1rem;
+}
+
+.your-guide-group {
+  display: flex;
+  padding: 0.5rem;
 }
