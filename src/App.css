@@ -1180,7 +1180,7 @@ img {
   max-height: calc(100vh - 13.125rem); }
   @media screen and (min-width: 64rem) {
     .dic-def {
-      top: 20rem; } }
+      top: 15rem; } }
   .dic-def__no-bold {
     font-weight: 500; }
 

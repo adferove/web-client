@@ -3,7 +3,8 @@
     "id": "11",
     "title": "Family and Relationships",
     "active": false,
-    "cardImage": "family-relationship"
+    "cardImage": "family-relationship",
+    "definition": "<p>Find information that may help you with a legal problem relating to your children, property or relationship</p>"
   },
   {
     "id": "12",
@@ -16,19 +17,22 @@
     "id": "13",
     "title": "Crime and offences",
     "active": false,
-    "cardImage": "crime"
+    "cardImage": "crime",
+    "definition": "<p>A crime occurs when a person breaks a law and commits an offence against the community in general or against a particular victim.</p><p>In Australia there are NSW laws and Commonwealth laws. Commonwealth laws apply in all states and territories. &nbsp;These laws define offences and state a maximum penalty that a court can give you, such as a fine and/or a prison sentence if you commit the offence.</p><p>If you are charged with an offence this means you have been accused of doing something that is against the law. If you are found guilty, the magistrate or judge will then decide what penalty or punishment(sentence) you should get.</p>"
   },
   {
     "id": "17",
     "title": "Debts & Money Problems",
     "active": false,
-    "cardImage": "debt-money"
+    "cardImage": "debt-money",
+    "definition": "<p>Are you owed money or being chased for a debt? This topic has information for people dealing with debts</p>"
   },
   {
     "id": "14",
     "title": "Neighbours",
     "active": false,
-    "cardImage": "neighbours"
+    "cardImage": "neighbours",
+    "definition": "<p>Find information that may help you with a legal problem relating to your neighbours such as fencing, noise, or trees</p>"
   },
   {
     "id": "15",
