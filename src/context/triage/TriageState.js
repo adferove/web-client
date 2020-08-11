@@ -141,7 +141,10 @@ const TriageState = (props) => {
     const clonedOptions = [...currentOptions];
     const newOptions = clonedOptions.map((cloned) => {
       const newOption = { ...cloned };
-      if (selectedOption.parent !== newOption.id) {
+      let parent = undefined;
+      if (selectedOption.parent)
+        parent = selectedOption.parent.find((p) => p === newOption.id);
+      if (parent === undefined) {
         newOption.active = false;
       }
       return newOption;
@@ -167,7 +170,10 @@ const TriageState = (props) => {
       beforeNext();
       let step = currentStep + 1;
       newOptions.filter((opt) => {
-        if (opt.parent === selectedOption.id) {
+        let parent = undefined;
+        if (opt.parent)
+          parent = opt.parent.find((o) => o === selectedOption.id);
+        if (parent) {
           opt.step = step;
         } else {
           if (opt.step === step) {

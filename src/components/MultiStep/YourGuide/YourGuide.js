@@ -31,9 +31,8 @@ const YourGuide = () => {
           <div className="dic-la-w-l11 dic-la-w-l11__no-bold dic-la-w-l11__print">
             {activeFacts.map((fact) => {
               let image = Images.getImageByName(fact.icon);
-
               return (
-                <Fragment>
+                <Fragment key={fact.pos}>
                   <div className="your-guide-group">
                     <img
                       className="your-guide-icon"

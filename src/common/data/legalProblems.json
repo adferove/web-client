@@ -46,7 +46,6 @@
     "id": "16",
     "title": "Motor Vehicles and Traffic Offences",
     "active": false,
-    "disabled": true,
     "cardImage": "traffic",
     "definition": "When a law about vehicles or road use is broken."
   },
@@ -54,49 +53,49 @@
     "id": "111",
     "title": "Adoption",
     "active": false,
-    "parent": "11",
+    "parent": ["11"],
     "disabled": true
   },
   {
     "id": "112",
     "title": "Care Arrangements",
     "active": false,
-    "parent": "11",
+    "parent": ["11"],
     "disabled": true
   },
   {
     "id": "113",
     "title": "Child Support",
     "active": false,
-    "parent": "11",
+    "parent": ["11"],
     "disabled": true
   },
   {
     "id": "114",
     "title": "Divorce",
     "active": false,
-    "parent": "11",
+    "parent": ["11"],
     "disabled": true
   },
   {
     "id": "115",
     "title": "Domestic Violence",
     "active": false,
-    "parent": "11",
+    "parent": ["11"],
     "disabled": true
   },
   {
     "id": "116",
     "title": "Family Law Children",
     "active": false,
-    "parent": "11",
+    "parent": ["11"],
     "disabled": true
   },
   {
     "id": "117",
     "title": "Guardianship",
     "active": false,
-    "parent": "11",
+    "parent": ["11"],
     "disabled": true
   },
 
@@ -105,7 +104,7 @@
     "title": "Parenting Arrangements",
     "key": "Parenting arrangements",
     "active": false,
-    "parent": "11",
+    "parent": ["11"],
     "image": "parenting-arrangements",
     "cardImage": "parenting",
     "desc": "Legal Aid NSW <b>does</b> give support for this legal matter.",
@@ -293,7 +292,7 @@
     "id": "119",
     "title": "Parenting Plan",
     "active": false,
-    "parent": "11",
+    "parent": ["11"],
     "disabled": true,
     "definition": "A written agreement, signed and dated by both parents, that sets out the care arrangements for a child."
   },
@@ -301,7 +300,7 @@
     "id": "131",
     "title": "Apprehended Violence Orders (AVOs)",
     "active": false,
-    "parent": "13",
+    "parent": ["13"],
     "disabled": true,
     "definition": "An order made by a court that is aimed at protecting one person or people from another person that causes them to fear for their safety."
   },
@@ -309,7 +308,7 @@
     "id": "132",
     "title": "Arrest",
     "active": false,
-    "parent": "13",
+    "parent": ["13"],
     "disabled": true,
     "definition": "To be taken into police custody for committing or being suspected of committing a criminal offence."
   },
@@ -317,7 +316,7 @@
     "id": "133",
     "title": "Child Abuse",
     "active": false,
-    "parent": "13",
+    "parent": ["13"],
     "disabled": true
   },
   {
@@ -325,7 +324,7 @@
     "title": "Drink Driving",
     "key": "Drink driving",
     "active": false,
-    "parent": "13",
+    "parent": ["13", "16"],
     "image": "drink-driving",
     "cardImage": "drinkdrive",
     "desc": "Legal Aid NSW <b>does</b> give support for this legal matter.",
@@ -499,14 +498,14 @@
     "id": "135",
     "title": "Drugs",
     "active": false,
-    "parent": "13",
+    "parent": ["13"],
     "disabled": true
   },
   {
     "id": "136",
     "title": "Juvenile Justice",
     "active": false,
-    "parent": "13",
+    "parent": ["13"],
     "disabled": true
   },
   {
@@ -514,7 +513,7 @@
     "title": "Neighbourhood disputes (Fences)",
     "key": "Fences",
     "active": false,
-    "parent": "14",
+    "parent": ["14"],
     "image": "fences",
     "cardImage": "fencing",
     "desc": "Legal Aid NSW <b>does not</b> provide advice on this matter.",
@@ -566,7 +565,7 @@
     "title": "Debts Between People",
     "key": "Debts between people",
     "active": false,
-    "parent": "17",
+    "parent": ["17"],
     "image": "debts-between-people",
     "cardImage": "debt-people",
     "desc": "Legal Aid NSW <b>does</b> give support for this legal matter.",

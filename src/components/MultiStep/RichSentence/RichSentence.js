@@ -38,7 +38,7 @@ const RichSentence = ({ questions }) => {
           )}
         </Fragment>
       );
-    return <Fragment>{q.sentence}</Fragment>;
+    return <Fragment key={q.pos}>{q.sentence}</Fragment>;
   });
 };
 
