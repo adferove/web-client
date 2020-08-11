@@ -281,14 +281,16 @@
     "title": "Apprehended Violence Orders (AVOs)",
     "active": false,
     "parent": "13",
-    "disabled": true
+    "disabled": true,
+    "definition": "An order made by a court that is aimed at protecting one person or people from another person that causes them to fear for their safety."
   },
   {
     "id": "132",
     "title": "Arrest",
     "active": false,
     "parent": "13",
-    "disabled": true
+    "disabled": true,
+    "definition": "To be taken into police custody for committing or being suspected of committing a criminal offence."
   },
   {
     "id": "133",
