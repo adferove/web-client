@@ -114,7 +114,7 @@
     "aboutYouStep2Title": "Do any of these apply to you?",
     "imageAboutYou": "about-you",
     "imageYourGuide": "your-guide",
-    "YourNextStepText": "<p>Based on the information you gave, <strong>you should get legal advice</strong></p>",
+    "YourNextStepText": "Based on the information you gave, <strong>you should get legal advice</strong>",
     "problemQuestions": [
       {
         "step": 1,
@@ -165,7 +165,7 @@
           }
         ],
         "multipleSelect": false,
-        "icon": "family",
+        "icon": "family_restroom",
         "options": [
           {
             "id": 1,
@@ -194,7 +194,7 @@
         "name": "ay-chk-1",
         "showResult": true,
         "resultLabel": "I’m <strong>under the age of 18</strong>",
-        "icon": "individual"
+        "icon": "person"
       },
       {
         "id": 2,
@@ -203,7 +203,7 @@
         "name": "ay-chk-2",
         "showResult": true,
         "resultLabel": "I’m <strong>Aboriginal or Torres Straight Islander</strong>",
-        "icon": "individual"
+        "icon": "person"
       },
       {
         "id": 3,
@@ -212,7 +212,7 @@
         "name": "ay-chk-3",
         "showResult": true,
         "resultLabel": "I’m on the maximum Centrelink benefit",
-        "icon": "individual"
+        "icon": "person"
       },
       {
         "id": 4,
@@ -334,7 +334,7 @@
     "aboutYouStep2Title": "Do any of these apply to you?",
     "imageAboutYou": "about-you",
     "imageYourGuide": "your-guide",
-    "YourNextStepText": "<p>Based on the information you gave, <strong>you should get legal advice</strong></p>",
+    "YourNextStepText": "Based on the information you gave, <strong>you should get legal advice</strong>",
     "problemQuestions": [
       {
         "step": 1,
@@ -346,7 +346,7 @@
           }
         ],
         "multipleSelect": false,
-        "icon": "driving",
+        "icon": "directions_car",
         "options": [
           {
             "id": 1,
@@ -354,7 +354,7 @@
             "checked": false,
             "name": "ay-chk-1",
             "showResult": true,
-            "resultLabel": "It's about Drink Driving (<strong>Low Range</strong>)"
+            "resultLabel": "It's about <strong>Drink Driving (Low Range)</strong>"
           },
           {
             "id": 2,
@@ -362,7 +362,7 @@
             "checked": false,
             "name": "ay-chk-2",
             "showResult": true,
-            "resultLabel": "It's about Drink Driving (<strong>Medium Range</strong>)"
+            "resultLabel": "It's about <strong>Drink Driving (Medium Range)</strong>"
           },
           {
             "id": 3,
@@ -370,7 +370,7 @@
             "checked": false,
             "name": "ay-chk-3",
             "showResult": true,
-            "resultLabel": "It's about Drink Driving (<strong>High Range</strong>)"
+            "resultLabel": "It's about <strong>Drink Driving (High Range)</strong>"
           },
           {
             "id": 4,
@@ -378,7 +378,7 @@
             "checked": false,
             "name": "ay-chk-4",
             "showResult": true,
-            "resultLabel": "It's about Drink Driving (<strong>I'm not sure about the range</strong>)"
+            "resultLabel": "It's about <strong>Drink Driving (I'm not sure about the range)</strong>"
           }
         ]
       },
@@ -401,7 +401,7 @@
           }
         ],
         "multipleSelect": false,
-        "icon": "calendar",
+        "icon": "date_range",
         "options": [
           {
             "id": 1,
@@ -535,7 +535,7 @@
     "desc": "Legal Aid NSW <b>does not</b> provide advice on this matter.",
     "note": "We can only provide you with information and contact details to other services if you require further legal support.",
     "imageYourGuide": "your-guide",
-    "YourNextStepText": "<p>Based on the information you gave, you cannot get legal advice from Legal Aid NSW. <br>Please use the information and alternative services for your problem.</p>",
+    "YourNextStepText": "Based on the information you gave, you cannot get legal advice from Legal Aid NSW. <br>Please use the information and alternative services for your problem.",
     "legalGuideFacts": [
       {
         "pos": 1,
@@ -546,8 +546,15 @@
       },
       {
         "pos": 2,
-        "icon": "debt",
+        "icon": "fence",
         "desc": "It's about <strong>Neighbourhood disputes (fences)</strong>",
+        "show": true,
+        "firm": true
+      },
+      {
+        "pos": 3,
+        "icon": "follow_the_signs",
+        "desc": "Based on the information you gave, you cannot get legal advice from Legal Aid NSW. <br>Please use the information and alternative services for your problem.",
         "show": true,
         "firm": true
       }
@@ -640,7 +647,7 @@
     "aboutYouStep2Title": "Do any of these apply to you?",
     "imageAboutYou": "about-you",
     "imageYourGuide": "your-guide",
-    "YourNextStepText": "<p>Based on the information you gave, <strong>you should get legal advice</strong></p>",
+    "YourNextStepText": "Based on the information you gave, <strong>you should get legal advice</strong>",
     "problemQuestions": [
       {
         "step": 1,
@@ -681,7 +688,7 @@
         "name": "ay-chk-1",
         "showResult": true,
         "resultLabel": "I’m <strong>under the age of 18</strong>",
-        "icon": "individual"
+        "icon": "person"
       },
       {
         "id": 2,
@@ -690,7 +697,7 @@
         "name": "ay-chk-2",
         "showResult": true,
         "resultLabel": "I’m <strong>Aboriginal or Torres Straight Islander</strong>",
-        "icon": "individual"
+        "icon": "person"
       },
       {
         "id": 3,
@@ -699,7 +706,7 @@
         "name": "ay-chk-3",
         "showResult": true,
         "resultLabel": "I’m on the maximum Centrelink benefit",
-        "icon": "individual"
+        "icon": "person"
       },
       {
         "id": 4,
@@ -708,7 +715,7 @@
         "name": "ay-chk-4",
         "showResult": true,
         "resultLabel": "I'm <strong>experiencing or at risk of family violence</strong>",
-        "icon": "individual"
+        "icon": "person"
       },
       {
         "id": 5,
@@ -745,7 +752,7 @@
       },
       {
         "pos": 2,
-        "icon": "debt",
+        "icon": "local_atm",
         "desc": "It's about <strong>debts between individuals</strong>",
         "show": true,
         "firm": true

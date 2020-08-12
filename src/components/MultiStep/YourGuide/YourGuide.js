@@ -3,7 +3,6 @@ import { useReactToPrint } from 'react-to-print';
 import { Link } from 'react-router-dom';
 import TriageContext from '../../../context/triage/triageContext';
 import Section from '../../common/Section/Section';
-import Images from '../../../common/images';
 
 const YourGuide = () => {
   const triageContext = useContext(TriageContext);
@@ -16,29 +15,25 @@ const YourGuide = () => {
   const activeFacts = selectedOption.legalGuideFacts.filter(
     (item) => item && item.show
   );
-  //let yourGuide = Images.getImageByName('yourGuide');
+
   return (
     <Fragment>
       <div className="dic-la" ref={componentRef}>
-        <Section preTitle="Your results summary" title="Legal guide" print top>
-          {/* <img
-            src={yourGuide}
-            alt="your-guide"
-            className="dic-la dic-la__dic-your-guide"
-          /> */}
-        </Section>
+        <Section
+          preTitle="Your results summary"
+          title="Legal guide"
+          print
+          top
+        ></Section>
         <Section grey>
           <div className="dic-la-w-l11 dic-la-w-l11__no-bold dic-la-w-l11__print">
             {activeFacts.map((fact) => {
-              let image = Images.getImageByName(fact.icon);
               return (
                 <Fragment key={fact.pos}>
                   <div className="your-guide-group">
-                    <img
-                      className="your-guide-icon"
-                      src={image}
-                      alt={fact.icon}
-                    />
+                    <i className="material-icons your-safety-align__icon">
+                      {fact.icon}
+                    </i>
                     <div
                       key={fact.pos}
                       dangerouslySetInnerHTML={{ __html: fact.desc }}
@@ -49,14 +44,7 @@ const YourGuide = () => {
             })}
           </div>
         </Section>
-        <Section print maroon title="Your Next Steps">
-          <div
-            className="dic-la-w-l11 dic-la-w-l11__no-bold dic-la-w-l11__print"
-            dangerouslySetInnerHTML={{
-              __html: selectedOption.YourNextStepText,
-            }}
-          ></div>
-        </Section>
+        <Section print grey title="Your Next Steps"></Section>
 
         {selectedOption.legalGuideSections.map((legalSection) => (
           <Section key={legalSection.pos} grey title={legalSection.title} print>

@@ -298,6 +298,13 @@ const TriageState = (props) => {
       });
       fixedFacts.push(...aboutYouFacts);
     }
+    pos += 1;
+    fixedFacts.push({
+      pos,
+      icon: 'follow_the_signs',
+      desc: selectedOption.YourNextStepText,
+      show: true,
+    });
     selectedOption.legalGuideFacts = fixedFacts;
     updateSelectedOption(selectedOption);
   };

@@ -1065,7 +1065,8 @@ img {
   padding-right: 1rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  font-weight: 600; }
+  font-weight: 600;
+  font-size: 1rem; }
   .dic-la-w-l11__no-bold {
     font-weight: 500; }
   .dic-la-w-l11__print {
@@ -1073,7 +1074,11 @@ img {
     padding-right: 2rem;
     padding-bottom: 0.2rem; }
   .dic-la-w-l11__top {
-    padding-top: 2rem; }
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem; }
+  @media screen and (min-width: 64rem) {
+    .dic-la-w-l11 {
+      font-size: 1rem; } }
 
 .dic-la-w-l12 {
   background-color: #002664;
@@ -1083,14 +1088,14 @@ img {
   width: 200vw; }
 
 .dic-la-w-l11-h1 {
-  font-size: 1rem;
+  font-size: 1.75rem;
   line-height: 1.25;
   font-weight: 600;
   font-family: Montserrat, sans-serif;
   text-align: left; }
   @media screen and (min-width: 64rem) {
     .dic-la-w-l11-h1 {
-      font-size: 1.5rem; } }
+      font-size: 2rem; } }
 
 .dic-la-w-l111 {
   display: -webkit-box;
@@ -1216,10 +1221,12 @@ img {
 .your-guide-icon {
   width: 1.625rem;
   height: 1.625rem;
-  margin-right: 1rem; }
+  margin-right: 1rem;
+  color: #333333; }
 
 .your-guide-group {
   display: flex;
+  align-items: center;
   padding: 0.5rem; }
 
 .your-safety {
