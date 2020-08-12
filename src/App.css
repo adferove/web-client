@@ -1246,12 +1246,12 @@ img {
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: auto; }
+  height: 2rem; }
   .your-safety-align__icon {
     margin-right: 1rem; }
   @media screen and (min-width: 64rem) {
     .your-safety-align {
-      height: 4rem; } }
+      height: 2.5rem; } }
 
 .nsw-card {
   font-family: Montserrat, sans-serif;

@@ -14,17 +14,25 @@ const YourSafety = ({ modal }) => {
         <div className="your-safety">
           <strong>{modal.title}</strong>
           {modal.paragraphs.map((item) => (
-            <div className="your-safety-align" key={item.pos}>
+            <Fragment key={item.pos}>
               {item.icon && (
-                <i className="material-icons your-safety-align__icon">
-                  {item.icon}
-                </i>
+                <div className="your-safety-align">
+                  <i className="material-icons your-safety-align__icon">
+                    {item.icon}
+                  </i>
+                  <p
+                    className="dic-def__no-bold"
+                    dangerouslySetInnerHTML={{ __html: item.text }}
+                  ></p>
+                </div>
               )}
-              <p
-                className="dic-def__no-bold"
-                dangerouslySetInnerHTML={{ __html: item.text }}
-              ></p>
-            </div>
+              {item.icon === undefined && (
+                <p
+                  className="dic-def__no-bold"
+                  dangerouslySetInnerHTML={{ __html: item.text }}
+                ></p>
+              )}
+            </Fragment>
           ))}
           <div>
             <div
