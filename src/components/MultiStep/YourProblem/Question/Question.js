@@ -47,7 +47,9 @@ const Question = () => {
       <Section preTitle={stepOf} title={selectedOption.title}></Section>
       <Section grey>
         <div className="land-text-row">
-          <RichSentence questions={question.questions} />
+          <p>
+            <RichSentence questions={question.questions} />
+          </p>
         </div>
         {question.options.map((item) => (
           <CheckBox
