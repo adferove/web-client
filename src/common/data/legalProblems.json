@@ -492,6 +492,43 @@
         "content": "<p><strong>&lsquo;Drink driving charges and you&rsquo; </strong></p><p>This brochure helps you prepare for court and explains the penalties for drink driving: &nbsp;<a href='http://www.legalaid.nsw.gov.au/publications/factsheets-and-resources/drink-driving-charges-and-you-pamphlet' rel='noopener noreferrer' target='_blank'><span style='color: rgb(111, 25, 46); overflow-wrap: break-word;'>www.legalaid.nsw.gov.au/publications/factsheets-and-resources/drink-driving-charges-and-you-pamphlet</span></a></p>"
       }
     ],
+    "yourGuideSections": [
+      {
+        "id": "yg1",
+        "pos": 1,
+        "title": "Your next steps",
+        "cards": [
+          {
+            "id": "yg11",
+            "pos": 1,
+            "title": "Book an advice session",
+            "text": "Call your local Legal Aid NSW office to speak to a lawyer before your court date.",
+            "link": "https:www.legalaid.nsw.gov.au"
+          },
+          {
+            "id": "yg12",
+            "pos": 2,
+            "title": "Get help at court on the day",
+            "text": "On your court date there will be a duty lawyer available who can give you legal advice.",
+            "link": "https:www.legalaid.nsw.gov.au"
+          }
+        ]
+      },
+      {
+        "id": "yg2",
+        "pos": 2,
+        "title": "In the meantime",
+        "cards": [
+          {
+            "id": "yg21",
+            "pos": 1,
+            "title": "Learn more about your problem",
+            "text": "This brochure helps you prepare for court and explains the penalties for drink driving.",
+            "link": "https:www.legalaid.nsw.gov.au"
+          }
+        ]
+      }
+    ],
     "journeySteps": [
       {
         "step": 3,

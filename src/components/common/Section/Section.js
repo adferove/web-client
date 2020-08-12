@@ -22,13 +22,16 @@ const Section = (props) => {
       ];
   }
 
+  let styleLayer3 = ['dic-la-w-l11-h1'];
+  if (props.sub) styleLayer3 = ['dic-la-w-l11-h1', 'dic-la-w-l11-h1__sub'];
+
   return (
     <div className="dic-la">
       <div className={style.join(' ')}>
         <div className={styleLayer1.join(' ')}>
           <div className={styleLayer2.join(' ')}>
             {props.preTitle}
-            <div className="dic-la-w-l11-h1">{props.title}</div>
+            <div className={styleLayer3.join(' ')}>{props.title}</div>
           </div>
           {props.children}
         </div>

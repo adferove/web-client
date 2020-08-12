@@ -25,6 +25,7 @@ const YourGuide = () => {
           print
           top
         ></Section>
+
         <Section grey>
           <div className="dic-la-w-l11 dic-la-w-l11__no-bold dic-la-w-l11__print">
             {activeFacts.map((fact) => {
@@ -34,28 +35,24 @@ const YourGuide = () => {
                     <i className="material-icons your-safety-align__icon">
                       {fact.icon}
                     </i>
-                    <div
-                      key={fact.pos}
-                      dangerouslySetInnerHTML={{ __html: fact.desc }}
-                    ></div>
+                    <div dangerouslySetInnerHTML={{ __html: fact.desc }}></div>
                   </div>
                 </Fragment>
               );
             })}
           </div>
         </Section>
-        <Section print grey title="Your Next Steps"></Section>
 
-        {selectedOption.legalGuideSections.map((legalSection) => (
-          <Section key={legalSection.pos} grey title={legalSection.title} print>
-            <div
-              className="dic-la-w-l11 dic-la-w-l11__no-bold dic-la-w-l11__print"
-              dangerouslySetInnerHTML={{
-                __html: legalSection.content,
-              }}
-            ></div>
-          </Section>
-        ))}
+        {selectedOption.yourGuideSections &&
+          selectedOption.yourGuideSections.map((yourLegalSection) => (
+            <Section
+              key={yourLegalSection.id}
+              title={yourLegalSection.title}
+              grey
+              print
+              sub
+            ></Section>
+          ))}
       </div>
       <Section grey>
         <div className="dic-la-w-l11">

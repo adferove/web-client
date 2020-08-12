@@ -145,8 +145,14 @@
   font-weight: 600;
   font-family: $font-stack;
   text-align: left;
+  &__sub {
+    font-size: 1.5rem;
+  }
   @media screen and (min-width: 64rem) {
     font-size: 2rem;
+    &__sub {
+      font-size: 1.75rem;
+    }
   }
 }
 

@@ -1093,9 +1093,13 @@ img {
   font-weight: 600;
   font-family: Montserrat, sans-serif;
   text-align: left; }
+  .dic-la-w-l11-h1__sub {
+    font-size: 1.5rem; }
   @media screen and (min-width: 64rem) {
     .dic-la-w-l11-h1 {
-      font-size: 2rem; } }
+      font-size: 2rem; }
+      .dic-la-w-l11-h1__sub {
+        font-size: 1.75rem; } }
 
 .dic-la-w-l111 {
   display: -webkit-box;
