@@ -1070,15 +1070,19 @@ img {
   .dic-la-w-l11__no-bold {
     font-weight: 500; }
   .dic-la-w-l11__print {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     padding-bottom: 0.2rem; }
   .dic-la-w-l11__top {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem; }
   @media screen and (min-width: 64rem) {
     .dic-la-w-l11 {
-      font-size: 1rem; } }
+      font-size: 1rem; }
+      .dic-la-w-l11__print {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 0.2rem; } }
 
 .dic-la-w-l12 {
   background-color: #002664;
@@ -1309,6 +1313,11 @@ img {
     flex-direction: column;
     order: 2;
     height: 100%; }
+  .nsw-card__content-yg {
+    padding: 1rem;
+    border-top: solid 4px #6f192e;
+    height: 100%;
+    cursor: pointer; }
   .nsw-card__tag {
     font-family: Montserrat, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -1394,6 +1403,8 @@ img {
     cursor: default;
     font-weight: bold;
     color: #333333; }
+  .nsw-card__card-link {
+    text-decoration: none !important; }
 
 .nsw-card--headline .nsw-card__title {
   font-size: 1.625rem;

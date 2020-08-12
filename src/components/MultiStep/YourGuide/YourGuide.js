@@ -3,6 +3,7 @@ import { useReactToPrint } from 'react-to-print';
 import { Link } from 'react-router-dom';
 import TriageContext from '../../../context/triage/triageContext';
 import Section from '../../common/Section/Section';
+import CardItem from './CardItem/CardItem';
 
 const YourGuide = () => {
   const triageContext = useContext(TriageContext);
@@ -20,8 +21,8 @@ const YourGuide = () => {
     <Fragment>
       <div className="dic-la" ref={componentRef}>
         <Section
-          preTitle="Your results summary"
-          title="Legal guide"
+          preTitle="Thank you for your answers"
+          title="This is your legal summary"
           print
           top
         ></Section>
@@ -51,11 +52,17 @@ const YourGuide = () => {
               grey
               print
               sub
-            ></Section>
+            >
+              <div className="grid-2 dic-la-w-l11__print">
+                {yourLegalSection.cards.map((card) => (
+                  <CardItem key={card.id} card={card} />
+                ))}
+              </div>
+            </Section>
           ))}
       </div>
       <Section grey>
-        <div className="dic-la-w-l11">
+        <div className="dic-la-w-l11 dic-la-w-l11__print">
           <div>
             <button
               onClick={handlePrint}
