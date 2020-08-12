@@ -44,6 +44,10 @@
     border-top: solid 4px $nsw-primary-highlight;
     height: 100%;
     cursor: pointer;
+    color: $black;
+    a:visited {
+      color: $black;
+    }
   }
 
   &__tag {

@@ -1317,7 +1317,10 @@ img {
     padding: 1rem;
     border-top: solid 4px #6f192e;
     height: 100%;
-    cursor: pointer; }
+    cursor: pointer;
+    color: #000000; }
+    .nsw-card__content-yg a:visited {
+      color: #000000; }
   .nsw-card__tag {
     font-family: Montserrat, sans-serif;
     -webkit-font-smoothing: antialiased;
