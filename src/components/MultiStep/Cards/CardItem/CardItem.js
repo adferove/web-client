@@ -36,8 +36,8 @@ const CardItem = ({ title, active, clicked, image, disabled, definition }) => {
         </div>
         {definition && (
           <div onClick={showDefinition} className="nsw-card__icon">
-            <i id="btn-quick-exit2" className="material-icons">
-              help_outline
+            <i id="btn-quick-exit2" className="material-icons dic-color-i">
+              info_outline
             </i>
           </div>
         )}

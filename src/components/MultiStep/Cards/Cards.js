@@ -20,7 +20,7 @@ const Cards = () => {
     <div className="dic-la-w-l11">
       <div className="dic-sug">
         <i id="help-i" className="material-icons dic-color-i">
-          help_outline
+          info_outline
         </i>
 
         <p className="dic-def__no-bold">

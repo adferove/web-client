@@ -26,7 +26,7 @@ const RichSentence = ({ questions }) => {
           <strong className="land-text-pointer" onClick={showDefinition}>
             &nbsp;{q.sentence}
             <i id="help-i" className="material-icons dic-color-i">
-              help_outline
+              info_outline
             </i>
           </strong>
           {open && (

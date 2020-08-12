@@ -190,7 +190,7 @@ img {
   position: -webkit-sticky;
   top: 0;
   width: 100%;
-  z-index: 2; }
+  z-index: 50; }
   .app-la-wrapper__breadcrumb {
     top: 4.5rem; }
 
@@ -1205,7 +1205,7 @@ img {
   align-items: center; }
 
 .dic-color-i {
-  color: #6f192e; }
+  color: #2e5299; }
 
 .your-guide-icon {
   width: 1.625rem;
