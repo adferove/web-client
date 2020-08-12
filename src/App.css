@@ -1319,6 +1319,7 @@ img {
     height: 100%;
     cursor: pointer;
     color: #000000; }
+    .nsw-card__content-yg a,
     .nsw-card__content-yg a:visited {
       color: #000000; }
   .nsw-card__tag {
