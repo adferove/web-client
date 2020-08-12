@@ -190,7 +190,7 @@ img {
   position: -webkit-sticky;
   top: 0;
   width: 100%;
-  z-index: 50; }
+  z-index: 90; }
   .app-la-wrapper__breadcrumb {
     top: 4.5rem; }
 
@@ -598,6 +598,8 @@ img {
   left: 0;
   top: 0;
   background: rgba(0, 0, 0, 0.5); }
+  .backdrop__header {
+    z-index: 80; }
 
 .navigation-items {
   font-family: Montserrat, sans-serif;
@@ -1081,11 +1083,14 @@ img {
   width: 200vw; }
 
 .dic-la-w-l11-h1 {
-  font-size: 2rem;
+  font-size: 1rem;
   line-height: 1.25;
   font-weight: 600;
   font-family: Montserrat, sans-serif;
   text-align: left; }
+  @media screen and (min-width: 64rem) {
+    .dic-la-w-l11-h1 {
+      font-size: 1.5rem; } }
 
 .dic-la-w-l111 {
   display: -webkit-box;
@@ -1106,7 +1111,7 @@ img {
       margin-top: 0.5rem; } }
 
 .dic-la-w-l111-h2 {
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 1.25;
   font-weight: 600;
   font-family: Montserrat, sans-serif;
@@ -1181,12 +1186,13 @@ img {
   padding: 16px 16px;
   box-sizing: border-box;
   border-radius: 0.25rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
   overflow-y: auto;
   max-height: calc(100vh - 13.125rem); }
   @media screen and (min-width: 64rem) {
     .dic-def {
-      top: 15rem; } }
+      top: 15rem;
+      font-size: 1.5rem; } }
   .dic-def__no-bold {
     font-weight: 500; }
 
@@ -1215,6 +1221,37 @@ img {
 .your-guide-group {
   display: flex;
   padding: 0.5rem; }
+
+.your-safety {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 200;
+  background-color: #6f192e;
+  color: #ffffff;
+  padding: 1rem 1rem;
+  box-sizing: border-box;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  overflow-y: auto; }
+  @media screen and (min-width: 64rem) {
+    .your-safety {
+      width: 52rem;
+      max-width: 90%;
+      font-size: 1.25rem; } }
+  .your-safety__no-bold {
+    font-weight: 500; }
+
+.your-safety-align {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: auto; }
+  .your-safety-align__icon {
+    margin-right: 1rem; }
+  @media screen and (min-width: 64rem) {
+    .your-safety-align {
+      height: 4rem; } }
 
 .nsw-card {
   font-family: Montserrat, sans-serif;

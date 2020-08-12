@@ -6,4 +6,7 @@
   left: 0;
   top: 0;
   background: rgba(0, 0, 0, 0.5);
+  &__header {
+    z-index: 80;
+  }
 }

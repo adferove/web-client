@@ -112,6 +112,33 @@
           }
         ]
       }
-    ]
+    ],
+    "modal": {
+      "title": "Your Safety",
+      "paragraphs": [
+        {
+          "pos": 1,
+          "text": "If you, or someone you are with is in immediate danger call <strong>000</strong>"
+        },
+        {
+          "pos": 2,
+          "text": "Contact <strong>1800RESPECT</strong> for domestic and family violence counselling, information and referrals (24 hours, 7 days)"
+        },
+        {
+          "pos": 3,
+          "text": "1800 737 732",
+          "icon": "local_phone"
+        },
+        {
+          "pos": 4,
+          "text": "<a href='https://chat.1800respect.org.au/' style='text-decoration: none!important;' rel='noopener noreferrer' target='_blank'><span style='color: rgb(255, 255, 255); text-decoration: none!important ;'><strong>www.chat.1800respect.org.au</strong></span></a>",
+          "icon": "chat_bubble"
+        },
+        {
+          "pos": 5,
+          "text": "If you need to leave this website quickly, use the exit button at the top"
+        }
+      ]
+    }
   }
 ]

@@ -145,14 +145,14 @@
 }
 
 .dic-la-w-l11-h1 {
-  font-size: 2rem;
+  font-size: 1rem;
   line-height: 1.25;
   font-weight: 600;
   font-family: $font-stack;
   text-align: left;
-  // @media screen and (min-width: 64rem) {
-  //   font-size: 2rem;
-  // }
+  @media screen and (min-width: 64rem) {
+    font-size: 1.5rem;
+  }
 }
 
 .dic-la-w-l111 {
@@ -176,7 +176,7 @@
 }
 
 .dic-la-w-l111-h2 {
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 1.25;
   font-weight: 600;
   font-family: $font-stack;
@@ -271,11 +271,12 @@
   padding: 16px 16px;
   box-sizing: border-box;
   border-radius: 0.25rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
   overflow-y: auto;
   max-height: calc(100vh - 13.125rem);
   @media screen and (min-width: 64rem) {
     top: 15rem;
+    font-size: 1.5rem;
   }
   &__no-bold {
     font-weight: 500;
@@ -313,4 +314,41 @@
 .your-guide-group {
   display: flex;
   padding: 0.5rem;
+}
+
+.your-safety {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+  z-index: 200;
+  background-color: $nsw-primary-highlight;
+  color: $white;
+  padding: 1rem 1rem;
+  box-sizing: border-box;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  overflow-y: auto;
+  //max-height: calc(100vh - 13.125rem);
+  @media screen and (min-width: 64rem) {
+    width: 52rem;
+    max-width: 90%;
+    font-size: 1.25rem;
+  }
+  &__no-bold {
+    font-weight: 500;
+  }
+}
+
+.your-safety-align {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: auto;
+  &__icon {
+    margin-right: 1rem;
+  }
+  @media screen and (min-width: 64rem) {
+    height: 4rem;
+  }
 }
