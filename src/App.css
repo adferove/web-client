@@ -327,8 +327,7 @@ img {
     background-color: #f4f4f7; }
 
 .land-la-w-img {
-  background-image: url(/images/landing.svg);
-  background-position: 50% 50%;
+  background-image: url(/images/landing.jpg);
   background-size: cover;
   object-fit: none;
   border-bottom: 6px solid;
@@ -345,7 +344,7 @@ img {
   transform: scaleX(-1); }
   @media screen and (min-width: 30rem) {
     .land-la-w-img {
-      background-image: url(/images/landingbig.svg);
+      background-image: url(/images/landingbig.jpg);
       border-bottom: 0;
       -webkit-transform: none;
       text-transform: none; } }
@@ -499,10 +498,10 @@ img {
         -webkit-transform: none;
         text-transform: none; } }
   .land-la-problem-img__about-you {
-    background-image: url(/images/about-you1.svg); }
+    background-image: url(/images/parenting-arrangements.jpg); }
     @media screen and (min-width: 30rem) {
       .land-la-problem-img__about-you {
-        background-image: url(/images/about-you.svg);
+        background-image: url(/images/parenting-arrangements-large.jpg);
         -webkit-transform: none;
         text-transform: none; } }
   .land-la-problem-img__your-guide {
