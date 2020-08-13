@@ -20,13 +20,17 @@ const Landing = () => {
       <Section grey>
         <div className="dic-la-w-l11 dic-la-w-l11__no-bold">
           {page.paragraphs.map((item) => {
-            let itemStyle = `dic-yg-2 dic-yg-2-img dic-yg-2-img__${item.icon}`;
             return (
-              <div
-                key={item.id}
-                className={itemStyle}
-                dangerouslySetInnerHTML={{ __html: item.paragraph }}
-              ></div>
+              <Fragment key={item.id}>
+                <div className="your-guide-group">
+                  <i className="material-icons your-safety-align__icon">
+                    {item.icon}
+                  </i>
+                  <div
+                    dangerouslySetInnerHTML={{ __html: item.paragraph }}
+                  ></div>
+                </div>
+              </Fragment>
             );
           })}
         </div>
