@@ -251,7 +251,7 @@
       {
         "pos": 1,
         "icon": "gavel",
-        "desc": "I have a <strong>Family Law</strong> problem",
+        "desc": "It looks like you have a <strong>Family Law</strong> problem",
         "show": true,
         "firm": true
       }
@@ -577,7 +577,7 @@
       {
         "pos": 1,
         "icon": "gavel",
-        "desc": "I have a <strong>Civil Law</strong> problem",
+        "desc": "It looks like you have a <strong>Civil Law</strong> problem",
         "show": true,
         "firm": true
       },
@@ -783,7 +783,7 @@
       {
         "pos": 1,
         "icon": "gavel",
-        "desc": "I have a <strong>Civil Law</strong> problem",
+        "desc": "It looks like you have a <strong>Civil Law</strong> problem",
         "show": true,
         "firm": true
       },
