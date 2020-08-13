@@ -1393,6 +1393,50 @@ img {
       background-image: url(/images/traffic.svg); }
     .nsw-card__image__children {
       background-image: url(/images/children.svg); }
+    .nsw-card__image__divorce {
+      background-image: url(/images/divorce.svg); }
+    .nsw-card__image__guardianship {
+      background-image: url(/images/guardianship.svg); }
+    .nsw-card__image__parentingplan {
+      background-image: url(/images/parentingplan.svg); }
+    .nsw-card__image__domesticviolence {
+      background-image: url(/images/domesticviolence.svg); }
+    .nsw-card__image__familylawchildren {
+      background-image: url(/images/familylawchildren.svg); }
+    .nsw-card__image__adoption {
+      background-image: url(/images/adoption.svg); }
+    .nsw-card__image__carearrengements {
+      background-image: url(/images/carearrengements.svg); }
+    .nsw-card__image__childsupport {
+      background-image: url(/images/childsupport.svg); }
+    .nsw-card__image__banking {
+      background-image: url(/images/banking.svg); }
+    .nsw-card__image__bankruptcy {
+      background-image: url(/images/bankruptcy.svg); }
+    .nsw-card__image__credit {
+      background-image: url(/images/credit.svg); }
+    .nsw-card__image__mortgages {
+      background-image: url(/images/mortgages.svg); }
+    .nsw-card__image__neighboursdisputes {
+      background-image: url(/images/neighboursdisputes.svg); }
+    .nsw-card__image__noise {
+      background-image: url(/images/noise.svg); }
+    .nsw-card__image__trees {
+      background-image: url(/images/trees.svg); }
+    .nsw-card__image__nuisanceages {
+      background-image: url(/images/nuisanceages.svg); }
+    .nsw-card__image__animals {
+      background-image: url(/images/animals.svg); }
+    .nsw-card__image__childabuse {
+      background-image: url(/images/childabuse.svg); }
+    .nsw-card__image__avos {
+      background-image: url(/images/avos.svg); }
+    .nsw-card__image__juvenilejustice {
+      background-image: url(/images/juvenilejustice.svg); }
+    .nsw-card__image__arrest {
+      background-image: url(/images/arrest.svg); }
+    .nsw-card__image__drugs {
+      background-image: url(/images/drugs.svg); }
   .nsw-card__cd {
     padding: 1.5rem 1rem 1.5rem 1rem;
     cursor: pointer; }
