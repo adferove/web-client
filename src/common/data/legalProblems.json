@@ -192,7 +192,7 @@
         "desc": "I’m under the age of 18",
         "checked": false,
         "name": "ay-chk-1",
-        "showResult": true,
+        "showResult": false,
         "resultLabel": "I’m <strong>under the age of 18</strong>",
         "icon": "person"
       },
@@ -210,7 +210,7 @@
         "desc": "I’m on the maximum Centrelink benefit",
         "checked": false,
         "name": "ay-chk-3",
-        "showResult": true,
+        "showResult": false,
         "resultLabel": "I’m on the maximum Centrelink benefit",
         "icon": "person"
       },
@@ -723,7 +723,7 @@
         "desc": "I’m under the age of 18",
         "checked": false,
         "name": "ay-chk-1",
-        "showResult": true,
+        "showResult": false,
         "resultLabel": "I’m <strong>under the age of 18</strong>",
         "icon": "person"
       },
@@ -732,7 +732,7 @@
         "desc": "I’m Aboriginal or Torres Straight Islander",
         "checked": false,
         "name": "ay-chk-2",
-        "showResult": true,
+        "showResult": false,
         "resultLabel": "I’m <strong>Aboriginal or Torres Straight Islander</strong>",
         "icon": "person"
       },
@@ -741,17 +741,17 @@
         "desc": "I’m on the maximum Centrelink benefit",
         "checked": false,
         "name": "ay-chk-3",
-        "showResult": true,
+        "showResult": false,
         "resultLabel": "I’m on the maximum Centrelink benefit",
         "icon": "person"
       },
       {
         "id": 4,
-        "desc": "I'm experiencing or at risk of family violence",
+        "desc": "I'm experiencing or at risk of domestic violence",
         "checked": false,
         "name": "ay-chk-4",
         "showResult": true,
-        "resultLabel": "I'm <strong>experiencing or at risk of family violence</strong>",
+        "resultLabel": "I'm <strong>experiencing or at risk of domestic violence</strong>",
         "icon": "person"
       },
       {
