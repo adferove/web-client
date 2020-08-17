@@ -589,6 +589,7 @@
     "note": "We can only provide you with information and contact details to other services if you require further legal support.",
     "imageYourGuide": "your-guide",
     "YourNextStepText": "Based on the information you gave, you cannot get legal advice from Legal Aid NSW. <br>Please use the information and alternative services for your problem.",
+    "definition": "<p>This topic gives you information about the law on dividing fences. It also gives you information about boundary disputes and retaining walls. It can help you if:</p><ul><li>you want to build, fix or replace a dividing fence</li><li>you have a disagreement with your neighbour about a dividing fence</li><li>you have a disagreement with your neighbour about where the common boundary between your properties is</li><li>you want to build a retaining wall.</li></ul>",
     "legalGuideFacts": [
       {
         "pos": 1,
@@ -708,6 +709,7 @@
     "imageAboutYou": "about-you",
     "imageYourGuide": "your-guide",
     "YourNextStepText": "Based on the information you gave, <strong>you should get legal advice</strong>",
+    "definition": "<p>Debts are a very common legal problem that most people experience at some stage in their life. This topic explains what you can do if you are owed money, or if someone is chasing you for money.</p><p>Debts can arise in lots of different ways:</p><ul><li>Contracts</li><li>Gifts and private loans</li> <li>Loans and credit cards</li><li>Electricity, gas, water and phone bills.</li></ul>",
     "problemQuestions": [
       {
         "step": 1,
