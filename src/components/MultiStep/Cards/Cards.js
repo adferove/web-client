@@ -14,7 +14,9 @@ const Cards = () => {
       cardActivation(optionId);
     }
   };
-  const filteredOptions = options.filter((opt) => opt.step === step);
+  const filteredOptions = options.filter(
+    (opt) => opt.step === step && opt.show
+  );
 
   return (
     <div className="dic-la-w-l11">

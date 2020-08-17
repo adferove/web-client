@@ -1,6 +1,7 @@
 [
   {
     "id": "11",
+    "show": true,
     "title": "Family and Relationships",
     "active": false,
     "cardImage": "family-relationship",
@@ -8,6 +9,7 @@
   },
   {
     "id": "12",
+    "show": false,
     "title": "Children and Young People",
     "active": false,
     "disabled": true,
@@ -15,6 +17,7 @@
   },
   {
     "id": "13",
+    "show": true,
     "title": "Crime and offences",
     "active": false,
     "cardImage": "crime",
@@ -22,6 +25,7 @@
   },
   {
     "id": "17",
+    "show": true,
     "title": "Debts & Money Problems",
     "active": false,
     "cardImage": "debt-money",
@@ -29,6 +33,7 @@
   },
   {
     "id": "14",
+    "show": true,
     "title": "Neighbours",
     "active": false,
     "cardImage": "neighbours",
@@ -36,6 +41,7 @@
   },
   {
     "id": "15",
+    "show": false,
     "title": "Courts and Tribunals",
     "active": false,
     "disabled": true,
@@ -44,6 +50,7 @@
   },
   {
     "id": "16",
+    "show": true,
     "title": "Motor Vehicles and Traffic Offences",
     "active": false,
     "cardImage": "traffic",
@@ -51,6 +58,7 @@
   },
   {
     "id": "111",
+    "show": false,
     "title": "Adoption",
     "active": false,
     "parent": ["11"],
@@ -59,6 +67,7 @@
   },
   {
     "id": "112",
+    "show": false,
     "title": "Care Arrangements",
     "active": false,
     "parent": ["11"],
@@ -67,6 +76,7 @@
   },
   {
     "id": "113",
+    "show": false,
     "title": "Child Support",
     "active": false,
     "parent": ["11"],
@@ -75,6 +85,7 @@
   },
   {
     "id": "114",
+    "show": false,
     "title": "Divorce",
     "active": false,
     "parent": ["11"],
@@ -83,6 +94,7 @@
   },
   {
     "id": "115",
+    "show": false,
     "title": "Domestic Violence",
     "active": false,
     "parent": ["11"],
@@ -91,6 +103,7 @@
   },
   {
     "id": "116",
+    "show": false,
     "title": "Family Law Children",
     "active": false,
     "parent": ["11"],
@@ -99,6 +112,7 @@
   },
   {
     "id": "117",
+    "show": false,
     "title": "Guardianship",
     "active": false,
     "parent": ["11", "17"],
@@ -108,6 +122,7 @@
 
   {
     "id": "118",
+    "show": true,
     "title": "Parenting Arrangements",
     "key": "Parenting arrangements",
     "active": false,
@@ -299,6 +314,7 @@
   {
     "id": "119",
     "title": "Parenting Plan",
+    "show": false,
     "active": false,
     "parent": ["11"],
     "cardImage": "parentingplan",
@@ -307,6 +323,7 @@
   },
   {
     "id": "131",
+    "show": false,
     "title": "Apprehended Violence Orders (AVOs)",
     "active": false,
     "parent": ["13"],
@@ -316,6 +333,7 @@
   },
   {
     "id": "132",
+    "show": false,
     "title": "Arrest",
     "active": false,
     "parent": ["13"],
@@ -325,6 +343,7 @@
   },
   {
     "id": "133",
+    "show": false,
     "title": "Child Abuse",
     "active": false,
     "parent": ["13"],
@@ -333,6 +352,7 @@
   },
   {
     "id": "134",
+    "show": true,
     "title": "Drink Driving",
     "key": "Drink driving",
     "active": false,
@@ -555,6 +575,7 @@
   },
   {
     "id": "135",
+    "show": false,
     "title": "Drugs",
     "active": false,
     "parent": ["13"],
@@ -563,6 +584,7 @@
   },
   {
     "id": "136",
+    "show": false,
     "title": "Juvenile Justice",
     "active": false,
     "parent": ["13"],
@@ -571,6 +593,7 @@
   },
   {
     "id": "142",
+    "show": false,
     "title": "Animals",
     "active": false,
     "parent": ["14"],
@@ -579,6 +602,7 @@
   },
   {
     "id": "141",
+    "show": true,
     "title": "Fences",
     "key": "Fences",
     "active": false,
@@ -639,6 +663,7 @@
   },
   {
     "id": "143",
+    "show": false,
     "title": "Neighbours disputes",
     "active": false,
     "parent": ["14"],
@@ -647,6 +672,7 @@
   },
   {
     "id": "144",
+    "show": false,
     "title": "Noise",
     "active": false,
     "parent": ["14"],
@@ -655,6 +681,7 @@
   },
   {
     "id": "145",
+    "show": false,
     "title": "Nuisanceages",
     "active": false,
     "parent": ["14"],
@@ -663,6 +690,7 @@
   },
   {
     "id": "146",
+    "show": false,
     "title": "Trees",
     "active": false,
     "parent": ["14"],
@@ -671,6 +699,7 @@
   },
   {
     "id": "172",
+    "show": false,
     "title": "Banking",
     "active": false,
     "parent": ["17"],
@@ -679,6 +708,7 @@
   },
   {
     "id": "173",
+    "show": false,
     "title": "Bankruptcy",
     "active": false,
     "parent": ["17"],
@@ -687,6 +717,7 @@
   },
   {
     "id": "174",
+    "show": false,
     "title": "Credit",
     "active": false,
     "parent": ["17"],
@@ -695,6 +726,7 @@
   },
   {
     "id": "171",
+    "show": true,
     "title": "Debts Between People",
     "key": "Debts between people",
     "active": false,
@@ -849,6 +881,7 @@
   },
   {
     "id": "175",
+    "show": false,
     "title": "Mortgages",
     "active": false,
     "parent": ["17"],
