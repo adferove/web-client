@@ -122,6 +122,7 @@
     "imageAboutYou": "about-you",
     "imageYourGuide": "your-guide",
     "YourNextStepText": "Based on the information you gave, <strong>you should get legal advice</strong>",
+    "definition": "<p>It&rsquo;s usually best for everyone involved if parents can come to their own agreement, focusing on the needs and best interests of the child. Parenting agreements can be;</p><ul><li>an oral agreement,</li><li>a written parenting plan, or</li><li>an agreement that is put into a formal court order, called &lsquo;consent orders(link is external)&rsquo;. This requires an application to the court.</li></ul>",
     "problemQuestions": [
       {
         "step": 1,
