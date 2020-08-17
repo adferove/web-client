@@ -18,15 +18,17 @@ const Cards = () => {
 
   return (
     <div className="dic-la-w-l11">
-      <div className="dic-sug">
-        <i id="help-i" className="material-icons dic-color-i">
-          info_outline
-        </i>
+      {step === 1 && (
+        <div className="dic-sug">
+          <i id="help-i" className="material-icons dic-color-i">
+            info_outline
+          </i>
 
-        <p className="dic-def__no-bold">
-          Click on the icon to find out the meaning of the words.
-        </p>
-      </div>
+          <p className="dic-def__no-bold">
+            Click on the icon to find out the meaning of the words.
+          </p>
+        </div>
+      )}
 
       <div className="grid-3">
         {filteredOptions.map((option) => (

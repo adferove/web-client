@@ -346,6 +346,7 @@
     "imageAboutYou": "about-you",
     "imageYourGuide": "your-guide",
     "YourNextStepText": "Based on the information you gave, <strong>you should get legal advice</strong>",
+    "definition": "<p>What to do if you are <strong>pleading guilty&nbsp;</strong>to a drink driving charge or have received a <strong>penalty notice</strong> for drink driving.</p><p>A drink driving charge can be:</p><ul><li>a &#39;prescribed concentration of alcohol&#39; (PCA) offence</li><li>a &#39;driving under the influence&#39; (DUI) offence</li><li>refusing or failing to give a breath analysis or blood sample, and</li><li>dangerous driving involving alcohol.</li></ul>",
     "problemQuestions": [
       {
         "step": 1,
