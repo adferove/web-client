@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import spinner from '../../assets/images/spinner.gif';
+import spinner from '../../assets/images/spinner.svg';
 import classes from './Loading.module.css';
 
 const Loading = () => (
