@@ -536,14 +536,14 @@
             "pos": 1,
             "title": "Book an advice session",
             "text": "Call your local Legal Aid NSW office to speak to a lawyer before your court date.",
-            "link": "https://www.legalaid.nsw.gov.au"
+            "link": "https://www.legalaid.nsw.gov.au/contact-us/legal-aid-nsw-offices"
           },
           {
             "id": "yg12",
             "pos": 2,
             "title": "Get help at court on the day",
             "text": "On your court date there will be a duty lawyer available who can give you legal advice.",
-            "link": "https://www.lawaccess.nsw.gov.au/"
+            "link": "https://www.legalaid.nsw.gov.au/get-legal-help/help-at-court"
           }
         ]
       },
