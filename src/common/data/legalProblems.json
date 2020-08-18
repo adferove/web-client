@@ -9,10 +9,10 @@
   },
   {
     "id": "12",
-    "show": false,
+    "show": true,
     "title": "Children and Young People",
     "active": false,
-    "disabled": true,
+    "disabled": false,
     "cardImage": "children"
   },
   {
@@ -41,10 +41,10 @@
   },
   {
     "id": "15",
-    "show": false,
+    "show": true,
     "title": "Courts and Tribunals",
     "active": false,
-    "disabled": true,
+    "disabled": false,
     "cardImage": "court",
     "definition": "<p>A body that resolves disputes between parties. There are different tribunals that deal with specific matters.</p><p>For example, the NSW Civil and Administrative Tribunal (NCAT) deals with a broad and diverse range of matters from disputes about residential tenancy and building works to guardianship and administrative review of government decisions. Orders made by a tribunal are legally enforceable.</p>"
   },
@@ -58,65 +58,65 @@
   },
   {
     "id": "111",
-    "show": false,
+    "show": true,
     "title": "Adoption",
     "active": false,
     "parent": ["11"],
-    "disabled": true,
+    "disabled": false,
     "cardImage": "adoption"
   },
   {
     "id": "112",
-    "show": false,
+    "show": true,
     "title": "Care Arrangements",
     "active": false,
     "parent": ["11"],
-    "disabled": true,
+    "disabled": false,
     "cardImage": "carearrengements"
   },
   {
     "id": "113",
-    "show": false,
+    "show": true,
     "title": "Child Support",
     "active": false,
     "parent": ["11"],
-    "disabled": true,
+    "disabled": false,
     "cardImage": "childsupport"
   },
   {
     "id": "114",
-    "show": false,
+    "show": true,
     "title": "Divorce",
     "active": false,
     "parent": ["11"],
-    "disabled": true,
+    "disabled": false,
     "cardImage": "divorce"
   },
   {
     "id": "115",
-    "show": false,
+    "show": true,
     "title": "Domestic Violence",
     "active": false,
     "parent": ["11"],
-    "disabled": true,
+    "disabled": false,
     "cardImage": "domesticviolence"
   },
   {
     "id": "116",
-    "show": false,
+    "show": true,
     "title": "Family Law Children",
     "active": false,
     "parent": ["11"],
-    "disabled": true,
+    "disabled": false,
     "cardImage": "familylawchildren"
   },
   {
     "id": "117",
-    "show": false,
+    "show": true,
     "title": "Guardianship",
     "active": false,
     "parent": ["11", "17"],
-    "disabled": true,
+    "disabled": false,
     "cardImage": "guardianship"
   },
 
@@ -314,40 +314,40 @@
   {
     "id": "119",
     "title": "Parenting Plan",
-    "show": false,
+    "show": true,
     "active": false,
     "parent": ["11"],
     "cardImage": "parentingplan",
-    "disabled": true,
+    "disabled": false,
     "definition": "A written agreement, signed and dated by both parents, that sets out the care arrangements for a child."
   },
   {
     "id": "131",
-    "show": false,
+    "show": true,
     "title": "Apprehended Violence Orders (AVOs)",
     "active": false,
     "parent": ["13"],
-    "disabled": true,
+    "disabled": false,
     "cardImage": "avos",
     "definition": "An order made by a court that is aimed at protecting one person or people from another person that causes them to fear for their safety."
   },
   {
     "id": "132",
-    "show": false,
+    "show": true,
     "title": "Arrest",
     "active": false,
     "parent": ["13"],
-    "disabled": true,
+    "disabled": false,
     "cardImage": "arrest",
     "definition": "To be taken into police custody for committing or being suspected of committing a criminal offence."
   },
   {
     "id": "133",
-    "show": false,
+    "show": true,
     "title": "Child Abuse",
     "active": false,
     "parent": ["13"],
-    "disabled": true,
+    "disabled": false,
     "cardImage": "childabuse"
   },
   {
@@ -575,29 +575,29 @@
   },
   {
     "id": "135",
-    "show": false,
+    "show": true,
     "title": "Drugs",
     "active": false,
     "parent": ["13"],
-    "disabled": true,
+    "disabled": false,
     "cardImage": "drugs"
   },
   {
     "id": "136",
-    "show": false,
+    "show": true,
     "title": "Juvenile Justice",
     "active": false,
     "parent": ["13"],
-    "disabled": true,
+    "disabled": false,
     "cardImage": "juvenilejustice"
   },
   {
     "id": "142",
-    "show": false,
+    "show": true,
     "title": "Animals",
     "active": false,
     "parent": ["14"],
-    "disabled": true,
+    "disabled": false,
     "cardImage": "animals"
   },
   {
@@ -663,65 +663,65 @@
   },
   {
     "id": "143",
-    "show": false,
+    "show": true,
     "title": "Neighbours disputes",
     "active": false,
     "parent": ["14"],
-    "disabled": true,
+    "disabled": false,
     "cardImage": "neighboursdisputes"
   },
   {
     "id": "144",
-    "show": false,
+    "show": true,
     "title": "Noise",
     "active": false,
     "parent": ["14"],
-    "disabled": true,
+    "disabled": false,
     "cardImage": "noise"
   },
   {
     "id": "145",
-    "show": false,
+    "show": true,
     "title": "Nuisanceages",
     "active": false,
     "parent": ["14"],
-    "disabled": true,
+    "disabled": false,
     "cardImage": "nuisanceages"
   },
   {
     "id": "146",
-    "show": false,
+    "show": true,
     "title": "Trees",
     "active": false,
     "parent": ["14"],
-    "disabled": true,
+    "disabled": false,
     "cardImage": "trees"
   },
   {
     "id": "172",
-    "show": false,
+    "show": true,
     "title": "Banking",
     "active": false,
     "parent": ["17"],
-    "disabled": true,
+    "disabled": false,
     "cardImage": "banking"
   },
   {
     "id": "173",
-    "show": false,
+    "show": true,
     "title": "Bankruptcy",
     "active": false,
     "parent": ["17"],
-    "disabled": true,
+    "disabled": false,
     "cardImage": "bankruptcy"
   },
   {
     "id": "174",
-    "show": false,
+    "show": true,
     "title": "Credit",
     "active": false,
     "parent": ["17"],
-    "disabled": true,
+    "disabled": false,
     "cardImage": "credit"
   },
   {
@@ -881,11 +881,11 @@
   },
   {
     "id": "175",
-    "show": false,
+    "show": true,
     "title": "Mortgages",
     "active": false,
     "parent": ["17"],
-    "disabled": true,
+    "disabled": false,
     "cardImage": "mortgages"
   }
 ]
