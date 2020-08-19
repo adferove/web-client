@@ -723,7 +723,7 @@
             "pos": 2,
             "title": "Use a self-help tool",
             "text": "‘Resolving Fencing Disputes’ This topic gives you information about the law on dividing fences. It also gives you information about boundary disputes and s...",
-            "link": "https://www.lawaccess.nsw.gov.au/Pages/representing/lawassist_fences/lawassist_fences.aspx"
+            "link": "https://legalhelp.lawaccess.nsw.gov.au/about-guided-pathways-resolving-fencing-disputes"
           }
         ]
       }
@@ -756,7 +756,7 @@
   {
     "id": "145",
     "show": true,
-    "title": "Nuisanceages",
+    "title": "Nuisance",
     "active": false,
     "parent": ["14"],
     "disabled": false,
