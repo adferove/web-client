@@ -296,6 +296,50 @@
         "content": "<p><strong>Arrangements for children </strong></p><p>&lsquo;Can I make arrangements for my children without going to court?&rsquo; <a href='https://familyviolencelaw.gov.au/family-law/arrangements-for-children/how-to-make-arrangments-for-children-without-going-to-court/' rel='noopener noreferrer' target='_blank'><span style='color: rgb(111, 25, 46); overflow-wrap: break-word;'>https://familyviolencelaw.gov.au/family-law/arrangements-for-children/how-to-make-arrangments-for-children-without-going-to-court/</span></a></p><p><strong>&lsquo;amica&rsquo; &nbsp;</strong></p><p>amica helps separated couples to: make parenting arrangements if they have children, and divide their money and property simply. <a href='https://amica.gov.au/' rel='noopener noreferrer' target='_blank'><span style='color: rgb(111, 25, 46);'>https://amica.gov.au/</span></a></p>"
       }
     ],
+    "yourGuideSections": [
+      {
+        "id": "yg1",
+        "pos": 1,
+        "title": "Your next steps",
+        "cards": [
+          {
+            "id": "yg11",
+            "pos": 1,
+            "title": "Book an advice session",
+            "text": "Call your local Legal Aid NSW office to speak to a lawyer before your court date.",
+            "link": "https://www.legalaid.nsw.gov.au/contact-us/legal-aid-nsw-offices"
+          }
+        ]
+      },
+      {
+        "id": "yg2",
+        "pos": 2,
+        "title": "In the meantime",
+        "cards": [
+          {
+            "id": "yg21",
+            "pos": 1,
+            "title": "Learn more about your problem",
+            "text": "‘What happens when your relationship ends’ is a factsheet with answers to questions about your family, your children and your property.",
+            "link": "https://www.legalaid.nsw.gov.au/publications/factsheets-and-resources/what-happens-when-your-relationship-ends"
+          },
+          {
+            "id": "yg22",
+            "pos": 2,
+            "title": "Learn more about your problem",
+            "text": "‘Can I make arrangements for my children without going to court?’ and more questions are answered on this webpage.",
+            "link": "https://familyviolencelaw.gov.au/family-law/arrangements-for-children/how-to-make-arrangments-for-children-without-going-to-court/"
+          },
+          {
+            "id": "yg23",
+            "pos": 2,
+            "title": "Use a self-help tool",
+            "text": "‘amica’ helps separated couples to: make parenting arrangements if they have children, and divide their money and property simply. ",
+            "link": "https://amica.gov.au/"
+          }
+        ]
+      }
+    ],
     "journeySteps": [
       {
         "step": 3,
@@ -558,6 +602,13 @@
             "title": "Learn more about your problem",
             "text": "This brochure helps you prepare for court and explains the penalties for drink driving.",
             "link": "https://www.legalaid.nsw.gov.au/publications/factsheets-and-resources/drink-driving-charges-and-you-pamphlet"
+          },
+          {
+            "id": "yg22",
+            "pos": 2,
+            "title": "Use a self-help tool",
+            "text": "‘Got a NSW traffic offence problem?’ This tool is designed by lawyers to help you find the best way to deal with your traffic offence problem.",
+            "link": "https://traffic.guidedpathways.legalaid.nsw.gov.au/"
           }
         ]
       }
@@ -652,6 +703,29 @@
         "pos": 3,
         "title": "Who you can contact",
         "content": "<p><strong>The Solicitor Referral Service of the Law Society of New South Wales</strong></p><p>helps members of the public find a private firm of solicitors or accredited specialists in specific areas of law.&nbsp;</p><p><a href='http://www.lawsociety.com.au/for-the-public/going-court-and-working-with-lawyers/solicitor-referral-service' rel='noopener noreferrer' target='_blank'><span style='color: rgb(111, 25, 46);overflow-wrap: break-word;'>www.lawsociety.com.au/for-the-public/going-court-and-working-with-lawyers/solicitor-referral-service</span></a></p><p><strong>Community Justice Centres </strong></p><p>provide quick and impartial dispute resolution services for minor matters e.g. neighbourhood disputes. &nbsp; &nbsp;</p><p><strong>Phone</strong>: 1800 990 777<br /><strong>Hours</strong>: 9am to 5pm, Monday to Friday</p><p><strong>Community Legal Centres NSW Recommendation Service</strong></p><p>This app will ask you a few questions to direct you to community legal centres that are suitable for your situation.</p><p><a href='https://applications-au.neotalogic.com/a/clcnsw-recommendation-service' rel='noopener noreferrer' target='_blank'><span style='color: rgb(111, 25, 46); overflow-wrap: break-word;'>https://applications-au.neotalogic.com/a/clcnsw-recommendation-service</span></a></p>"
+      }
+    ],
+    "yourGuideSections": [
+      {
+        "id": "yg1",
+        "pos": 1,
+        "title": "Your next steps",
+        "cards": [
+          {
+            "id": "yg11",
+            "pos": 1,
+            "title": "Learn more about your problem",
+            "text": "‘Fences’ This topic gives you information about the law on dividing fences. It also gives you information about boundary disputes and retaining walls...",
+            "link": "https://www.lawaccess.nsw.gov.au/Pages/representing/lawassist_fences/lawassist_fences.aspx "
+          },
+          {
+            "id": "yg12",
+            "pos": 2,
+            "title": "Use a self-help tool",
+            "text": "‘Resolving Fencing Disputes’ This topic gives you information about the law on dividing fences. It also gives you information about boundary disputes and s...",
+            "link": "https://www.lawaccess.nsw.gov.au/Pages/representing/lawassist_fences/lawassist_fences.aspx"
+          }
+        ]
       }
     ],
     "journeySteps": [
@@ -850,6 +924,43 @@
         "desc": "It's about <strong>debts between individuals</strong>",
         "show": true,
         "firm": true
+      }
+    ],
+    "yourGuideSections": [
+      {
+        "id": "yg1",
+        "pos": 1,
+        "title": "Your next steps",
+        "cards": [
+          {
+            "id": "yg11",
+            "pos": 1,
+            "title": "Book an advice session",
+            "text": "Call your local Legal Aid NSW office to speak to a lawyer before your court date.",
+            "link": "https://www.legalaid.nsw.gov.au/contact-us/legal-aid-nsw-offices"
+          }
+        ]
+      },
+      {
+        "id": "yg2",
+        "pos": 2,
+        "title": "In the meantime",
+        "cards": [
+          {
+            "id": "yg21",
+            "pos": 1,
+            "title": "Learn more about your problem",
+            "text": "‘Does someone owe you money or goods?’ This section has step-by-step information for people who want to start a small claim in court to recover money...",
+            "link": "https://www.lawaccess.nsw.gov.au/Pages/representing/Local_courts_small_claims/owed_money/does_someone_owe_you_money_or_goods.aspx"
+          },
+          {
+            "id": "yg22",
+            "pos": 2,
+            "title": "Use a self-help tool",
+            "text": "‘Recovering Money’ is a tool that helps you recover money from individuals or small businesses.",
+            "link": "https://legalhelp.lawaccess.nsw.gov.au/about-recovering-money"
+          }
+        ]
       }
     ],
     "legalGuideSections": [
