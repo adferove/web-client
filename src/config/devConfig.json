@@ -1,6 +1,5 @@
 {
   "version": "v1",
   "functionsHost": "http://localhost:4201/api",
-  "legalBotHost": "https://onlinetriage-legalbot-dev.azurewebsites.net",
-  "prevLegalBotHost": "https://app-triagetoolalphalegalbot-dev.azurewebsites.net"
+  "legalBotHost": "https://app-triagetoolalphalegalbot-dev.azurewebsites.net"
 }

@@ -12,7 +12,7 @@
     "show": true,
     "title": "Children and Young People",
     "active": false,
-    "disabled": false,
+    "disabled": true,
     "cardImage": "children"
   },
   {
@@ -44,7 +44,7 @@
     "show": true,
     "title": "Courts and Tribunals",
     "active": false,
-    "disabled": false,
+    "disabled": true,
     "cardImage": "court",
     "definition": "<p>A body that resolves disputes between parties. There are different tribunals that deal with specific matters.</p><p>For example, the NSW Civil and Administrative Tribunal (NCAT) deals with a broad and diverse range of matters from disputes about residential tenancy and building works to guardianship and administrative review of government decisions. Orders made by a tribunal are legally enforceable.</p>"
   },
@@ -62,7 +62,7 @@
     "title": "Adoption",
     "active": false,
     "parent": ["11"],
-    "disabled": false,
+    "disabled": true,
     "cardImage": "adoption"
   },
   {
@@ -71,7 +71,7 @@
     "title": "Care Arrangements",
     "active": false,
     "parent": ["11"],
-    "disabled": false,
+    "disabled": true,
     "cardImage": "carearrengements"
   },
   {
@@ -80,7 +80,7 @@
     "title": "Child Support",
     "active": false,
     "parent": ["11"],
-    "disabled": false,
+    "disabled": true,
     "cardImage": "childsupport"
   },
   {
@@ -89,7 +89,7 @@
     "title": "Divorce",
     "active": false,
     "parent": ["11"],
-    "disabled": false,
+    "disabled": true,
     "cardImage": "divorce"
   },
   {
@@ -98,7 +98,7 @@
     "title": "Domestic Violence",
     "active": false,
     "parent": ["11"],
-    "disabled": false,
+    "disabled": true,
     "cardImage": "domesticviolence"
   },
   {
@@ -107,7 +107,7 @@
     "title": "Family Law Children",
     "active": false,
     "parent": ["11"],
-    "disabled": false,
+    "disabled": true,
     "cardImage": "familylawchildren"
   },
   {
@@ -116,7 +116,7 @@
     "title": "Guardianship",
     "active": false,
     "parent": ["11", "17"],
-    "disabled": false,
+    "disabled": true,
     "cardImage": "guardianship"
   },
 
@@ -362,7 +362,7 @@
     "active": false,
     "parent": ["11"],
     "cardImage": "parentingplan",
-    "disabled": false,
+    "disabled": true,
     "definition": "A written agreement, signed and dated by both parents, that sets out the care arrangements for a child."
   },
   {
@@ -371,7 +371,7 @@
     "title": "Apprehended Violence Orders (AVOs)",
     "active": false,
     "parent": ["13"],
-    "disabled": false,
+    "disabled": true,
     "cardImage": "avos",
     "definition": "An order made by a court that is aimed at protecting one person or people from another person that causes them to fear for their safety."
   },
@@ -381,7 +381,7 @@
     "title": "Arrest",
     "active": false,
     "parent": ["13"],
-    "disabled": false,
+    "disabled": true,
     "cardImage": "arrest",
     "definition": "To be taken into police custody for committing or being suspected of committing a criminal offence."
   },
@@ -391,7 +391,7 @@
     "title": "Child Abuse",
     "active": false,
     "parent": ["13"],
-    "disabled": false,
+    "disabled": true,
     "cardImage": "childabuse"
   },
   {
@@ -630,7 +630,7 @@
     "title": "Drugs",
     "active": false,
     "parent": ["13"],
-    "disabled": false,
+    "disabled": true,
     "cardImage": "drugs"
   },
   {
@@ -639,7 +639,7 @@
     "title": "Juvenile Justice",
     "active": false,
     "parent": ["13"],
-    "disabled": false,
+    "disabled": true,
     "cardImage": "juvenilejustice"
   },
   {
@@ -648,7 +648,7 @@
     "title": "Animals",
     "active": false,
     "parent": ["14"],
-    "disabled": false,
+    "disabled": true,
     "cardImage": "animals"
   },
   {
@@ -741,7 +741,7 @@
     "title": "Neighbours disputes",
     "active": false,
     "parent": ["14"],
-    "disabled": false,
+    "disabled": true,
     "cardImage": "neighboursdisputes"
   },
   {
@@ -750,7 +750,7 @@
     "title": "Noise",
     "active": false,
     "parent": ["14"],
-    "disabled": false,
+    "disabled": true,
     "cardImage": "noise"
   },
   {
@@ -759,7 +759,7 @@
     "title": "Nuisance",
     "active": false,
     "parent": ["14"],
-    "disabled": false,
+    "disabled": true,
     "cardImage": "nuisanceages"
   },
   {
@@ -768,7 +768,7 @@
     "title": "Trees",
     "active": false,
     "parent": ["14"],
-    "disabled": false,
+    "disabled": true,
     "cardImage": "trees"
   },
   {
@@ -777,7 +777,7 @@
     "title": "Banking",
     "active": false,
     "parent": ["17"],
-    "disabled": false,
+    "disabled": true,
     "cardImage": "banking"
   },
   {
@@ -786,7 +786,7 @@
     "title": "Bankruptcy",
     "active": false,
     "parent": ["17"],
-    "disabled": false,
+    "disabled": true,
     "cardImage": "bankruptcy"
   },
   {
@@ -795,7 +795,7 @@
     "title": "Credit",
     "active": false,
     "parent": ["17"],
-    "disabled": false,
+    "disabled": true,
     "cardImage": "credit"
   },
   {
@@ -996,7 +996,7 @@
     "title": "Mortgages",
     "active": false,
     "parent": ["17"],
-    "disabled": false,
+    "disabled": true,
     "cardImage": "mortgages"
   }
 ]
